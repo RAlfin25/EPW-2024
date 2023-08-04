@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+h1 {
+    font-family: "Poppins";
+    font-size: 70px;
+    line-height: 40px;
+}
+
+.coming-soon {
+    background-color: #29A8DF;
+    height: 100vh;    
+}
+
+.coming-soon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   top: 150px;
+}
+
+.coming-soon-name1 {
+    padding-left: 50px;
+    z-index: 2;
+    color: #F2EFD5;
+}
+
+.coming-soon-name2 {
+    position: absolute;
+    padding: 10px 0px 0 357px;
+    z-index: 1;
+    transform: translateY(20) 2s;
+}
+
+.Logo {
+    height: 40vmin;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .Logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.coming-soon-asset {
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    position: relative;
+    bottom: 73px;
+   
+}
+
+  .asset1 {
+    width: 500px;
+  }
+  
+  

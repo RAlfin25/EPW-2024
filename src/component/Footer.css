@@ -1,0 +1,84 @@
+
+.foot {
+    background-color: #48545D;
+    height: 400px;
+    z-index: 0;
+}
+
+.footer-container {
+    display: flex;
+    margin: auto;
+    position: relative;
+    width: 80%;
+    padding: 50px;
+    border-bottom: solid 2px white;
+    justify-content: space-between; 
+}
+
+.footer-brand {
+    padding-right: 100px;
+    border-right: solid white;
+    text-align: center;
+    color: white;
+}
+
+.footer-logo {
+    width: 170px;
+}
+
+.footer-main {
+    display: flex;
+    color: white;
+    
+}
+
+.footer-main h1{
+    
+    font-size: 25px;
+   text-decoration: underline;
+}
+
+.footer-main li {
+    position: relative;
+    right: 48px;
+   list-style-type: none;
+    font-size: 18px;
+    line-height: 1.7rem;
+    padding-left: 0px;
+}
+
+.footer-main li:hover{
+    color: black;
+}
+
+.hover {
+    text-decoration: none;
+    color: white;
+}
+ 
+.hover:hover {
+    color:  black;
+    
+}
+
+.footer-sosmed {
+    padding-left: 50px;
+
+}
+
+.sosmed {
+    display: flex;
+}
+
+.sosmed a{
+    padding: 10px;
+}
+
+
+.footer-sub{
+    color: white;
+    margin: auto;
+    width: 86%;
+    display: flex;
+}
+
