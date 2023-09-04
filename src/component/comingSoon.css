@@ -1,14 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
-h1 {
+.coming-soon-name1 h1 {
     font-family: "Poppins";
     font-size: 70px;
-    line-height: 40px;
+    line-height: 70px;
+    text-shadow: 5px 5px 0px black;
+}
+
+
+.asset-awan {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  max-height: 100vh;
+  margin: 0;
+  opacity: 70%;
 }
 
 .coming-soon {
     background-color: #29A8DF;
-    height: 100vh;    
+    min-width: 100%;
+    height: 100vh;   
 }
 
 .coming-soon-container {
@@ -16,8 +27,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
    top: 150px;
+   height: 40%;
+    
 }
 
 .coming-soon-name1 {
@@ -26,21 +38,20 @@ h1 {
     color: #F2EFD5;
 }
 
-.coming-soon-name2 {
-    position: absolute;
-    padding: 10px 0px 0 357px;
-    z-index: 1;
-    transform: translateY(20) 2s;
-}
 
-.Logo {
-    height: 40vmin;
+
+.Logo-1 {
+    width: 41vmin;
+    height: auto;
     pointer-events: none;
     z-index: 1;
 }
 
+
+
+
 @media (prefers-reduced-motion: no-preference) {
-    .Logo {
+    .Logo-1 {
       animation: App-logo-spin infinite 20s linear;
     }
   }
@@ -59,12 +70,219 @@ h1 {
     justify-content: space-between;
     z-index: 0;
     position: relative;
-    bottom: 73px;
-   
+    align-items: flex-end;
+    min-width: 100%;
+    height: 60vh;
+    align-content: flex-end;
+    
 }
 
   .asset1 {
-    width: 500px;
+    width: 450px;
+    height: auto;
   }
   
+  .asset2 {
+    width: 500px;
+    height: auto;
+  }
   
+  @media only screen and (max-width: 1100px) {
+    h1 {
+      font-size: 55px;
+      line-height: 60px;
+      text-shadow: 4px 4px 0px black;
+  }
+  
+  .Logo-1 {
+   width: 32vmin;
+   height: auto;
+}
+
+.asset1 {
+  width: 340px;
+  height: auto;
+}
+
+.asset2 {
+  width: 370px;
+  height: auto;
+}
+
+.asset-awan {
+  top: 50px;
+  height: auto;
+  width: 100%;
+}
+  }
+
+  @media only screen and (max-width: 740px) {
+    h1 {
+      font-size: 40px;
+      line-height: 40px;
+      text-shadow: 2.5px 2.5px 0px black;
+  }
+
+  .coming-soon-name1 {
+    padding-left: 30px;
+
+}
+  
+  .Logo-1 {
+    width: 30vmin;
+    height: auto;
+    padding: 0;
+}
+
+.asset1 {
+  width: 250px;
+  height: auto;
+}
+
+.asset2 {
+  width: 300px;
+  height: auto;
+}
+
+.asset-awan {
+  top: 100px;
+  height: auto;
+  width: 100%;
+}
+  }
+
+  @media only screen and (max-width: 630px) {
+    h1 {
+      font-size: 40px;
+      line-height: 40px;
+      text-shadow: 2.5px 2.5px 0px black;
+  }
+  
+  .Logo-1 {
+    width: 30vmin;
+    height: auto;
+}
+
+.coming-soon-container {
+ 
+  flex-direction: column;
+}
+
+.coming-soon-name1 {
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+}
+
+.asset1 {
+  width: 200px;
+  height: auto;
+}
+
+.asset2 {
+  width: 230px;
+  height: auto;
+}
+
+.asset-awan {
+  width: 100%;
+  height: auto;
+}
+
+  }
+
+  @media only screen and (max-width: 480px) { 
+
+    h1 {
+      font-size: 30px;
+      line-height: 30px;
+      text-shadow: 1.5px 1.5px 0px black;
+  }
+  
+  .coming-soon {
+      background-color: #29A8DF;
+      min-width: 360px;
+      height: 100vh;   
+  }
+  
+  .coming-soon-container {
+      flex-direction: column;
+  }
+  
+  .coming-soon-name1 {
+      padding-top: 20px;
+  }
+  
+  .Logo-1 {
+      width: 30vmin;
+      height: auto;
+  }
+  
+  .asset-awan {
+    top: 150px;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .coming-soon-asset {
+    max-width: 360px;
+    height: 60vh;
+  }
+  
+
+  
+  .asset1 {
+    width: 150px;
+    height: auto;
+  }
+  
+  .asset2 {
+    width: 165px;
+    height: auto;
+  }
+    }
+
+  @media only screen and (max-width: 360px) { 
+
+  h1 {
+    font-size: 30px;
+    line-height: 30px;
+    text-shadow: 1.5px 1.5px 0px black;
+}
+
+.coming-soon {
+    background-color: #29A8DF;
+    min-width: 360px;
+    height: 100vh;   
+}
+
+.coming-soon-container {
+    flex-direction: column;
+}
+
+.coming-soon-name1 {
+    padding-top: 20px;
+}
+
+.Logo-1 {
+    height: 30vmin;
+}
+
+.asset-awan {
+  width: 360px;
+  height: 300px;
+}
+
+.coming-soon-asset {
+  max-width: 360px;
+  height:60vh;
+}
+
+
+.asset1 {
+  width: 150px;
+}
+
+.asset2 {
+  height: 100px;
+}
+  }

@@ -1,0 +1,41 @@
+.container-notfound {
+    aspect-ratio: 16/9;
+    background-image: url(./asset/Page-Not-found-404-Ver-2.png);
+    background-size: cover;
+}
+
+.notfound{
+    margin: auto;
+    text-align: center;
+}
+
+.text-notfound{
+    position: relative;
+    top: 30px;
+}
+
+.text-notfound p, h1, h2 {
+    font-family:'Poppins';
+    color: #2E5B78;
+    line-height: 2rem;
+    font-weight:normal;
+}
+
+.text-notfound h1 {
+    font-size: 120px;
+}
+
+.text-notfound h2 {
+    font-size: 50px;
+}
+.text-notfound p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.building {
+    position: relative;
+    top: 40px;
+    width: 400px;
+    aspect-ratio: 1/1;
+}

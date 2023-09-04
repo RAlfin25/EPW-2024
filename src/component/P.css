@@ -1,0 +1,49 @@
+.Page4 {
+    height: 100vh;
+}
+
+.containerP4 {
+    position: relative;
+    top: 200px;
+    right: 0;
+    width: 700px;
+  }
+  .textP4 {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0px 50px;
+   display: flex;
+   flex-direction: column;
+    position: relative;
+   justify-content: flex-end;
+
+  }
+  
+  .textLab {
+
+  color: #FA8406;
+  font-size: 90px;
+  }
+  
+  .tfP4 {
+    
+   
+    color: white;
+    background-color: #48545D;
+    border-radius: 50px;
+  width: fit-content;
+    font-size: 30px ;
+    padding: 5px 20px;
+    margin: 0;
+    right: 0px;
+  }
+
+  
+  
+  .textPanjangP4 {
+    
+    width: 500px;
+    right: 0;
+    
+  }
