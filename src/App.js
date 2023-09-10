@@ -18,19 +18,7 @@ import NotFound from './component/Notfound';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar/>
-        
-          <Routes>
-            <Route path='/' exact Component={HomePage}/>
-            <Route path='/aboutTF' Component={AboutTF}/>
-            <Route path='/merch' Component={Merch}/>
-            <Route path='/epc' Component={EPC}/>
-            <Route path='/injection' Component={Injection}/>
-            <Route path='/videografi' Component={Videografi}/>
-          </Routes>
-        <Footer/>
-      </Router>
+      <NotFound />
     </div>
   );
 }
