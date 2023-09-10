@@ -1,6 +1,13 @@
 import "./homepage.css";
 import ephyfest from "../component/asset/ephyfest.svg";
 import slider1 from "../component/asset/image 18.jpg";
+import pertamina from "../component/asset/pertamina.svg";
+import pupuk_kaltim from "../component/asset/pupukkaltim.svg";
+import ruang_guru from "../component/asset/ruangGuru.svg";
+import waskita from "../component/asset/Waskita_Karya.svg";
+import indofood from "../component/asset/Indofood.svg";
+import bri from "../component/asset/Bank-BRI.svg";
+
 import { useEffect, useRef, useState } from "react";
 const sliderContent = [
   {
@@ -25,9 +32,9 @@ const sliderContent = [
     link: "",
   },
   {
-    title: "Workshop",
+    title: "Workshop1",
     sumary:
-      "Kegiatan ini ditujukan untuk mahasiswa dengan menampilkan berbagai teknologi riset yang dikembangkannya",
+      "Kegiatan ini ditujukan untuk mahasiswa dengan menampilkan berbagai teknologi riset yang dikembangkannya aaa",
     img: slider1,
     link: "",
   },
@@ -82,9 +89,9 @@ function HomePage() {
     }
   }, [left, right]);
   useEffect(() => {
-    setInterval(() => {
-      setLeft(true);
-    }, 5000);
+    // setInterval(() => {
+    //   setLeft(true);
+    // }, 10000);
   }, []);
   return (
     <>
@@ -188,14 +195,18 @@ function HomePage() {
             <div className="slider-header">Explore More</div>
             <div className="slider" ref={slider}>
               {sliderContent.map((item, i) => {
-                let prev = (index == 0 ? sliderContent.length - 1 : index) - 1;
-                let next = (index == sliderContent.length - 1 ? 0 : index) + 1;
-                if (
-                  (i >= prev && i <= next) ||
-                  i == prev ||
-                  i == index ||
-                  i == next
-                ) {
+                let prev =
+                  index - 1 == -1 ? sliderContent.length - 1 : index - 1;
+                let next = index + 1;
+                if (next == sliderContent.length) {
+                  next = 0;
+                  while (next == prev || next == index) {
+                    // if ((next + 1) == sliderContent.length - 1) next = 0;
+                    next++;
+                  }
+                }
+                console.log(prev, index, next);
+                if (i == prev || i == index || i == next) {
                   return (
                     <div
                       className={(() => {
@@ -244,8 +255,34 @@ function HomePage() {
       </div>
       <div className="timeline">
         <div className="timeline-content">
-          <h1>EPW</h1>
+          <div className="timeline-title">
+            <h1>EPW 2024</h1>
+            <h3>Timeline</h3>
+          </div>
+          <div className="timeline-image"></div>
         </div>
+      </div>
+      <div class="sponsor">
+        <div className="sponsor-mask"></div>
+        <div className="sponsor-content">
+          <div className="sponsor-title">
+            <h3>THIS EVENT IS</h3>
+            <h1>SPONSORED BY</h1>
+          </div>
+          <div className="sponsor-list">
+            <div className="sponsor-list-item">
+              <img src={pertamina} />
+              <img src={pupuk_kaltim} />
+              <img src={ruang_guru} />
+              <img src={waskita} />
+              <img src={indofood} />
+              <img src={bri} />
+            </div>
+            <div className="sponsor-top"></div>
+            <div className="sponsor-left"></div>
+          </div>
+        </div>
+        <div class="sponsor-bottom"></div>
       </div>
     </>
   );
