@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@900&display=swap");
+
+.header {
+  min-height: 160vh;
+  padding-top: 20vh;
+  background: #83daff;
+  background-size: cover;
+  background-position: 5%;
+  position: relative;
+}
+.header .header-content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10vh;
+}
+.header .header-content .header-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0;
+}
+.header .header-content .header-logo .logo {
+  width: 12vw;
+  height: 12vw;
+  padding: 20px;
+  background: #fff url("../component/asset/Vibrastik.png") center no-repeat;
+  background-size: 80%;
+  border-radius: 50%;
+  box-shadow: 0 5px 100px #ff974d;
+  position: absolute;
+  top: 120px;
+}
+.header .header-content .header-logo .hand {
+  width: 25vw;
+  height: 14vw;
+  background: url("../component/asset/hand.svg") top no-repeat;
+  background-size: 100%;
+}
+.header .header-content .header-logo h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  background: #5a8eaf;
+  border: 8px solid #112e41;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 0;
+  z-index: 1;
+}
+.header .header-content .header-logo h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  width: 60%;
+  text-align: center;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header .header-content button {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  background: #ff8c12;
+  border: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2;
+}
+.header .header-end {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15%;
+  background: url("../component/asset/Ellipse\ 3.svg") top no-repeat;
+  z-index: 1;
+}
+
+.header .header-art {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  background: url("../component/asset/Top.svg") bottom no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.deskripsi-lab {  
+  min-height: 50vh;
+  background: #f2efd5 url("../component/asset/wave.svg") center no-repeat;
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+.deskripsi-lab .deskripsi-lab-content {
+  min-height: 20%;
+  width: 80%;
+  margin: auto;
+  background: #b3f0ff;
+  border: 5px solid #5A8EAF;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+}
+.deskripsi-lab .deskripsi-lab-content .deskripsi-lab-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  background: #FF8C12;
+  border: 4 px solid #5A8EAF;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin-top: 0;
+  z-index: 1;
+  position: absolute;
+  top: -20px;
+}
+.deskripsi-lab .deskripsi-lab-content .baut {
+  position: absolute;
+  background: url("../component/asset/Asset\ 5@300x.svg") center no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+.deskripsi-lab .deskripsi-lab-content .baut.tl {
+  top: 2px;
+  left: 2px;
+}
+.deskripsi-lab .deskripsi-lab-content .baut.tr {
+  top: 2px;
+  right: 2px;
+}
+.deskripsi-lab .deskripsi-lab-content .baut.bl {
+  bottom: 2px;
+  left: 2px;
+}
+.deskripsi-lab .deskripsi-lab-content .baut.br {
+  bottom: 2px;
+  right: 2px;
+}
+
+.bidang-pengembangan {
+  min-height: 120vh;
+  height: 100vh;
+  background: #f2efd5 url("../component/asset/wave.svg") center no-repeat;
+  background-blend-mode: lighten;
+  background-size: cover;
+  margin: 0;
+}
+.bidang-pengembangan .content {
+  width: 85%;  
+  position: relative;
+  height: 100%;
+  margin: auto;
+}
+.bidang-pengembangan .content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  color: #ffffff;
+  background: #235D9C;
+  /* border: 8px solid #112E41; */
+  padding: 20px 25px;
+  border-radius: 15px;
+  margin-top: 0;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 50px;
+  width: max-content;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.633);
+  margin-bottom: 5px;
+}
+.bidang-pengembangan .content h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #FF8415;  
+  border-radius: 20px;
+  margin-top: 0;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 50px;
+  width: max-content;  
+}
+.bidang-pengembangan .content .main-content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10vh;
+}
+.bidang-pengembangan .content .main-content .content-img {
+  width: 50%;
+  height: 50%;
+  background: #000 url("https://media.kompas.tv/library/image/content_article/article_img/20220926073750.jpg")
+  center no-repeat;
+  background-size: cover;  
+  border-radius: 20px;
+  border: 5px solid #5A8EAF;
+}
+.bidang-pengembangan .content .main-content .content-text {
+  width: 45%;  
+  
+}
