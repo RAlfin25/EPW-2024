@@ -1,0 +1,125 @@
+.regist-inj-main {
+    padding-top: 100px;
+    background-image: url('./asset-regist/Background\ Design\ --------------------------------------------.svg');
+}
+
+.regist-inj-judul{
+    text-align: center;
+    margin: auto;
+    padding: 100px 0px;
+}
+
+.regist-inj-judul h1{
+    margin: 0;
+    font-size: 150px;
+   color: #1F624E;
+   font-family: 'poppins';
+   font-weight: 700; 
+   text-shadow: 3px 7px 2px rgba(0, 0, 0, 0.4);
+   line-height: 1em;
+}
+
+.regist-inj-judul p {
+    margin: auto;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    background-color: #1F624E;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 18px;
+    font-family: 'poppins';
+}
+
+.pembatas-inj-regis-img {
+    background-image: url('./asset-regist/Group\ 287.svg');
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.regist-inj-bar {
+    margin: auto;
+    width: 40%;
+    padding-bottom: 100px;
+}
+
+.regist-inj-bar h1{
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'poppins';
+    font-size: 25px;
+    background: #1B7A76;
+}
+
+.regist-inj-bar-checklist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.regist-inj-bar-checklist-button1 {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+}
+
+.regist-inj-bar-checklist-button2{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+}
+
+.regist-inj-bar-checklist-button1 label {
+    color: #1B7A76;
+    font-style: bold ;
+    font-family: 'poppins';
+    font-size: 30px;
+}
+
+.regist-inj-bar-checklist-button2 label {
+    color: #1B7A76;
+    font-style: bold ;
+    font-family: 'poppins';
+    font-size: 30px;
+}
+
+.regist-inj-bar h2{
+    margin: 20px 0 5px;
+    color: #1B7A76;
+    font-family: 'poppins';
+}
+
+.regist-inj-bar-input input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: large;
+    padding: 0px 20px;
+}
+
+.regist-inj-button {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.regist-inj-button button {
+    margin: 20px;
+    font-family: 'poppins';
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    background-color: #1A9B95;
+    aspect-ratio: 4/1.2;
+}

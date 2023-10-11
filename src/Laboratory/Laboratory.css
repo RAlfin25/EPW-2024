@@ -1,0 +1,1487 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900,800&family=Poppins:wght@600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap");
+
+
+/*Sec 1*/
+.container-lab {
+    text-align: center;
+    background-color: #83DAFF;
+    height: auto;
+}
+
+.Judul {
+    position: relative;
+    margin: 0;
+    background-color: #83DAFF;
+    height: 140vh;
+    background: url(./asset-lab/awan\ \(2\).svg) center;
+    background-blend-mode: multiply;
+    background-size: cover;
+        
+    top: 20px;
+}
+
+.img-judul {
+    width: 550px;
+    height: auto;
+}
+
+.Judul h1 {
+    position: relative;
+    top: -40px;
+    color: white;
+    text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+    font-size: 80px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1em;
+}
+
+.pembatas-lab-1 {
+    background-image: url(./asset-lab/Vector.png);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    position: absolute;
+    top: -21vh;
+    right: 0;
+    left: 0;
+    padding: 7em;
+}
+
+
+/*Sec 2*/
+
+.deskripsi-lab {
+position: relative;
+background-color: #F2EFD5 ;
+height: 250vh;
+margin: 0;
+}
+
+.box-cont-desk {
+    position: relative;
+    top: 200px;
+}
+
+.box-judul-desk {
+position: relative;
+top: 27px;
+left: 300px ;
+background-color: #5A8EAF;
+border-radius: 25px;
+width: 30%;
+height: 51px;    
+}
+
+.box-judul-desk h2{
+    font-size: 25px;
+    position: relative;
+    top: 4px;
+    padding: 5px 0px;
+    justify-self: center;
+    border-radius: 22px;
+   margin: 0px 10px;
+   align-self: center;
+   background-color: #FF8C12;
+   color: white;
+}
+
+.box-judul-desk p{
+    margin: 0;
+}
+
+.box-lab {
+    margin: auto;
+    text-align: center;
+    width: 75%;
+    background-color: #B3F0FF;
+    border-radius: 25px;
+    border: 12px solid #5A8EAF;
+    
+}
+
+.box-desk-lab {
+    padding-top: 20px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.box-lab .box-desk-lab img{
+    width: 300px;
+}
+
+.box-lab .box-desk-lab p{
+    padding: 0px 50px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.deskripsi-lab .cont-bipeng {
+    margin: auto;
+    width: 76%;
+    position: relative;
+    top: 400px;
+}
+
+.deskripsi-lab .cont-bipeng .judul-bipeng h1 {
+    margin: 60px 0px 10px 0px;
+    width: fit-content;
+    padding: 5px 30px 80px;
+    height: 80px;
+    color: white;
+    text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.5);
+    font-size: 60px;
+    background-color: #235D9C;
+    border-radius: 20px;
+    box-shadow: -7px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.deskripsi-lab .cont-bipeng .judul-bipeng h2 {
+    margin: 0;
+    color: #FF8C12;
+    text-align: start;
+    font-size: 30px;
+}
+
+.deskripsi-lab .cont-bipeng .content-bipeng {
+    display: flex;
+    margin: 70px 0px;
+    width: 90%;
+    align-items: center;
+}
+
+.deskripsi-lab .cont-bipeng .content-bipeng .img-bipeng {
+    width: 50%;
+    height: auto;
+}
+
+.Background-txt-bipeng {
+    
+    background-color: #5A8EAF;
+    border-radius: 20px;
+    padding: 2px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    margin: 50px 0px 50px 80px;
+}
+
+.txt-bipeng {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #000000;
+    background-color: #F2EFD5;
+    border-radius: 20px;
+    padding: 3px 10px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    margin: 0px 5px;
+    font-weight: 700;
+    width: 600px;
+    font-size: 35px;
+}
+
+.fotoObeng1 {
+    width: 28px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.pembatas-lab-2 {
+    background-image: url(./asset-lab/Group\ 286.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 38vh;
+    right: 0;
+    left: 0;
+    bottom: 0vh;
+    position: absolute;
+}
+
+.prestasi-lab {
+    position: relative;
+    height: 150vh;
+    background: #F2EFD5;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1381px) {
+    /*Sec 1*/
+    .Judul {
+        margin: 0;
+        height: 120vh;
+        top: 20px;
+    }
+    
+    .img-judul {
+        width: 400px;
+        height: auto;
+    }
+    
+    .Judul h1 {
+        top: -40px;
+        text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+        font-size: 65px;
+        margin: 0;
+        line-height: 1em;
+    }
+
+    .pembatas-lab-1 {
+        background-size: cover;
+        background-repeat: no-repeat ;
+        position: absolute;
+        top: -19vh;
+        right: 0;
+        left: 0;
+        padding: 6em; 
+    }
+    
+    /*Sec 2*/
+
+.deskripsi-lab {
+    height: 250vh;
+    margin: 0;
+    }
+
+    .box-cont-desk {
+        position: relative;
+        top: 200px;
+    }
+    
+    .box-judul-desk {
+    position: relative;
+    top: 27px;
+    left: 230px ;
+    border-radius: 25px;
+    width: 34%;
+    height: 44px;
+        
+    }
+    
+    .box-judul-desk h2{
+        font-size: 19px;
+        top: 4px;
+        padding: 5px 0px;
+        border-radius: 22px;
+       margin: 0px 10px;;
+    }
+       
+    .box-lab {
+        margin: auto;
+        width: 75%;
+        border-radius: 25px;
+        border: 7px solid #5A8EAF;
+        
+    }
+    
+    .box-desk-lab {
+        padding-top: 20px;
+        display: flex;
+        margin: 20px 50px;
+    }
+    
+    .box-lab .box-desk-lab img{
+        width: 200px;
+    }
+    
+    .box-lab .box-desk-lab p{
+        padding: 0px 50px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .deskripsi-lab .cont-bipeng {
+        margin: auto;
+        width: 76%;
+        position: relative;
+        top: 400px;
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h1 {
+        margin: 60px 0px 10px 0px;
+        width: fit-content;
+        padding: 5px 30px 80px;
+        height: 80px;
+        color: white;
+        text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.5);
+        font-size: 60px;
+        background-color: #235D9C;
+        border-radius: 20px;
+        box-shadow: -7px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h2 {
+        margin: 0;
+        color: #FF8C12;
+        text-align: start;
+        font-size: 30px;
+    }
+    
+    .deskripsi-lab .cont-bipeng .content-bipeng {
+        display: flex;
+        margin: 70px 0px;
+        width: 90%;
+        align-items: center;
+    }
+    
+    .deskripsi-lab .cont-bipeng .content-bipeng .img-bipeng {
+        width: 50%;
+        height: auto;
+    }
+    
+    .Background-txt-bipeng {
+        
+        background-color: #5A8EAF;
+        border-radius: 20px;
+        padding: 2px;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        margin: 40px 100px;
+    }
+    
+    .txt-bipeng {
+        display: flex;
+        position: relative;
+        align-items: center;
+        color: #000000;
+        background-color: #F2EFD5;
+        border-radius: 20px;
+        padding: 3px 10px;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        margin: 0px 5px;
+        font-weight: 700;
+        width: 500px;
+        font-size: 29px;
+    }
+    
+    .fotoObeng1 {
+        width: 28px;
+        height: auto;
+        margin-right: 20px;
+    }
+    
+    .pembatas-lab-2 {
+        background-image: url(./asset-lab/Group\ 286.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 32vh;
+        right: 0;
+        left: 0;
+        bottom: 0vh;
+        position: absolute;
+    }
+
+}
+
+@media only screen and (max-width: 1240px) {
+    .box-judul-desk {
+        position: relative;
+        top: 27px;
+        left: 220px ;
+        border-radius: 25px;
+        width: 36%;
+        height: 44px;
+            
+        }
+        
+        .box-judul-desk h2{
+            font-size: 18px;
+            top: 4px;
+            padding: 5px 0px;
+            border-radius: 22px;
+           margin: 0px 10px;;
+        }
+
+        .box-lab .box-desk-lab img{
+            width: 190px;
+        }
+        
+        .box-lab .box-desk-lab p{
+            padding: 0px 50px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .deskripsi-lab .cont-bipeng {
+            margin: auto;
+            width: 76%;
+            position: relative;
+            top: 400px;
+        }
+        
+        .deskripsi-lab .cont-bipeng .judul-bipeng h1 {
+            margin: 60px 0px 10px 0px;
+            padding: 5px 30px 0px;
+            height: 60px;
+            text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.5);
+            font-size: 40px;
+            border-radius: 20px;
+            box-shadow: -7px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .deskripsi-lab .cont-bipeng .judul-bipeng h2 {
+            margin: 0;
+            color: #FF8C12;
+            text-align: start;
+            font-size: 16px;
+            
+        }
+        
+        .deskripsi-lab .cont-bipeng .content-bipeng {
+            display: flex;
+            margin: 70px 0px;
+            width: 90%;
+            align-items: center;
+        }
+
+        .Background-txt-bipeng {
+            
+            background-color: #5A8EAF;
+            border-radius: 20px;
+            padding: 2px;
+            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+            margin: 40px 60px;
+        }
+        
+        .txt-bipeng {
+            display: flex;
+            position: relative;
+            align-items: center;
+            color: #000000;
+            background-color: #F2EFD5;
+            border-radius: 20px;
+            padding: 3px 10px;
+            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+            margin: 0px 5px;
+            font-weight: 700;
+            width: 450px;
+            font-size: 29px;
+        }
+
+        .pembatas-lab-2 {
+            background-image: url(./asset-lab/Group\ 286.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 30vh;
+            right: 0;
+            left: 0;
+            bottom: 0vh;
+            position: absolute;
+        }
+
+        .pembatas-lab-2 {
+            background-image: url(./asset-lab/Group\ 286.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 30vh;
+            right: 0;
+            left: 0;
+            bottom: 0vh;
+            position: absolute;
+        }
+}
+
+@media only screen and (max-width: 1130px) {
+    /*Sec 1*/
+    .Judul {
+        margin: 0;
+        height: 120vh;
+        top: 20px;
+    }
+    
+    .img-judul {
+        width: 400px;
+        height: auto;
+    }
+    
+    .Judul h1 {
+        top: -40px;
+        text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+        font-size: 65px;
+        margin: 0;
+        line-height: 1em;
+    }
+
+    .pembatas-lab-1 {
+        background-size: cover;
+        background-repeat: no-repeat ;
+        position: absolute;
+        top: -19vh;
+        right: 0;
+        left: 0;
+        padding: 6em; 
+    }
+    
+    /*Sec 2*/
+
+.deskripsi-lab {
+    height: 180vh;
+    margin: 0;
+    }
+
+    .box-cont-desk {
+        position: relative;
+        top: 200px;
+    }
+    
+    .box-judul-desk {
+    position: relative;
+    top: 27px;
+    left: 190px ;
+    border-radius: 25px;
+    width: 37%;
+    height: 40px;
+        
+    }
+    
+    .box-judul-desk h2{
+        font-size: 17px;
+        top: 4px;
+        padding: 5px    0px;
+        border-radius: 22px;
+        margin: 0px 10px;;
+    }
+       
+    .box-lab {
+        margin: auto;
+        width: 75%;
+        border-radius: 25px;
+        border: 7px solid #5A8EAF;
+        
+    }
+    
+   .box-desk-lab {
+        padding-top: 20px;
+        display: flex;
+        margin: 20px 50px;
+    } 
+    
+    .box-lab .box-desk-lab img{
+        width: 180px;
+    }
+    
+    .box-lab .box-desk-lab p{
+        padding: 0px 40px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .deskripsi-lab .cont-bipeng {
+        margin: auto;
+        width: 76%;
+        position: relative;
+        top: 300px;
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h1 {
+        margin: 60px 0px 10px 0px;
+        padding: 5px 30px 0px;
+        height: 60px;
+        text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.5);
+        font-size: 40px;
+        border-radius: 20px;
+        box-shadow: -7px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h2 {
+        margin: 0;
+        color: #FF8C12;
+        text-align: start;
+        font-size: 16px;
+        
+    }
+    
+    .deskripsi-lab .cont-bipeng .content-bipeng {
+        display: flex;
+        margin: 50px 0px;
+        width: 90%;
+        align-items: center;
+    }
+
+    .Background-txt-bipeng {
+        
+        background-color: #5A8EAF;
+        border-radius: 20px;
+        padding: 2px;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        margin: 30px 50px;
+    }
+    
+    .txt-bipeng {
+        display: flex;
+        position: relative;
+        align-items: center;
+        border-radius: 15px;
+        padding: 3px 10px;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        margin: 0px 5px;
+        font-weight: 700;
+        width: 400px;
+        font-size: 25px;
+    }
+
+    .pembatas-lab-2 {
+        height: 26vh;
+        right: 0;
+        left: 0;
+        bottom: 0vh;
+        position: absolute;
+    }
+}
+@media only screen and (max-width: 1040px) {
+/*Sec 1*/
+.Judul {
+    margin: 0;
+    height: 110vh;
+    top: 20px;
+}
+
+.img-judul {
+    width: 350px;
+    height: auto;
+}
+
+.Judul h1 {
+    top: -35px;
+    text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+    font-size: 55px;
+    margin: 0;
+    line-height: 1em;
+}
+
+.pembatas-lab-1 {
+    background-size: cover;
+    background-repeat: no-repeat ;
+    position: absolute;
+    top: -17vh;
+    right: 0;
+    left: 0;
+    padding: 5em; 
+}
+
+/*Sec 2*/
+
+.deskripsi-lab {
+height: 160vh;
+margin: 0;
+}
+
+.box-cont-desk {
+    position: relative;
+    top: 100px;
+}
+
+.box-judul-desk {
+position: relative;
+top: 27px;
+left: 190px ;
+border-radius: 25px;
+width: 37%;
+height: 40px;
+    
+}
+
+.box-judul-desk h2{
+    font-size: 15px;
+    top: 4px;
+    padding: 5px    0px;
+    border-radius: 22px;
+    margin: 0px 10px;;
+}
+   
+.box-lab {
+    margin: auto;
+    width: 75%;
+    border-radius: 25px;
+    border: 7px solid #5A8EAF;
+    
+}
+
+.box-desk-lab {
+    padding-top: 20px;
+    display: flex;
+    margin: 20px 50px;
+} 
+
+.box-lab .box-desk-lab img{
+    width: 180px;
+}
+
+.box-lab .box-desk-lab p{
+    padding: 0px 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.deskripsi-lab .cont-bipeng {
+    margin: auto;
+    width: 76%;
+    position: relative;
+    top: 200px;
+}
+
+.deskripsi-lab .cont-bipeng .judul-bipeng h1 {
+    margin: 60px 0px 10px 0px;
+    padding: 5px 30px 0px;
+    height: 50px;
+    text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.5);
+    font-size: 35px;
+    border-radius: 15px;
+    box-shadow: -7px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.deskripsi-lab .cont-bipeng .judul-bipeng h2 {
+    margin: 0;
+    color: #FF8C12;
+    text-align: start;
+    font-size: 14px;
+    
+}
+
+.deskripsi-lab .cont-bipeng .content-bipeng {
+    display: flex;
+    margin: 50px 0px;
+    width: 90%;
+    align-items: center;
+}
+
+.Background-txt-bipeng {
+    
+    background-color: #5A8EAF;
+    border-radius: 20px;
+    padding: 2px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    margin: 30px 50px;
+}
+
+.txt-bipeng {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 15px;
+    padding: 3px 10px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    margin: 0px 5px;
+    font-weight: 700;
+    width: 360px;
+    font-size: 23px;
+}
+
+.pembatas-lab-2 {
+    height: 17vh;
+    right: 0;
+    left: 0;
+    bottom: 0vh;
+    position: absolute;
+}
+}
+
+@media only screen and (max-width: 945px) {
+   /*sec 2*/
+   
+    .box-judul-desk {
+        position: relative;
+        top: 27px;
+        left: 170px ;
+        border-radius: 25px;
+        width: 40%;
+        height: 39px;
+            
+        }
+          
+        .box-judul-desk h2{
+            font-size: 15px;
+            top: 4px;
+            padding: 5px 0px;
+            border-radius: 22px;
+           margin: 0px 10px;;
+        }
+
+        .box-lab .box-desk-lab img{
+            width: 190px;
+        }
+        
+        .box-lab .box-desk-lab p{
+            padding: 0px 30px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .pembatas-lab-2 {
+            height: 16vh;
+            right: 0;
+            left: 0;
+            bottom: 0vh;
+            position: absolute;
+        }
+}
+
+@media only screen and (max-width: 850px) {
+    .Judul {
+        margin: 0;
+        height: 110vh;
+        top: 50px;
+    }
+    
+    .img-judul {
+        width: 320px;
+        height: auto;
+    }
+    
+    .Judul h1 {
+        top: -35px;
+        text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+        font-size: 47px;
+        margin: 0;
+        line-height: 1em;
+    }
+    
+    .pembatas-lab-1 {
+        background-size: cover;
+        background-repeat: no-repeat ;
+        position: absolute;
+        top: -17vh;
+        right: 0;
+        left: 0;
+        padding: 5em; 
+    }
+    
+    /*Sec 2*/
+    
+    .deskripsi-lab {
+    height: 200vh;
+    margin: 0;
+    }
+    
+    .box-cont-desk {
+        position: relative;
+        top: 70px;
+    }
+    
+    .box-judul-desk {
+    left: 0;
+    position: relative;
+    top: 27px;
+    border-radius: 25px;
+    width: 42%;
+    height: 36px;
+    margin: auto;
+        
+    }
+    
+    .box-judul-desk h2{
+        font-size: 14px;
+        top: 4px;
+        padding: 5px  0px;
+        border-radius: 22px;
+        margin: 0px 10px;;
+    }
+       
+    .box-lab {
+        margin: auto;
+        width: 75%;
+        border-radius: 25px;
+        border: 7px solid #5A8EAF;
+        
+    }
+    
+    .box-desk-lab {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 50px;
+    } 
+    
+    .box-lab .box-desk-lab img{
+        width: 180px;
+    }
+    
+    .box-lab .box-desk-lab p{
+        padding: 0px 40px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .deskripsi-lab .cont-bipeng {
+        margin: auto;
+        width: 76%;
+        position: relative;
+        top: 100px;
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h1 {
+        margin: 60px 0px 10px 0px;
+        width: fit-content;
+        padding: 5px 30px 0px;
+        height: 45px;
+        color: white;
+        text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        background-color: #235D9C;
+        border-radius: 15px;
+        box-shadow: -3px 6px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h2 {
+        margin: 0;
+        color: #FF8C12;
+        text-align: start;
+        font-size: 15px;
+    }
+    
+    .deskripsi-lab .cont-bipeng .content-bipeng {
+        display: flex;
+        margin: 50px 0px;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .deskripsi-lab .cont-bipeng .content-bipeng .img-bipeng {
+        width: 60%;
+        height: auto;
+    }
+    
+    .Background-txt-bipeng {
+        background-color: #5A8EAF;
+        border-radius: 20px;
+        padding: 2px;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        margin: 20px 100px;
+    }
+    
+    .txt-bipeng {
+        display: flex;
+        position: relative;
+        align-items: center;
+        color: #000000;
+        background-color: #F2EFD5;
+        border-radius: 20px;
+        padding: 3px 10px;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        margin: 0px 5px;
+        font-weight: 700;
+        width: 300px;
+        font-size: 20px;
+    }
+    
+    .fotoObeng1 {
+        width: 24px;
+        height: auto;
+        margin-right: 20px;
+    }
+    
+    .pembatas-lab-2 {
+        background-image: url(./asset-lab/Group\ 286.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 19vh;
+        right: 0;
+        left: 0;
+        bottom: 0vh;
+        position: absolute;
+    }
+    
+    .prestasi-lab {
+        position: absolute;
+        height: 150vh;
+        background: #F2EFD5;
+        background-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .Judul {
+        margin: 0;
+        height: 90vh;
+        top: 100px;
+    }
+    
+    .img-judul {
+        width: 225px;
+        height: auto;
+    }
+    
+    .Judul h1 {
+        top: -20px;
+        text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+        font-size: 35px;
+        margin: 0;
+        line-height: 1em;
+    }
+    
+    .pembatas-lab-1 {
+        background-size: cover;
+        background-repeat: no-repeat ;
+        position: absolute;
+        top: -10vh;
+        right: 0;
+        left: 0;
+        padding: 3em; 
+    }
+    
+    /*sec 2*/
+    
+     .box-judul-desk {
+         position: relative;
+         top: 27px;
+         left: 0px ;
+         border-radius: 25px;
+         width: 48%;
+         height: 39px;
+             
+         }
+           
+         .box-judul-desk h2{
+             font-size: 14px;
+             top: 4px;
+             padding: 5px 0px;
+             border-radius: 22px;
+            margin: 0px 10px;;
+         }
+ 
+         .box-lab .box-desk-lab img{
+             width: 160px;
+         }
+         
+         .box-lab .box-desk-lab p{
+             padding: 0px 30px;
+             font-size: 16px;
+             font-weight: bold;
+         }
+ 
+         .deskripsi-lab .cont-bipeng {
+            margin: auto;
+            width: 76%;
+            position: relative;
+            top: 100px;
+        }
+        
+        .deskripsi-lab .cont-bipeng .judul-bipeng h1 {
+            margin: 60px 0px 10px 0px;
+            width: fit-content;
+            padding: 5px 20px 0px;
+            height: 40px;
+            color: white;
+            text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
+            font-size: 24px;
+            background-color: #235D9C;
+            border-radius: 15px;
+            box-shadow: -3px 6px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .deskripsi-lab .cont-bipeng .judul-bipeng h2 {
+            margin: 0;
+            color: #FF8C12;
+            text-align: start;
+            font-size: 12px;
+        }
+        
+        .txt-bipeng {
+            display: flex;
+            position: relative;
+            align-items: center;
+            color: #000000;
+            background-color: #F2EFD5;
+            border-radius: 20px;
+            padding: 3px 10px;
+            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+            margin: 0px 5px;
+            font-weight: 700;
+            width: 250px;
+            font-size: 15px;
+        }
+
+        .pembatas-lab-2 {
+            background-image: url(./asset-lab/Group\ 286.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 16vh;
+            right: 0;
+            left: 0;
+            bottom: 0vh;
+            position: absolute;
+        }
+     
+ }
+
+@media only screen and (max-width: 645px){
+    .Judul {
+        margin: 0;
+        height: 90vh;
+        top: 100px;
+    }
+    
+    .img-judul {
+        width: 225px;
+        height: auto;
+    }
+    
+    .Judul h1 {
+        top: -20px;
+        text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+        font-size: 35px;
+        margin: 0;
+        line-height: 1em;
+    }
+    
+    .pembatas-lab-1 {
+        background-size: cover;
+        background-repeat: no-repeat ;
+        position: absolute;
+        top: -14vh;
+        right: 0;
+        left: 0;
+        padding: 3em; 
+    }
+    
+    /*Sec 2*/
+    
+    .deskripsi-lab {
+    height: 160vh;
+    margin: 0;
+    }
+    
+    .box-cont-desk {
+        position: relative;
+        top: 70px;
+    }
+    
+    .box-judul-desk {
+    left: 0;
+    position: relative;
+    top: 27px;
+    border-radius: 25px;
+    width: 60%;
+    height: 36px;
+    margin: auto;
+        
+    }
+    
+    .box-judul-desk h2{
+        font-size: 12px;
+        top: 4px;
+        padding: 5px  0px;
+        border-radius: 22px;
+        margin: 0px 10px;;
+    }
+       
+    .box-lab {
+        margin: auto;
+        width: 75%;
+        border-radius: 25px;
+        border: 7px solid #5A8EAF;
+        
+    }
+    
+    .box-desk-lab {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 50px;
+    } 
+    
+    .box-lab .box-desk-lab img{
+        width: 150px;
+    }
+    
+    .box-lab .box-desk-lab p{
+        padding: 0px 0px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .deskripsi-lab .cont-bipeng {
+        margin: auto;
+        width: 76%;
+        position: relative;
+        top: 100px;
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h1 {
+        margin: 30px 0px 10px 0px;
+        width: fit-content;
+        padding: 5px 20px 0px;
+        height: 40px;
+        color: white;
+        text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
+        font-size: 22px;
+        background-color: #235D9C;
+        border-radius: 15px;
+        box-shadow: -3px 6px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h2 {
+        margin: 0;
+        color: #FF8C12;
+        text-align: start;
+        font-size: 11px;
+    }
+    
+    .txt-bipeng {
+        display: flex;
+        position: relative;
+        align-items: center;
+        color: #000000;
+        background-color: #F2EFD5;
+        border-radius: 20px;
+        padding: 3px 10px;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        margin: 0px 5px;
+        font-weight: 700;
+        width: 220px;
+        font-size: 12px;
+    }
+
+    .pembatas-lab-2 {
+        background-image: url(./asset-lab/Group\ 286.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 14vh;
+        right: 0;
+        left: 0;
+        bottom: 0vh;
+        position: absolute;
+    }
+}
+@media only screen and (max-width: 508px){
+    .Judul {
+        margin: 0;
+        height: 70vh;
+        top: 100px;
+    }
+    
+    .img-judul {
+        width: 150px;
+        height: auto;
+    }
+    
+    .Judul h1 {
+        top: -15px;
+        text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+        font-size: 25px;
+        margin: 0;
+        line-height: 1em;
+    }
+    
+    .pembatas-lab-1 {
+        background-size: cover;
+        background-repeat: no-repeat ;
+        position: absolute;
+        top: -14vh;
+        right: 0;
+        left: 0;
+        padding: 3em; 
+    }
+    
+    /*Sec 2*/
+    
+    .deskripsi-lab {
+    height: 150vh;
+    margin: 0;
+    }
+    
+    .box-cont-desk {
+        position: relative;
+        top: 70px;
+    }
+    
+    .box-judul-desk {
+    left: 0;
+    position: relative;
+    top: 27px;
+    border-radius: 25px;
+    width: 63%;
+    height: 36px;
+    margin: auto;
+        
+    }
+    
+    .box-judul-desk h2{
+        font-size: 11px;
+        top: 4px;
+        padding: 5px  0px;
+        border-radius: 22px;
+        margin: 0px 10px;;
+    }
+       
+    .box-lab {
+        margin: auto;
+        width: 75%;
+        border-radius: 25px;
+        border: 7px solid #5A8EAF;
+        
+    }
+    
+    .box-desk-lab {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px;
+    } 
+    
+    .box-lab .box-desk-lab img{
+        width: 130px;
+    }
+    
+    .box-lab .box-desk-lab p{
+        padding: 0px 0px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .deskripsi-lab .cont-bipeng {
+        margin: auto;
+        width: 76%;
+        position: relative;
+        top: 100px;
+    }
+
+    .deskripsi-lab .cont-bipeng .content-bipeng {
+        display: flex;
+        margin: 30px 0px;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h1 {
+        margin: 20px auto 5px;
+        width: fit-content;
+        padding: 5px 20px 0px;
+        height: 30px;
+        color: white;
+        text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        background-color: #235D9C;
+        border-radius: 10px;
+        box-shadow: -1px 3px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .deskripsi-lab .cont-bipeng .judul-bipeng h2 {
+        margin: 0;
+        color: #FF8C12;
+        text-align: center;
+        font-size: 9px;
+    }
+
+    .fotoObeng1 {
+        width: 22px;
+        height: auto;
+        margin-right: 10px;
+    }
+    
+    .txt-bipeng {
+        display: flex;
+        position: relative;
+        align-items: center;
+        color: #000000;
+        background-color: #F2EFD5;
+        border-radius: 20px;
+        padding: 3px 10px;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        margin: 0px 5px;
+        font-weight: 700;
+        width: 170px;
+        font-size: 10px;
+    }
+
+    .pembatas-lab-2 {
+        background-image: url(./asset-lab/Group\ 286.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 10vh;
+        right: 0;
+        left: 0;
+        bottom: 0vh;
+        position: absolute;
+    }
+}
+@media only screen and (max-width: 400px){
+    .Judul {
+        margin: 0;
+        height: 70vh;
+        top: 100px;
+    }
+    
+    .img-judul {
+        width: 150px;
+        height: auto;
+    }
+    
+    .Judul h1 {
+        top: -15px;
+        text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+        font-size: 25px;
+        margin: 0;
+        line-height: 1em;
+    }
+    
+    .pembatas-lab-1 {
+        background-size: cover;
+        background-repeat: no-repeat ;
+        position: absolute;
+        top: -14vh;
+        right: 0;
+        left: 0;
+        padding: 3em; 
+    }
+    
+    /*Sec 2*/
+    
+    .deskripsi-lab {
+    height: 150vh;
+    margin: 0;
+    }
+    
+    .box-cont-desk {
+        position: relative;
+        top: 70px;
+    }
+    
+    .box-judul-desk {
+    left: 0;
+    position: relative;
+    top: 27px;
+    border-radius: 25px;
+    width: 70%;
+    height: 33px;
+    margin: auto;
+        
+    }
+    
+    .box-judul-desk h2{
+        font-size: 11px;
+        top: 4px;
+        padding: 5px  0px;
+        border-radius: 22px;
+        margin: 0px 10px;;
+    }
+       
+    .box-lab {
+        margin: auto;
+        width: 75%;
+        border-radius: 25px;
+        border: 7px solid #5A8EAF;
+        
+    }
+    
+    .box-desk-lab {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 30px;
+    } 
+    
+    .box-lab .box-desk-lab img{
+        width: 130px;
+    }
+    
+    .box-lab .box-desk-lab p{
+        padding: 0px 0px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
+

@@ -13,25 +13,30 @@ function Footer () {
                     <h1>EPW 2024</h1>
                 </div>
                 <div className="footer-main">
-                    <div>
+                    <div className="footer-event">
                         <h1>Event</h1>
                         <ul>
-                            <li><NavLink className="hover" to="/epc" >
+                            <li>
+                                <NavLink className="hover" to="/epc" >
                                 EPC
                                 </NavLink>
                             </li>
-                            <li><NavLink className="hover" to="/injection" >
-                            Injection
-                        </NavLink></li>
-                            <li><NavLink className="hover" to="/videografi">
-                            Videografi
-                        </NavLink></li>
+                            <li>
+                                <NavLink className="hover" to="/injection" >
+                                Injection
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink className="hover" to="/videografi">
+                                Videografi
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                     <div className="footer-sosmed">
                         <h1>You can find us at</h1>
                         <ul className="sosmed">
-                            <li><a><FaInstagram size={25}/></a></li>
+                            <li><a href="https://www.instagram.com/epw_its/"><FaInstagram size={25}/></a></li>
                             <li><a><FaFacebookF size={25}/></a></li>
                             <li><a><FaTiktok size={25}/></a></li>
                             <li><a><FaLinkedin size={25}/></a></li>
@@ -42,7 +47,7 @@ function Footer () {
                 </div>
             </div>
             <div className="footer-sub">
-                <div>
+                <div className="footer-cr">
                   <p> &copy; Copyright by EPW 2024</p>  
                 </div>  
             </div>

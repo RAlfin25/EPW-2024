@@ -1,0 +1,1978 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900,800&family=Poppins:wght@600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap");
+
+.Injection {
+    background-image: url(./asset-Inj/Background\ Design\ --------------------------------------------.svg);
+    background-size: cover;
+
+}
+
+.Judul-Inj {
+    width: 84%;
+    height: 100vh;
+    margin: auto;
+    padding: 300px 0px 0px;
+}
+
+.Judul-Inj h1 {
+    font-family: "poppins";
+    font-size: 125px;
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+    color: #365569;
+    margin: auto;
+}
+
+.Deskripsi-Inj{
+    position: relative;
+}
+
+.Judul-Inj p {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+.build-inj {
+    text-align: center;
+    position: relative;
+    top: 68px;
+}
+
+.build-inj-img {
+    width: 50%;
+}
+
+.Judul-Inj .Judul-Inj-container{
+
+}
+
+.Deskripsi-Inj .txt-judul-inj {
+    position: relative;
+    top: 29px;
+    width: 23%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 4px solid #000000;
+    border-radius: 50px;
+    box-shadow: -7px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Deskripsi-Inj .txt-judul-inj h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 36px;
+    color: white;
+
+}
+
+.Deskripsi-Inj .txt-deskripsi-inj {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    border-radius: 50px;
+    bottom: 0;
+}
+
+.Deskripsi-Inj .txt-deskripsi-inj p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 19px;
+    margin: auto;
+    padding: 60px 80px;
+}
+
+
+.pembatas-awan-inj-1 {
+    background-image: url(./asset-Inj/Cloud.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 70vh;
+    right: 0;
+    left: 0;
+    bottom: -21vh;
+}
+
+.prizepool-inj {
+    margin: 200px 0px;
+}
+
+.prizepool-inj .prizepool-img-inj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.prizepool-inj .prizepool-img-inj .img-pp-inj-1 {
+    width: 55%;
+}
+
+.prizepool-inj .prizepool-img-inj .img-pp-inj-2 {
+    width: auto;
+    height: 200px;
+}
+
+.prizepool-inj .prizepool-img-inj .img-pp-inj-3 {
+    width: auto;
+    height: 200px;
+}
+
+.prizepool-inj .prizepool-img-inj .img-pp-inj-4 {
+    width: 55%;
+}
+
+.benefit-inj {
+    background-image: url(./asset-Inj/Group\ 224.png);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    position: relative;
+}
+
+.pembatas-awan-inj-2 {
+    background: url(./asset-Inj/cloud\ \(2\).svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -36vh;    
+    bottom: 0px;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+
+.benefit-inj .box-benefit-inj{
+    margin: auto;
+    padding-top: 180px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    
+}
+
+.benefit-inj .box-benefit-inj .title-benefit-inj {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.benefit-inj .box-benefit-inj .title-benefit-inj h1{
+    color: #FF880B;
+    font-family: "poppins";
+    font-weight: 900;
+    font-size: 90px;
+    margin: auto;
+}
+
+.benefit-inj .box-benefit-inj .title-benefit-inj h3{
+    color: white;
+    font-weight: 900;
+    font-size: 27px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 450px;
+    border-radius: 18px;
+    padding: 6px 0px;
+    border: 5px solid  #000000;
+}
+
+.benefit-inj .box-benefit-inj .desk-benefit-inj {
+    width: 60%;
+}
+
+.benefit-inj .box-benefit-inj .desk-benefit-inj p{
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    background-color: #275A7B;
+    margin: 20px 30px;
+    width: 800px;
+    border-radius: 16px;
+    padding: 6px 30px;
+}
+
+.pembatas-awan-inj-3 {
+    background-image: url(./asset-Inj/cloud\ \(1\).svg);
+    background-size: cover;
+    height: 60vh;
+    position: absolute;
+    top: 69vh;
+    right: 0;
+    left: 0;
+}
+
+.timeline-inj {
+    height: 180vh;
+}
+
+.timeline-inj .title-timeline-inj {
+    
+    margin: auto;
+    padding-top: 300px;
+    text-align: center;
+}
+
+.timeline-inj .title-timeline-inj h2 {
+    color: #F2EFD5;
+    font-family: "poppins";
+    background-color: #5A8EAF;
+    font-size: 40px;
+    margin: auto;
+    width: 400px;
+    border-radius: 25px;
+    border: 5px solid #112E41;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-inj .title-timeline-inj h1{
+    color: white;
+    font-family: "poppins";
+    font-size: 80px;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.3);
+    margin: 20px 0px;
+}
+
+.timeline-inj .title-timeline-inj .img-timeline-inj {
+    width: 90%;
+    margin: 100px 0px;
+}
+
+.city-inj {
+    width: 100%;
+     position: relative;
+     top: 60px;
+    
+    }
+    
+.road-inj{
+    width: 100%;
+     position: relative;
+     top: 25px;   
+    }
+
+
+@media only screen and (max-width: 1880px) {
+        .pembatas-awan-inj-1 {
+            bottom: -25vh;
+            height: 70vh;
+            left: 0;
+            right: 0;
+        }
+    
+        .pembatas-awan-inj-2 {
+            top: -32vh;
+            height: 60vh;
+            right: 0;
+            left: 0;
+        }
+    
+        .pembatas-awan-inj-3 {
+            height: 60vh;
+            top: 69vh;
+            right: 0;
+            left: 0;
+        }
+    }
+    
+@media only screen and (max-width: 1760px) {
+    .pembatas-awan-inj-1 {
+        bottom: -28vh;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+    
+    .pembatas-awan-inj-2 {
+        top: -30vh;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+    
+    .pembatas-awan-inj-3 {
+        height: 60vh;
+        top: 72vh;
+        right: 0;
+        left: 0;
+    }
+    }
+    
+@media only screen and (max-width: 1600px) {
+    .pembatas-awan-inj-1 {
+        bottom: -31vh;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+        
+    .pembatas-awan-inj-2 {
+        top: -28vh;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+
+    .benefit-inj .box-benefit-inj{
+        margin: auto;
+        padding-top: 180px;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        
+    }
+    
+    .benefit-inj .box-benefit-inj .title-benefit-inj {
+        margin: auto;
+        width: 40%;
+        text-align: center;
+    }
+    
+    .benefit-inj .box-benefit-inj .title-benefit-inj h1{
+        color: #FF880B;
+        font-family: "poppins";
+        font-weight: 900;
+        font-size: 90px;
+        margin: auto;
+    }
+    
+    .benefit-inj .box-benefit-inj .title-benefit-inj h3{
+        color: white;
+        font-weight: 900;
+        font-size: 27px;
+        background-color: #5A8EAF;
+        margin: auto;
+        width: 450px;
+        border-radius: 18px;
+        padding: 6px 0px;
+        border: 5px solid  #000000;
+    }
+    
+    .benefit-inj .box-benefit-inj .desk-benefit-inj {
+        width: 60%;
+    }
+    
+    .benefit-inj .box-benefit-inj .desk-benefit-inj p{
+        color: white;
+        font-weight: 900;
+        font-size: 23px;
+        background-color: #275A7B;
+        margin: 20px 30px;
+        width: 700px;
+        border-radius: 16px;
+        padding: 6px 30px;
+    }
+        
+    .pembatas-awan-inj-3 {
+        height: 60vh;
+        top: 73vh;
+        right: 0;
+        left: 0;
+        }
+    }
+    
+@media only screen and (max-width: 1490px) {
+        .pembatas-awan-inj-1 {
+            bottom: -35vh;
+            height: 70vh;
+            left: 0;
+            right: 0;
+        }
+            
+        .pembatas-awan-inj-2 {
+            top: -26vh;
+            height: 60vh;
+            right: 0;
+            left: 0;
+        }
+            
+        .pembatas-awan-inj-3 {
+            height: 60vh;
+            top: 74vh;
+            right: 0;
+            left: 0;
+            }
+    }
+     
+@media only screen and (max-width: 1356px) {
+    
+/*Sec 1*/    
+.Judul-Inj {
+    width: 84%;
+    height: 90vh;
+    margin: auto;
+    padding: 300px 0px 0px;
+}
+            
+.Judul-Inj h1 {
+    font-family: "poppins";
+    font-size: 108px;
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+            
+.Judul-Inj p {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+        
+/*Sec 2*/ 
+        
+.build-inj {
+    text-align: center;
+    position: relative;
+    top: 68px;
+    }
+        
+.build-inj-img {
+    width: 50%;
+}
+
+
+        
+.Deskripsi-Inj .txt-judul-inj {
+    position: relative;
+    top: 29px;
+    width: 23%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 4px solid #000000;
+    border-radius: 50px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+        
+.Deskripsi-Inj .txt-judul-inj h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 36px;
+    color: white;
+        
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    border-radius: 45px;
+    bottom: 0;
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    padding: 60px 70px;
+}
+        
+.pembatas-awan-inj-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -17.5vh;
+    height: 50vh;
+    left: 0;
+    right: 0;
+}
+        
+/*Sec 3*/ 
+.prizepool-inj {
+    margin: 200px 0px;
+    text-align: center;
+}
+        
+.prizepool-inj .prizepool-img-inj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+        }
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-1 {
+    width: 55%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-2 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-3 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-4 {
+    width: 55%;
+}
+        
+/*Sec 4*/ 
+.benefit-inj {
+    background-size: 100%;
+    height: 85vh;
+    margin: auto;
+        }
+        
+.pembatas-awan-inj-2 {
+    top: -23.6vh;
+    bottom: 0px;
+    height: 50vh;
+    right: 0;
+    left: 0;
+}
+        
+.benefit-inj .box-benefit-inj{
+    margin: auto;
+    padding-top: 200px;
+    flex-direction: row;
+    width: 90%;   
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj {
+    width: 40%;
+    text-align: center;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h1{
+    font-size: 57px;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h3{
+    background-color: #5A8EAF;
+    font-size: 23px;
+    margin: auto;
+    width: 400px;
+    border-radius: 15px;
+    border: 5px solid  #000000;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj {
+    width: 60%;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj p{
+    font-size: 19px;
+    margin: 20px 30px;
+    width: 600px;
+    border-radius: 13px;
+    padding: 6px 30px;
+}
+        
+.pembatas-awan-inj-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50vh;
+    top: 71vh;
+}
+/*Sec 5*/ 
+.timeline-inj {
+    height: 180vh;
+}
+        
+.timeline-inj .title-timeline-inj {
+    padding-top: 300px;
+    }
+        
+.timeline-inj .title-timeline-inj h2 {
+    font-size: 40px;
+    width: 400px;
+    border-radius: 15px;
+}
+        
+.timeline-inj .title-timeline-inj h1{
+    font-size: 80px;
+    margin: 20px 0px;
+        }
+        
+.timeline-inj .title-timeline-inj .img-timeline-inj {
+    margin: 100px 0px;
+}
+        
+.city-inj {
+    top: 49px;
+}
+            
+.road-inj{
+    top: 19px;   
+}
+        
+}
+
+@media only screen and (max-width: 1130px) {
+    
+/*Sec 1*/    
+.Judul-Inj {
+    width: 84%;
+    height: 90vh;
+    margin: auto;
+    padding: 200px 0px 0px;
+}
+            
+.Judul-Inj h1 {
+    font-family: "poppins";
+    font-size: 108px;
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+            
+.Judul-Inj p {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+        
+/*Sec 2*/ 
+        
+.build-inj {
+    text-align: center;
+    position: relative;
+    top: 62px;
+    }
+        
+.build-inj-img {
+    width: 50%;
+}
+        
+        
+.Deskripsi-Inj .txt-judul-inj {
+    position: relative;
+    top: 29px;
+    width: 23%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 4px solid #000000;
+    border-radius: 50px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+        
+.Deskripsi-Inj .txt-judul-inj h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+        
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 290px;
+    margin: auto;
+    border-radius: 40px;
+    bottom: 0;
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+    margin: auto;
+    padding: 50px 70px;
+}
+        
+.pembatas-awan-inj-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -13vh;
+    height: 40vh;
+    left: 0;
+    right: 0;
+}
+        
+/*Sec 3*/ 
+.prizepool-inj {
+    margin: 200px 0px;
+    text-align: center;
+}
+        
+.prizepool-inj .prizepool-img-inj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+        }
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-1 {
+    width: 55%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-2 {
+    width: auto;
+    height: 180px;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-3 {
+    width: auto;
+    height: 180px;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-4 {
+    width: 55%;
+}
+        
+/*Sec 4*/ 
+.benefit-inj {
+    background-size: 100%;
+    height: 72vh;
+    margin: auto;
+        }
+        
+.pembatas-awan-inj-2 {
+    top: -20vh;
+    bottom: 0px;
+    height: 40vh;
+    right: 0;
+    left: 0;
+}
+        
+.benefit-inj .box-benefit-inj{
+    margin: auto;
+    padding-top: 140px;
+    flex-direction: row;
+    width: 90%;   
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj {
+    width: 40%;
+    text-align: center;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h1{
+    font-size: 57px;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h3{
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 330px;
+    border-radius: 15px;
+    border: 3px solid  #000000;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj {
+    width: 60%;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj p{
+    font-size: 16px;
+    margin: 20px 30px;
+    width: 500px;
+    border-radius: 13px;
+    padding: 6px 30px;
+}
+        
+.pembatas-awan-inj-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 40vh;
+    top: 60vh;
+}
+/*Sec 5*/ 
+.timeline-inj {
+    height: 180vh;
+}
+        
+.timeline-inj .title-timeline-inj {
+    padding-top: 300px;
+    }
+        
+.timeline-inj .title-timeline-inj h2 {
+    font-size: 40px;
+    width: 400px;
+    border-radius: 15px;
+}
+        
+.timeline-inj .title-timeline-inj h1{
+    font-size: 80px;
+    margin: 20px 0px;
+        }
+        
+.timeline-inj .title-timeline-inj .img-timeline-inj {
+    margin: 100px 0px;
+}
+        
+.city-inj {
+    top: 49px;
+}
+            
+.road-inj{
+    top: 19px;   
+}
+
+        
+}
+
+@media only screen and (max-width: 1040px) {
+/*Sec 1*/    
+.Judul-Inj {
+    width: 84%;
+    height: 90vh;
+    margin: auto;
+    padding: 200px 0px 0px;
+}
+            
+.Judul-Inj h1 {
+    font-family: "poppins";
+    font-size: 90px;
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+            
+.Judul-Inj p {
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+}
+        
+/*Sec 2*/ 
+        
+.build-inj {
+    text-align: center;
+    position: relative;
+    top: 53px;
+    }
+        
+.build-inj-img {
+    width: 50%;
+}
+        
+        
+.Deskripsi-Inj .txt-judul-inj {
+    position: relative;
+    top: 25px;
+    width: 23%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 4px solid #000000;
+    border-radius: 30px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+        
+.Deskripsi-Inj .txt-judul-inj h1 {
+    text-align: center;
+    margin: 7px;
+    font-size: 28px;
+    color: white;
+        
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 220px;
+    margin: auto;
+    border-radius: 40px;
+    bottom: 0;
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+    padding: 40px 60px;
+}
+        
+.pembatas-awan-inj-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -15vh;
+    height: 40vh;
+    left: 0;
+    right: 0;
+}
+        
+/*Sec 3*/ 
+.prizepool-inj {
+    margin: 180px 0px;
+    text-align: center;
+}
+        
+.prizepool-inj .prizepool-img-inj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+        }
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-1 {
+    width: 55%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-2 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-3 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-4 {
+    width: 55%;
+}
+        
+/*Sec 4*/ 
+.benefit-inj {
+    background-size: 100%;
+    height: 60vh;
+    margin: auto;
+        }
+        
+.pembatas-awan-inj-2 {
+    top: -19.5vh;
+    bottom: 0px;
+    height: 30vh;
+    right: 0;
+    left: 0;
+}
+        
+.benefit-inj .box-benefit-inj{
+    margin: auto;
+    padding-top: 100px;
+    flex-direction: row;
+    width: 90%;   
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj {
+    width: 40%;
+    text-align: center;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h1{
+    font-size: 50px;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h3{
+    background-color: #5A8EAF;
+    margin: auto;
+    font-size: 17px;
+    width: 300px;
+    border-radius: 15px;
+    border: 3px solid  #000000;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj {
+    width: 60%;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj p{
+    font-size: 14px;
+    margin: 20px 30px;
+    width: 450px;
+    border-radius: 13px;
+    padding: 6px 30px;
+}
+        
+.pembatas-awan-inj-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30vh;
+    top: 49vh;
+}
+/*Sec 5*/ 
+.timeline-inj {
+    height: 90vh;
+}
+        
+.timeline-inj .title-timeline-inj {
+    padding-top: 170px;
+    }
+        
+.timeline-inj .title-timeline-inj h2 {
+    font-size: 30px;
+    width: 300px;
+    border-radius: 15px;
+}
+        
+.timeline-inj .title-timeline-inj h1{
+    font-size: 70px;
+    margin: 20px 0px;
+        }
+        
+.timeline-inj .title-timeline-inj .img-timeline-inj {
+    margin: 80px 0px;
+}
+        
+.city-inj {
+    top: 49px;
+}
+            
+.road-inj{
+    top: 19px;   
+}
+        
+}
+
+@media only screen and (max-width: 945px) {
+.pembatas-awan-inj-1 {
+    bottom: -10vh;
+    height: 32vh;
+    left: 0;
+    right: 0;
+}
+
+.pembatas-awan-inj-2 {
+    top: -16vh;
+    height: 32vh;
+    left: 0;
+    right: 0;
+    }
+
+.pembatas-awan-inj-3 {
+    top: 51vh;
+    height: 33vh;
+    left: 0;
+    right: 0;
+}
+}
+
+@media only screen and (max-width: 850px) {
+/*Sec 1*/    
+.Judul-Inj {
+    width: 84%;
+    height: 80vh;
+    margin: auto;
+    padding: 200px 0px 0px;
+}
+            
+.Judul-Inj h1 {
+    font-family: "poppins";
+    font-size: 80px;
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+            
+.Judul-Inj p {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+        
+/*Sec 2*/ 
+        
+.build-inj {
+    text-align: center;
+    position: relative;
+    top: 48px;
+    }
+        
+.build-inj-img {
+    width: 50%;
+}
+
+.Deskripsi-Inj{
+    position: relative;
+}       
+        
+.Deskripsi-Inj .txt-judul-inj {
+    position: relative;
+    top: 24px;
+    width: 28%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 4px solid #000000;
+    border-radius: 30px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+        
+.Deskripsi-Inj .txt-judul-inj h1 {
+    text-align: center;
+    margin: 6px;
+    font-size: 24px;
+    color: white;
+        
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    border-radius: 40px;
+    bottom: 0;
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj p{
+    width: 95%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    padding: 40px 50px;
+}
+        
+.pembatas-awan-inj-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -50vh;
+    height: 70vh;
+    left: 0;
+    right: 0;
+}
+        
+/*Sec 3*/ 
+.prizepool-inj {
+    margin: 140px 0px;
+    text-align: center;
+}
+        
+.prizepool-inj .prizepool-img-inj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+        }
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-1 {
+    width: 55%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-2 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-3 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-4 {
+    width: 55%;
+}
+        
+/*Sec 4*/ 
+.benefit-inj {
+    background-size: 100%;
+    height: 60vh;
+    margin: auto;
+}
+        
+.pembatas-awan-inj-2 {
+    top: -14.5vh;
+    bottom: 0px;
+    height: 40vh;
+    right: 0;
+    left: 0;
+}
+        
+.benefit-inj .box-benefit-inj{
+    margin: auto;
+    padding-top: 90px;
+    flex-direction: column;
+    width: 90%;   
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj {
+    width: 100%;
+    text-align: center;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h1{
+    font-size: 40px;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h3{
+    background-color: #5A8EAF;
+    margin: auto;
+    font-size: 15px;
+    width: 260px;
+    border-radius: 15px;
+    border: 3px solid  #000000;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj {
+    width: 74%;
+    padding-top: 20px;
+    margin: auto;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj p{
+    font-size: 13px;
+    margin: 20px 30px;
+    width: 400px;
+    border-radius: 13px;
+    padding: 6px 30px;
+}
+        
+.pembatas-awan-inj-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 35vh;
+    top: 51.5vh;
+}
+/*Sec 5*/ 
+.timeline-inj {
+    height: 120vh;
+}
+        
+.timeline-inj .title-timeline-inj {
+    padding-top: 150px;
+    }
+        
+.timeline-inj .title-timeline-inj h2 {
+    font-size: 25px;
+    width: 250px;
+    border-radius: 15px;
+}
+        
+.timeline-inj .title-timeline-inj h1{
+    font-size: 55px;
+    margin: 20px 0px;
+        }
+        
+.timeline-inj .title-timeline-inj .img-timeline-inj {
+    margin: 60px 0px;
+}
+        
+.city-inj {
+    top: 49px;
+}
+            
+.road-inj{
+    top: 19px;   
+}
+        
+}
+
+@media only screen and (max-width: 750px) {
+/*Sec 1*/    
+.Judul-Inj {
+    width: 84%;
+    height: 70vh;
+    margin: auto;
+    padding: 200px 0px 0px;
+}
+            
+.Judul-Inj h1 {
+    font-family: "poppins";
+    font-size: 70px;
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+            
+.Judul-Inj p {
+    font-size: 19px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/*Sec 2*/         
+.build-inj {
+    text-align: center;
+    position: relative;
+    top: 43px;
+    }
+        
+.build-inj-img {
+    width: 50%;
+}
+        
+        
+.Deskripsi-Inj .txt-judul-inj {
+    position: relative;
+    top: 20px;
+    width: 28%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 3px solid #000000;
+    border-radius: 30px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+        
+.Deskripsi-Inj .txt-judul-inj h1 {
+    text-align: center;
+    margin: 6px;
+    font-size: 22px;
+    color: white;
+        
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj {
+    background-color: #F2EFD5;
+    width: 90%;
+    height: 170px;
+    margin: auto;
+    border-radius: 30px;
+    bottom: 0;
+    left: 0;
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj p{
+    width: 95%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10.5px;
+    margin: auto;
+    padding: 30px 50px;
+}
+        
+.pembatas-awan-inj-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -52vh;
+    height: 70vh;
+    left: 0;
+    right: 0;
+}
+
+
+.pembatas-awan-inj-2 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30vh;
+    top: -13vh;
+}
+
+.pembatas-awan-inj-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 35vh;
+    top: 53vh;
+}
+}
+
+@media only screen and (max-width: 645px) {
+/*Sec 1*/    
+.Judul-Inj {
+    width: 84%;
+    height: 50vh;
+    margin: auto;
+    padding: 100px 0px 0px;
+}
+            
+.Judul-Inj h1 {
+    font-family: "poppins";
+    font-size: 60px;
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+            
+.Judul-Inj p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+        
+/*Sec 2*/ 
+        
+.build-inj {
+    text-align: center;
+    position: relative;
+    top: 36.5px;
+    }
+        
+.build-inj-img {
+    width: 50%;
+}
+        
+        
+.Deskripsi-Inj .txt-judul-inj {
+    position: relative;
+    top: 19px;
+    width: 26%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 3px solid #000000;
+    border-radius: 30px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+        
+.Deskripsi-Inj .txt-judul-inj h1 {
+    text-align: center;
+    margin: 6px;
+    font-size: 16px;
+    color: white;
+        
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 140px;
+    margin: auto;
+    border-radius: 30px;
+    bottom: 0;
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj p{
+    width: 95%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 9px;
+    margin: auto;
+    padding: 30px 40px;
+}
+        
+.pembatas-awan-inj-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -84vh;
+    height: 70vh;
+    left: 0;
+    right: 0;
+}
+        
+/*Sec 3*/ 
+.prizepool-inj {
+    margin: 140px 0px;
+    text-align: center;
+}
+        
+.prizepool-inj .prizepool-img-inj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-1 {
+    width: 55%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-2 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-3 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-4 {
+    width: 55%;
+}
+        
+/*Sec 4*/ 
+.benefit-inj {
+    background-size: 100%;
+    height: 80vh;
+    margin: auto;
+}
+        
+.pembatas-awan-inj-2 {
+    top: 213vh;
+    bottom: 0px;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+        
+.benefit-inj .box-benefit-inj{
+    margin: auto;
+    padding-top: 70px;
+    flex-direction: column;
+    width: 90%;   
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj {
+    width: 100%;
+    text-align: center;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h1{
+    font-size: 40px;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h3{
+    background-color: #5A8EAF;
+    margin: auto;
+    font-size: 15px;
+    width: 260px;
+    border-radius: 15px;
+    border: 3px solid  #000000;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj {
+    width: 60%;
+    padding-top: 20px;
+    margin: auto;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj p{
+    font-size: 11px;
+    margin: 20px 0px;
+    width: 350px;
+    border-radius: 13px;
+    padding: 6px 30px;
+}
+        
+.pembatas-awan-inj-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60vh;
+    top: 300vh;
+}
+/*Sec 5*/ 
+.timeline-inj {
+    height: 120vh;
+}
+        
+.timeline-inj .title-timeline-inj {
+    padding-top: 180px;
+    }
+        
+.timeline-inj .title-timeline-inj h2 {
+    font-size: 23px;
+    width: 250px;
+    border-radius: 15px;
+    border: 3px solid #112E41;
+}
+        
+.timeline-inj .title-timeline-inj h1{
+    font-size: 43px;
+    margin: 20px 0px;
+        }
+        
+.timeline-inj .title-timeline-inj .img-timeline-inj {
+    margin: 60px 0px;
+}
+        
+.city-inj {
+    top: 49px;
+}
+            
+.road-inj{
+    top: 19px;   
+}
+        
+}
+
+@media only screen and (max-width: 508px) {
+    
+    /*Sec 1*/    
+    .Judul-Inj {
+        width: 84%;
+        height: 40vh;
+        margin: auto;
+        padding: 100px 0px 0px;
+    }
+                
+    .Judul-Inj h1 {
+        font-family: "poppins";
+        font-size: 40px;
+        text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+        margin: auto;
+    }
+                
+    .Judul-Inj p {
+        font-size: 13px;
+        margin: 0;
+        font-weight: bold;
+                }
+            
+    /*Sec 2*/ 
+            
+    .build-inj {
+        text-align: center;
+        position: relative;
+        top: 27px;
+        }
+            
+    .build-inj-img {
+        width: 50%;
+    }
+            
+            
+    .Deskripsi-Inj .txt-judul-inj {
+        position: relative;
+        top: 13px;
+        width: 23%;
+        margin: auto;
+        background-color: #5A8EAF;
+        border: 3px solid #000000;
+        border-radius: 20px;
+        box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+        }
+            
+    .Deskripsi-Inj .txt-judul-inj h1 {
+        text-align: center;
+        margin: 5px;
+        font-size: 8px;
+        color: white;
+            
+    }
+            
+    .Deskripsi-Inj .txt-deskripsi-inj {
+        background-color: #F2EFD5;
+        width: 60%;
+        height: 95px;
+        margin: auto;
+        border-radius: 20px;
+        bottom: 0;
+            }
+            
+    .Deskripsi-Inj .txt-deskripsi-inj p{
+        width: 90%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 7px;
+        margin: auto;
+        padding: 18px 8px;
+    }
+            
+    .pembatas-awan-inj-1 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -162px;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+            
+    /*Sec 3*/ 
+    .prizepool-inj {
+        margin: 40px 0px;
+        text-align: center;
+    }
+            
+    .prizepool-inj .prizepool-img-inj{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;  
+            }
+            
+    .prizepool-inj .prizepool-img-inj .img-pp-inj-1 {
+        width: 55%;
+    }
+            
+    .prizepool-inj .prizepool-img-inj .img-pp-inj-2 {
+        width: 45%;
+        height: 100%;
+    }
+            
+    .prizepool-inj .prizepool-img-inj .img-pp-inj-3 {
+        width: 45%;
+        height: 100%;
+    }
+            
+    .prizepool-inj .prizepool-img-inj .img-pp-inj-4 {
+        width: 55%;
+    }
+            
+    /*Sec 4*/ 
+    .benefit-inj {
+        background-size: 100%;
+        height: 70vh;
+        margin: auto;
+            }
+            
+    .pembatas-awan-inj-2 {
+        top: 620px;
+        bottom: 0px;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+            
+    .benefit-inj .box-benefit-inj{
+        margin: auto;
+        padding-top: 40px;
+        flex-direction: column;
+        width: 95%;   
+    }
+            
+    .benefit-inj .box-benefit-inj .title-benefit-inj {
+        width: 100%;
+        text-align: center;
+    }
+            
+    .benefit-inj .box-benefit-inj .title-benefit-inj h1{
+        font-size: 35px;
+    }
+            
+    .benefit-inj .box-benefit-inj .title-benefit-inj h3{
+        font-size: 15px;
+        background-color: #5A8EAF;
+        margin: auto;
+        width: 260px;
+        border-radius: 15px;
+        border: 3px solid  #000000;
+    }
+            
+    .benefit-inj .box-benefit-inj .desk-benefit-inj {
+        width: 60%;
+        padding-top: 20px;
+        margin: auto;
+    }
+            
+    .benefit-inj .box-benefit-inj .desk-benefit-inj p{
+        font-size: 9px;
+        margin: 10px 0px;
+        width: 290px;
+        border-radius: 20px;
+        padding: 6px 30px;
+    }
+            
+    .pembatas-awan-inj-3 {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 60vh;
+        top: 1049px;
+    }
+    /*Sec 5*/ 
+    .timeline-inj {
+        height: 60vh;
+    }
+            
+    .timeline-inj .title-timeline-inj {
+        padding-top: 70px;
+        }
+            
+    .timeline-inj .title-timeline-inj h2 {
+        font-size: 20px;
+        width: 200px;
+        border-radius: 12px;
+        border: 3px solid #112E41;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    }
+            
+    .timeline-inj .title-timeline-inj h1{
+        
+        font-size: 30px;
+        margin: 10px 0px;
+            }
+            
+    .timeline-inj .title-timeline-inj .img-timeline-inj {
+        margin: 20px 0px;
+    }
+            
+    .city-inj {
+        top: 40px;
+    }
+                
+    .road-inj{
+        top: 24px;   
+    }
+            
+    }
+
+@media only screen and (max-width: 390px) {
+    
+/*Sec 1*/    
+.Judul-Inj {
+    width: 84%;
+    height: 40vh;
+    margin: auto;
+    padding: 100px 0px 0px;
+}
+            
+.Judul-Inj h1 {
+    font-family: "poppins";
+    font-size: 40px;
+    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+            
+.Judul-Inj p {
+    font-size: 13px;
+    margin: 0;
+    font-weight: bold;
+            }
+        
+/*Sec 2*/ 
+        
+.build-inj {
+    text-align: center;
+    position: relative;
+    top: 27px;
+    }
+        
+.build-inj-img {
+    width: 200px;
+}
+        
+        
+.Deskripsi-Inj .txt-judul-inj {
+    position: relative;
+    top: 13px;
+    width: 50%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+        
+.Deskripsi-Inj .txt-judul-inj h1 {
+    text-align: center;
+    margin: 5px;
+    font-size: 8px;
+    color: white;
+        
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj {
+    background-color: #F2EFD5;
+    width: 70%;
+    height: 95px;
+    margin: auto;
+    border-radius: 20px;
+    bottom: 0;
+}
+        
+.Deskripsi-Inj .txt-deskripsi-inj p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 7px;
+    margin: auto;
+    padding: 18px 8px;
+}
+        
+.pembatas-awan-inj-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -9vh;
+    height: 22vh;
+    left: 0;
+    right: 0;
+}
+        
+/*Sec 3*/ 
+.prizepool-inj {
+    margin: 40px 0px;
+    text-align: center;
+}
+        
+.prizepool-inj .prizepool-img-inj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+        }
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-1 {
+    width: 55%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-2 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-3 {
+    width: 45%;
+    height: 100%;
+}
+        
+.prizepool-inj .prizepool-img-inj .img-pp-inj-4 {
+    width: 55%;
+}
+        
+/*Sec 4*/ 
+.benefit-inj {
+    background-size: 100%;
+    height: 60vh;
+    margin: auto;
+        }
+        
+.pembatas-awan-inj-2 {
+    top: -10vh;
+    bottom: 0px;
+    height: 22vh;
+    right: 0;
+    left: 0;
+}
+        
+.benefit-inj .box-benefit-inj{
+    margin: auto;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 95%;   
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj {
+    width: 100%;
+    text-align: center;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h1{
+    font-size: 35px;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h3{
+    font-size: 15px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 260px;
+    border-radius: 15px;
+    border: 3px solid  #000000;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj {
+    width: 70%;
+    padding-top: 20px;
+    margin: auto;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj p{
+    font-size: 8px;
+    margin: 10px 0px;
+    width: 250px;
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+        
+.pembatas-awan-inj-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 22vh;
+    top: 54vh;
+}
+/*Sec 5*/ 
+.timeline-inj {
+    height: 50vh;
+}
+        
+.timeline-inj .title-timeline-inj {
+    padding-top: 70px;
+    }
+        
+.timeline-inj .title-timeline-inj h2 {
+    font-size: 16px;
+    width: 180px;
+    border-radius: 12px;
+    border: 3px solid #112E41
+}
+        
+.timeline-inj .title-timeline-inj h1{
+    font-size: 27px;
+    margin: 10px 0px;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+.timeline-inj .title-timeline-inj .img-timeline-inj {
+    margin: 20px 0px;
+}
+        
+.city-inj {
+    top: 40px;
+}
+            
+.road-inj{
+    top: 24px;   
+}
+        
+}

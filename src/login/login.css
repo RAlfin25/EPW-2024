@@ -1,0 +1,128 @@
+/*Login*/
+.Login {
+    text-align: center;
+    background-color: #7ED7F4;
+    margin: auto;
+    padding: 200px 0;
+}
+
+.judul-login {
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.judul-login h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 70px;
+    margin: auto;
+}
+
+.judul-login h2{
+    font-size: 60px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin: auto;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.form-login label {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.form-login input {
+    height: 45px;
+    border-radius: 15px;
+    border: solid 3px #000;
+    font-size: 20px ;
+    padding: 0px 20px;
+}
+
+.button-login {
+    padding: 30px 0px;
+}
+
+.button-login p {
+    text-align: center;
+}
+
+.confirm{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    height: 45px;
+    width: 100%;
+    border-radius: 15px;
+    border: solid 3px #000;
+    background-color: #EA7000;
+    color: #ffffff;
+}
+
+.notToday {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    height: 45px;
+    border-radius: 15px;
+    border: solid 2px #000;
+    width: 100%;
+    background-color: #ffffff;
+    color: #EA7000;
+
+}
+
+
+/*SignUp*/
+.SignUp {
+    text-align: center;
+    background-color: #7ED7F4;
+    margin: auto;
+    padding: 200px 0;
+}
+
+.judul-signup {
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.judul-signup h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 70px;
+    margin: auto;
+}
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.form-signup label {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.form-signup input {
+    height: 45px;
+    border-radius: 15px;
+    border: solid 3px #000;
+    font-size: 20px ;
+    padding: 0px 20px;
+}

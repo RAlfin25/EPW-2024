@@ -1,5 +1,6 @@
 .container-notfound {
-    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100vh;
     background-image: url(./asset/Page-Not-found-404-Ver-2.png);
     background-size: cover;
 }
@@ -11,28 +12,31 @@
 
 .text-notfound{
     position: relative;
-    top: 30px;
+    bottom: 40px;
 }
 
-.text-notfound p, h1, h2 {
+/* .text-notfound p, h1, h2 {
     font-family:'Poppins';
     color: #2E5B78;
-    line-height: 2rem;
+    line-height: 0.5rem;
     font-weight:normal;
 }
 
 .text-notfound h1 {
     font-size: 120px;
+    font-weight: 700;
 }
 
 .text-notfound h2 {
     font-size: 50px;
+    font-weight: 900;
 }
 .text-notfound p {
     font-size: 20px;
-    font-weight: 100;
+    
 }
 
+*/
 .building {
     position: relative;
     top: 40px;

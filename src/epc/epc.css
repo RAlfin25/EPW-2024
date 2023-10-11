@@ -1,0 +1,1683 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900,800&family=Poppins:wght@600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap");
+
+.Epc {
+    background-image: url(./asset-Epc/Background\ Design\ --------------------------------------------\ \(1\).svg);
+    background-size: cover;
+
+}
+
+.Judul-Epc {
+    width: 84%;
+    height: 100vh;
+    margin: auto;
+    padding: 300px 0px 0px;
+}
+
+.Judul-Epc h1 {
+    font-family: "poppins";
+    font-size: 125px;
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+    color: #365569;
+    margin: auto;
+}
+
+.Judul-Epc p {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+.build-epc {
+    text-align: center;
+    position: relative;
+    top: 58px;
+}
+
+.build-epc-img {
+    width: 50%;
+}
+
+.Judul-epc .Judul-Epc-container{
+
+}
+
+.Deskripsi-Epc{
+    position: relative;
+}
+
+.Deskripsi-Epc .txt-judul-epc {
+    position: relative;
+    top: 29px;
+    width: 40%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 4px solid #000000;
+    border-radius: 50px;
+    box-shadow: -7px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Deskripsi-Epc .txt-judul-epc h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 26px;
+    color: white;
+
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    border-radius: 50px;
+    bottom: 0;
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 19px;
+    margin: auto;
+    padding: 48px 80px;
+}
+
+
+.pembatas-awan-epc-1 {
+    background-image: url(./asset-Epc/Cloud.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -21vh;
+    height: 70vh;
+    left: 0;
+    right: 0;
+}
+
+
+
+.prizepool-epc {
+    margin: 200px 0px;
+    text-align: center;
+}
+
+.prizepool-epc .prizepool-img-epc{
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.prizepool-epc .prizepool-img-epc .img-pp-epc {
+    width: 90%;
+}
+
+
+.benefit-epc {
+    background-image: url(./asset-Epc/Group\ 224.png);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    position: relative;
+}
+
+.pembatas-awan-epc-2 {
+    background: url(./asset-Epc/cloud\ \(2\).svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -35.5vh;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+
+.benefit-epc .box-benefit-epc{
+    margin: auto;
+    padding-top: 240px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h1{
+    color: #FF880B;
+    font-family: "poppins";
+    font-weight: 900;
+    font-size: 90px;
+    margin: auto;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h3{
+    color: white;
+    font-weight: 900;
+    font-size: 27px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 450px;
+    border-radius: 18px;
+    padding: 6px 0px;
+    border: 5px solid  #000000;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc {
+    width: 60%;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc p{
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    background-color: #275A7B;
+    margin: 20px 30px;
+    width: 800px;
+    border-radius: 16px;
+    padding: 6px 30px;
+}
+
+.pembatas-awan-epc-3 {
+    background-image: url(./asset-Epc/cloud\ \(1\).svg);
+    background-size: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 69vh;
+    right: 0;
+    left: 0;
+}
+
+.timeline-epc {
+    height: 150vh;
+}
+
+.timeline-epc .title-timeline-epc {
+    
+    margin: auto;
+    padding-top: 300px;
+    text-align: center;
+}
+
+.timeline-epc .title-timeline-epc h2 {
+    color: #F2EFD5;
+    font-family: "poppins";
+    background-color: #5A8EAF;
+    font-size: 40px;
+    margin: auto;
+    width: 400px;
+    border-radius: 25px;
+    border: 5px solid #112E41;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-epc .title-timeline-epc h1{
+    color: white;
+    font-family: "poppins";
+    font-size: 80px;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.3);
+    margin: 10px 0px;
+}
+
+.timeline-epc .title-timeline-epc .img-timeline-epc {
+    width: 90%;
+    margin: 100px 0px;
+}
+
+.city-epc {
+    width: 100%;
+     position: relative;
+     top: 49px;
+    
+    }
+    
+.road-epc{
+    width: 100%;
+     position: relative;
+     top: 19px;   
+    }
+
+    @media only screen and (max-width: 1880px) {
+        .pembatas-awan-epc-1 {
+            bottom: -25vh;
+            height: 70vh;
+            left: 0;
+            right: 0;
+        }
+    
+        .pembatas-awan-epc-2 {
+            top: -32vh;
+            height: 60vh;
+            right: 0;
+            left: 0;
+        }
+    
+        .pembatas-awan-epc-3 {
+            height: 60vh;
+            top: 69vh;
+            right: 0;
+            left: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 1760px) {
+    .pembatas-awan-epc-1 {
+        bottom: -28vh;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+    
+    .pembatas-awan-epc-2 {
+        top: -30vh;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+    
+    .pembatas-awan-epc-3 {
+        height: 60vh;
+        top: 72vh;
+        right: 0;
+        left: 0;
+    }
+    }
+    
+    @media only screen and (max-width: 1600px) {
+    .pembatas-awan-epc-1 {
+        bottom: -31vh;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+        
+    .pembatas-awan-epc-2 {
+        top: -28vh;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+        
+    .pembatas-awan-epc-3 {
+        height: 60vh;
+        top: 73vh;
+        right: 0;
+        left: 0;
+        }
+    }
+    
+@media only screen and (max-width: 1490px) {
+        .pembatas-awan-epc-1 {
+            bottom: -35vh;
+            height: 70vh;
+            left: 0;
+            right: 0;
+        }
+            
+        .pembatas-awan-epc-2 {
+            top: -26vh;
+            height: 60vh;
+            right: 0;
+            left: 0;
+        }
+            
+        .pembatas-awan-epc-3 {
+            height: 60vh;
+            top: 74vh;
+            right: 0;
+            left: 0;
+            }
+    }
+
+@media only screen and (max-width: 1356px) {
+/*Sec 1*/    
+.Judul-Epc {
+    width: 84%;
+    height: 90vh;
+    margin: auto;
+    padding: 200px 0px 0px;
+}
+    
+.Judul-Epc h1 {
+    font-family: "poppins";
+    font-size: 108px;
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+    
+.Judul-Epc p {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/*Sec 2*/ 
+
+.build-epc {
+    text-align: center;
+    position: relative;
+    top: 58px;
+}
+
+.build-epc-img {
+    width: 50%;
+}
+
+
+.Deskripsi-Epc .txt-judul-epc {
+    position: relative;
+    top: 29px;
+    width: 43%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 4px solid #000000;
+    border-radius: 50px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Deskripsi-Epc .txt-judul-epc h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 26px;
+    color: white;
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 330px;
+    margin: auto;
+    border-radius: 45px;
+    bottom: 0;
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    padding: 50px 70px;
+}
+
+.pembatas-awan-epc-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -190px;
+    height: 60vh;
+    left: 0;
+    right: 0;
+}
+
+/*Sec 3*/ 
+.prizepool-epc {
+    margin: 200px 0px;
+    text-align: center;
+}
+
+
+/*Sec 4*/ 
+.benefit-epc {
+    background-size: 100%;
+    height: 85vh;
+    margin: auto;
+}
+
+.pembatas-awan-epc-2 {
+    top: 590px;
+    bottom: 0px;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+
+.benefit-epc .box-benefit-epc{
+    margin: auto;
+    padding-top: 140px;
+    flex-direction: row;
+    width: 90%;     
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc {
+    width: 40%;
+    text-align: center;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h1{
+    font-size: 57px;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h3{
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 330px;
+    border-radius: 15px;
+    border: 3px solid  #000000;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc {
+    width: 60%;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc p{
+    font-size: 16px;
+    margin: 20px 30px;
+    width: 500px;
+    border-radius: 13px;
+    padding: 6px 30px;
+}
+
+.pembatas-awan-epc-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60vh;
+    top: 900px;
+    right: 0;
+    left: 0;
+}
+/*Sec 5*/ 
+.timeline-epc {
+    height: 180vh;
+}
+
+.timeline-epc .title-timeline-epc {
+    padding-top: 300px;
+}
+
+.timeline-epc .title-timeline-epc h2 {
+    font-size: 40px;
+    width: 400px;
+    border-radius: 15px
+
+}
+
+.timeline-epc .title-timeline-epc h1{
+    font-size: 80px;
+    margin: 20px 0px;
+}
+
+.timeline-epc .title-timeline-epc .img-timeline-epc {
+    margin: 100px 0px;
+}
+
+.city-epc {
+     top: 49px;
+    
+    }
+    
+.road-epc{
+     top: 19px;   
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+ /*Sec 1*/
+    .Judul-Epc {
+        width: 84%;
+        height: 90vh;
+        margin: auto;
+        padding: 200px 0px 0px;
+    }
+        
+    .Judul-Epc h1 {
+        font-family: "poppins";
+        font-size: 108px;
+        text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+        margin: auto;
+    }
+        
+    .Judul-Epc p {
+        font-size: 28px;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    /*Sec 2*/ 
+    
+    .build-epc {
+        text-align: center;
+        position: relative;
+        top: 58px;
+    }
+    
+    .build-epc-img {
+        width: 50%;
+    }
+    
+    
+    .Deskripsi-Epc .txt-judul-epc {
+        position: relative;
+        top: 29px;
+        width: 50%;
+        margin: auto;
+        background-color: #5A8EAF;
+        border: 4px solid #000000;
+        border-radius: 50px;
+        box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .Deskripsi-Epc .txt-judul-epc h1 {
+        text-align: center;
+        margin: 10px;
+        font-size: 26px;
+        color: white;
+    }
+    
+    .Deskripsi-Epc .txt-deskripsi-epc {
+        background-color: #F2EFD5;
+        width: 60%;
+        height: 330px;
+        margin: auto;
+        border-radius: 45px;
+        bottom: 0;
+    }
+    
+    .Deskripsi-Epc .txt-deskripsi-epc p{
+        width: 90%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 16px;
+        margin: auto;
+        padding: 40px 70px;
+    }
+    
+    .pembatas-awan-epc-1 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -190px;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+    
+    /*Sec 3*/ 
+    .prizepool-epc {
+        margin: 200px 0px;
+        text-align: center;
+    }
+    
+    
+    /*Sec 4*/ 
+    .benefit-epc {
+        background-size: 100%;
+        height: 85vh;
+        margin: auto;
+    }
+    
+    .pembatas-awan-epc-2 {
+        top: 590px;
+        bottom: 0px;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+    
+    .benefit-epc .box-benefit-epc{
+        margin: auto;
+        padding-top: 140px;
+        flex-direction: row;
+        width: 90%;     
+    }
+    
+    .benefit-epc .box-benefit-epc .title-benefit-epc {
+        width: 40%;
+        text-align: center;
+    }
+    
+    .benefit-epc .box-benefit-epc .title-benefit-epc h1{
+        font-size: 57px;
+    }
+    
+    .benefit-epc .box-benefit-epc .title-benefit-epc h3{
+        background-color: #5A8EAF;
+        margin: auto;
+        width: 330px;
+        border-radius: 15px;
+        border: 3px solid  #000000;
+    }
+    
+    .benefit-epc .box-benefit-epc .desk-benefit-epc {
+        width: 60%;
+    }
+    
+    .benefit-epc .box-benefit-epc .desk-benefit-epc p{
+        font-size: 16px;
+        margin: 20px 30px;
+        width: 500px;
+        border-radius: 13px;
+        padding: 6px 30px;
+    }
+    
+    .pembatas-awan-epc-3 {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 60vh;
+        top: 900px;
+        right: 0;
+        left: 0;
+    }
+    /*Sec 5*/ 
+    .timeline-epc {
+        height: 180vh;
+    }
+    
+    .timeline-epc .title-timeline-epc {
+        padding-top: 300px;
+    }
+    
+    .timeline-epc .title-timeline-epc h2 {
+        font-size: 40px;
+        width: 400px;
+        border-radius: 15px
+    
+    }
+    
+    .timeline-epc .title-timeline-epc h1{
+        font-size: 80px;
+        margin: 20px 0px;
+    }
+    
+    .timeline-epc .title-timeline-epc .img-timeline-epc {
+        margin: 100px 0px;
+    }
+    
+    .city-epc {
+         top: 49px;
+        
+        }
+        
+    .road-epc{
+         top: 19px;   
+        }
+}
+
+@media only screen and (max-width: 1040px) {
+    /*Sec 1*/
+    .Judul-Epc {
+        width: 84%;
+        height: 90vh;
+        margin: auto;
+        padding: 200px 0px 0px;
+    }
+        
+    .Judul-Epc h1 {
+        font-family: "poppins";
+        font-size: 90px;
+        text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+        margin: auto;
+    }
+        
+    .Judul-Epc p {
+        font-size: 22px;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    /*Sec 2*/ 
+    
+    .build-epc {
+        text-align: center;
+        position: relative;
+        top: 58px;
+    }
+    
+    .build-epc-img {
+        width: 50%;
+    }
+    
+    
+    .Deskripsi-Epc .txt-judul-epc {
+        position: relative;
+        top: 29px;
+        width: 50%;
+        margin: auto;
+        background-color: #5A8EAF;
+        border: 4px solid #000000;
+        border-radius: 50px;
+        box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .Deskripsi-Epc .txt-judul-epc h1 {
+        text-align: center;
+        margin: 7px;
+        font-size: 22px;
+        color: white;
+    }
+    
+    .Deskripsi-Epc .txt-deskripsi-epc {
+        background-color: #F2EFD5;
+        width: 60%;
+        height: 250px;
+        margin: auto;
+        border-radius: 45px;
+        bottom: 0;
+    }
+    
+    .Deskripsi-Epc .txt-deskripsi-epc p{
+        width: 90%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 13px;
+        margin: auto;
+        padding: 40px 50px;
+    }
+    
+    .pembatas-awan-epc-1 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -15vh;
+        height: 40vh;
+        left: 0;
+        right: 0;
+    }
+    
+    /*Sec 3*/ 
+    .prizepool-epc {
+        margin: 200px 0px;
+        text-align: center;
+    }
+    
+    
+    /*Sec 4*/ 
+    .benefit-epc {
+        background-size: 100%;
+        height: 60vh;
+        margin: auto;
+    }
+    
+    .pembatas-awan-epc-2 {
+        top: -18vh;
+        bottom: 0px;
+        height: 40vh;
+        right: 0;
+        left: 0;
+    }
+    
+    .benefit-epc .box-benefit-epc{
+        margin: auto;
+        padding-top: 140px;
+        flex-direction: row;
+        width: 90%;     
+    }
+    
+    .benefit-epc .box-benefit-epc .title-benefit-epc {
+        width: 50%;
+        text-align: center;
+    }
+    
+    .benefit-epc .box-benefit-epc .title-benefit-epc h1{
+        font-size: 50px;
+    }
+    
+    .benefit-epc .box-benefit-epc .title-benefit-epc h3{
+        background-color: #5A8EAF;
+        margin: auto;
+        width: 270px;
+        font-size: 17px;
+        border-radius: 15px;
+        border: 3px solid  #000000;
+    }
+    
+    .benefit-epc .box-benefit-epc .desk-benefit-epc {
+        width: 50%;
+    }
+    
+    .benefit-epc .box-benefit-epc .desk-benefit-epc p{
+        font-size: 14px;
+        margin: 20px 30px;
+        width: 350px;
+        border-radius: 12px;
+        padding: 6px 30px;
+    }
+    
+    .pembatas-awan-epc-3 {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 40vh;
+        top: 49vh;
+        right: 0;
+        left: 0;
+    }
+    /*Sec 5*/ 
+    .timeline-epc {
+        height: 180vh;
+    }
+    
+    .timeline-epc .title-timeline-epc {
+        padding-top: 300px;
+    }
+    
+    .timeline-epc .title-timeline-epc h2 {
+        font-size: 40px;
+        width: 400px;
+        border-radius: 15px
+    
+    }
+    
+    .timeline-epc .title-timeline-epc h1{
+        font-size: 80px;
+        margin: 20px 0px;
+    }
+    
+    .timeline-epc .title-timeline-epc .img-timeline-epc {
+        margin: 100px 0px;
+    }
+    
+    .city-epc {
+         top: 49px;
+        
+        }
+        
+    .road-epc{
+         top: 19px;   
+        }
+}
+
+@media only screen and (max-width: 945px) {
+.pembatas-awan-epc-1 {
+    bottom: -10vh;
+    height: 32vh;
+    left: 0;
+    right: 0;
+}
+
+.pembatas-awan-epc-2 {
+    top: -16vh;
+    height: 32vh;
+    left: 0;
+    right: 0;
+}
+
+.pembatas-awan-epc-3 {
+    top: 50vh;
+    height: 33vh;
+    left: 0;
+    right: 0;
+}
+}
+
+@media only screen and (max-width: 850px) {
+/*Sec 1*/    
+.Judul-Epc {
+    width: 84%;
+    height: 80vh;
+    margin: auto;
+    padding: 100px 0px 0px;
+    }
+    
+.Judul-Epc h1 {
+    font-family: "poppins";
+    font-size: 80px;
+    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+    
+.Judul-Epc p {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/*Sec 2*/ 
+
+.build-epc {
+    text-align: center;
+    position: relative;
+    top: 34px;
+}
+
+.build-epc-img {
+    width: 50%;
+}
+
+
+.Deskripsi-Epc .txt-judul-epc {
+    position: relative;
+    top: 13px;
+    width: 41%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Deskripsi-Epc .txt-judul-epc h1 {
+    text-align: center;
+    margin: 5px;
+    font-size: 15px;
+    color: white;
+
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    border-radius: 30px;
+    bottom: 0;
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.pembatas-awan-epc-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -12vh;
+    height: 33vh;
+    left: 0;
+    right: 0;
+}
+
+/*Sec 3*/ 
+.prizepool-epc {
+    margin: 140px 0px;
+    text-align: center;
+}
+
+
+/*Sec 4*/ 
+.benefit-epc {
+    background-size: 100%;
+    height: 50vh;
+    margin: auto;
+}
+
+.pembatas-awan-epc-2 {
+    top: -15vh;
+    bottom: 0px;
+    height: 25vh;
+    right: 0;
+    left: 0;
+}
+
+.benefit-epc .box-benefit-epc{
+    margin: auto;
+    padding-top: 90px;
+    flex-direction: column;
+    width: 95%;   
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc {
+    width: 100%;
+    text-align: center;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h1{
+    font-size: 40px;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h3{
+    font-size: 15px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 200px;
+    border-radius: 15px;
+    border: 3px solid  #000000;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc {
+    width: 50%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc p{
+    font-size: 13px;
+    margin: 10px 0px;
+    width: 320px;
+    border-radius: 10px;
+    padding: 6px 30px;
+}
+
+.pembatas-awan-epc-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30vh;
+    top: 40vh;
+    right: 0;
+    left: 0
+}
+/*Sec 5*/ 
+.timeline-epc {
+    height: 100vh;
+}
+
+.timeline-epc .title-timeline-epc {
+    padding-top: 70px;
+}
+
+.timeline-epc .title-timeline-epc h2 {
+    font-size: 25px;
+    width: 250px;
+    border-radius: 15px;
+    border: 4px solid #112E41;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-epc .title-timeline-epc h1{
+    font-size: 55px;
+    margin: 20px 0px;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-epc .title-timeline-epc .img-timeline-epc {
+    margin: 60px 0px;
+}
+
+.city-epc {
+     top: 40px;
+    
+    }
+    
+.road-epc{
+     top: 24px;   
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .pembatas-awan-epc-1 {
+        bottom: -7vh;
+        height: 25vh;
+        left: 0;
+        right: 0;
+    }
+
+    .pembatas-awan-epc-2 {
+        top: -12vh;
+        height: 32vh;
+        left: 0;
+        right: 0;
+    }
+
+    .pembatas-awan-epc-3 {
+        top: 43vh;
+        height: 33vh;
+        left: 0;
+        right: 0;
+    }
+}
+
+
+@media only screen and (max-width: 645px) {
+/*Sec 1*/    
+.Judul-Epc {
+    width: 84%;
+    height: 50vh;
+    margin: auto;
+    padding: 100px 0px 0px;
+    }
+    
+.Judul-Epc h1 {
+    font-family: "poppins";
+    font-size: 60px;
+    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+    
+.Judul-Epc p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/*Sec 2*/ 
+
+.build-epc {
+    text-align: center;
+    position: relative;
+    top: 34px;
+}
+
+.build-epc-img {
+    width: 50%;
+}
+
+
+.Deskripsi-Epc .txt-judul-epc {
+    position: relative;
+    top: 13px;
+    width: 50%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Deskripsi-Epc .txt-judul-epc h1 {
+    text-align: center;
+    margin: 5px;
+    font-size: 15px;
+    color: white;
+
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc {
+    background-color: #F2EFD5;
+    width: 70%;
+    height: 120px;
+    margin: auto;
+    border-radius: 20px;
+    bottom: 0;
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 9px;
+    margin: auto;
+    padding: 16px 8px;
+}
+
+.pembatas-awan-epc-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -190px;
+    height: 70vh;
+    left: 0;
+    right: 0;
+}
+
+/*Sec 3*/ 
+.prizepool-epc {
+    margin: 140px 0px;
+    text-align: center;
+}
+
+
+/*Sec 4*/ 
+.benefit-epc {
+    background-size: 100%;
+    height: 50vh;
+    margin: auto;
+}
+
+.pembatas-awan-epc-2 {
+    top: 590px;
+    bottom: 0px;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+
+.benefit-epc .box-benefit-epc{
+    margin: auto;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 95%;   
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc {
+    width: 100%;
+    text-align: center;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h1{
+    font-size: 40px;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h3{
+    font-size: 15px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 200px;
+    border-radius: 13px;
+    border: 3px solid  #000000;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc {
+    width: 48%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc p{
+    font-size: 11px;
+    margin: 10px 0px;
+    width: 290px;
+    border-radius: 10px;
+    padding: 6px 30px;
+}
+
+.pembatas-awan-epc-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60vh;
+    top: 900px;
+    right: 0;
+    left: 0;
+}
+/*Sec 5*/ 
+.timeline-epc {
+    height: 70vh;
+}
+
+.timeline-epc .title-timeline-epc {
+    padding-top: 70px;
+}
+
+.timeline-epc .title-timeline-epc h2 {
+    font-size: 20px;
+    width: 200px;
+    border-radius: 12px;
+    border: 3px solid #112E41;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-epc .title-timeline-epc h1{
+    font-size: 40px;
+    margin: 10px 0px;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-epc .title-timeline-epc .img-timeline-epc {
+    margin: 20px 0px;
+}
+
+.city-epc {
+     top: 40px;
+    
+    }
+    
+.road-epc{
+     top: 24px;   
+    }
+}
+
+@media only screen and (max-width: 508px) {
+/*Sec 1*/    
+.Judul-Epc {
+    width: 84%;
+    height: 40vh;
+    margin: auto;
+    padding: 100px 0px 0px;
+    }
+    
+.Judul-Epc h1 {
+    font-family: "poppins";
+    font-size: 60px;
+    text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+    
+.Judul-Epc p {
+    font-size: 15px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/*Sec 2*/ 
+
+.build-epc {
+    text-align: center;
+    position: relative;
+    top: 27px;
+}
+
+.build-epc-img {
+    width: 50%;
+}
+
+
+.Deskripsi-Epc .txt-judul-epc {
+    position: relative;
+    top: 13px;
+    width: 50%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Deskripsi-Epc .txt-judul-epc h1 {
+    text-align: center;
+    margin: 5px;
+    font-size: 8px;
+    color: white;
+
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc {
+    background-color: #F2EFD5;
+    width: 70%;
+    height: 120px;
+    margin: auto;
+    border-radius: 20px;
+    bottom: 0;
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 7px;
+    margin: auto;
+    padding: 16px 8px;
+}
+
+.pembatas-awan-epc-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -190px;
+    height: 70vh;
+    left: 0;
+    right: 0;
+}
+
+/*Sec 3*/ 
+.prizepool-epc {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+
+/*Sec 4*/ 
+.benefit-epc {
+    background-size: 100%;
+    height: 50vh;
+    margin: auto;
+}
+
+.pembatas-awan-epc-2 {
+    top: 590px;
+    bottom: 0px;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+
+.benefit-epc .box-benefit-epc{
+    margin: auto;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 95%;   
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc {
+    width: 100%;
+    text-align: center;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h1{
+    font-size: 35px;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h3{
+    font-size: 15px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 200px;
+    border-radius: 13px;
+    border: 3px solid  #000000;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc {
+    width: 57%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc p{
+    font-size: 10px;
+    margin: 10px 0px;
+    width: 270px;
+    border-radius: 8px;
+    padding: 6px 30px;
+}
+
+.pembatas-awan-epc-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60vh;
+    top: 900px;
+    right: 0;
+    left: 0;
+}
+/*Sec 5*/ 
+.timeline-epc {
+    height: 70vh;
+}
+
+.timeline-epc .title-timeline-epc {
+    padding-top: 70px;
+}
+
+.timeline-epc .title-timeline-epc h2 {
+    font-size: 20px;
+    width: 200px;
+    border-radius: 12px;
+    border: 3px solid #112E41;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-epc .title-timeline-epc h1{
+    font-size: 40px;
+    margin: 10px 0px;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-epc .title-timeline-epc .img-timeline-epc {
+    margin: 20px 0px;
+}
+
+.city-epc {
+     top: 40px;
+    
+    }
+    
+.road-epc{
+     top: 24px;   
+    }
+}
+
+ @media only screen and (max-width: 390px) {
+    
+/*Sec 1*/    
+    .Judul-Epc {
+        width: 84%;
+        height: 40vh;
+        margin: auto;
+        padding: 100px 0px 0px;
+    }
+    
+    .Judul-Epc h1 {
+        font-family: "poppins";
+        font-size: 60px;
+        text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+        margin: auto;
+    }
+    
+    .Judul-Epc p {
+        font-size: 15px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+/*Sec 2*/ 
+
+.build-epc {
+    text-align: center;
+    position: relative;
+    top: 27px;
+}
+
+.build-epc-img {
+    width: 50%;
+}
+
+
+.Deskripsi-Epc .txt-judul-epc {
+    position: relative;
+    top: 13px;
+    width: 50%;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Deskripsi-Epc .txt-judul-epc h1 {
+    text-align: center;
+    margin: 5px;
+    font-size: 8px;
+    color: white;
+
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc {
+    background-color: #F2EFD5;
+    width: 70%;
+    height: 120px;
+    margin: auto;
+    border-radius: 20px;
+    bottom: 0;
+}
+
+.Deskripsi-Epc .txt-deskripsi-epc p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 7px;
+    margin: auto;
+    padding: 16px 8px;
+}
+
+.pembatas-awan-epc-1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -8vh;
+    height: 22vh;
+    left: 0;
+    right: 0;
+}
+
+/*Sec 3*/ 
+.prizepool-epc {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+
+/*Sec 4*/ 
+.benefit-epc {
+    background-size: 100%;
+    height: 46vh;
+    margin: auto;
+}
+
+.pembatas-awan-epc-2 {
+    top: -9vh;
+    bottom: 0px;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+
+.benefit-epc .box-benefit-epc{
+    margin: auto;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 95%;   
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc {
+    width: 100%;
+    text-align: center;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h1{
+    font-size: 35px;
+}
+
+.benefit-epc .box-benefit-epc .title-benefit-epc h3{
+    font-size: 15px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 200px;
+    border-radius: 12px;
+    border: 3px solid  #000000;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc {
+    width: 58%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.benefit-epc .box-benefit-epc .desk-benefit-epc p{
+    font-size: 8px;
+    margin: 10px 0px;
+    width: 210px;
+    border-radius: 8px;
+    padding: 6px 20px;
+}
+
+.pembatas-awan-epc-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 22vh;
+    top: 40vh;
+    right: 0;
+    left: 0;
+}
+/*Sec 5*/ 
+.timeline-epc {
+    height: 40vh;
+}
+
+.timeline-epc .title-timeline-epc {
+    padding-top: 50px;
+}
+
+.timeline-epc .title-timeline-epc h2 {
+    font-size: 16px;
+    width: 180px;
+    border-radius: 15px;
+
+}
+
+.timeline-epc .title-timeline-epc h1{
+    font-size: 40px;
+    margin: 10px 0px;
+}
+
+.timeline-epc .title-timeline-epc .img-timeline-epc {
+    margin: 20px 0px;
+}
+
+.city-epc {
+     top: 40px;
+    
+    }
+    
+.road-epc{
+     top: 24px;   
+    }
+
+}

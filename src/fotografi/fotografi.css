@@ -1,0 +1,1683 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900,800&family=Poppins:wght@600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap");
+
+.Fotografi {
+    background-image: url(./asset-Fotografi/Background\ Design\ --------------------------------------------\ \(2\).svg);
+    background-size: cover;
+
+}
+
+.Judul-Fotografi {
+    width: 84%;
+    height: 100vh;
+    margin: auto;
+    padding: 300px 0px 0px;
+}
+
+.Judul-Fotografi h1 {
+    font-family: "poppins";
+    font-size: 125px;
+    text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+    color: #693636;
+    margin: auto;
+}
+
+
+
+.Judul-Fotografi p {
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.Deskripsi-Fotografi {
+    position: relative;
+}
+
+.build-Fotografi {
+    text-align: center;
+    position: relative;
+    top: 56px;
+}
+
+.build-Fotografi-img {
+    width: 700px;
+}
+
+.Judul-Fotografi .Judul-Fotografi-container{
+
+}
+
+.Deskripsi-Fotografi .txt-judul-Fotografi {
+    position: relative;
+    top: 29px;
+    width: fit-content;
+    margin: auto;
+    background-color: #5A8EAF;
+    border: 4px solid #000000;
+    border-radius: 50px;
+    box-shadow: -7px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Deskripsi-Fotografi .txt-judul-Fotografi h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 26px;
+    color: white;
+
+}
+
+.Deskripsi-Fotografi .txt-deskripsi-Fotografi {
+    background-color: #F2EFD5;
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    border-radius: 50px;
+    bottom: 0;
+}
+
+.Deskripsi-Fotografi .txt-deskripsi-Fotografi p{
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 19px;
+    margin: auto;
+    padding: 48px 80px;
+}
+
+
+.pembatas-awan-Fotografi-1 {
+    background-image: url(./asset-Fotografi/Cloud.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -20vh;
+    height: 70vh;
+    left: 0;
+    right: 0;
+}
+
+
+
+.prizepool-Fotografi {
+   
+    margin: 200px 0px;
+    text-align: center;
+}
+
+.prizepool-Fotografi .prizepool-img-Fotografi{
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.prizepool-Fotografi .prizepool-img-Fotografi .img-pp-Fotografi {
+    width: 90%;
+}
+
+
+.benefit-Fotografi {
+    position: relative;
+    background-image: url(./asset-Fotografi/Group\ 224.png);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+}
+
+.pembatas-awan-Fotografi-2 {
+    background: url(./asset-Fotografi/cloud\ \(2\).svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -37vh;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+
+.benefit-Fotografi .box-benefit-Fotografi{
+    padding-top: 30vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+     align-items: center;
+}
+
+.benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+   
+}
+
+.benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h1{
+    color: #FF880B;
+    font-family: "poppins";
+    font-weight: 900;
+    font-size: 90px;
+    margin: auto;
+}
+
+.benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h3{
+    color: white;
+    font-weight: 900;
+    font-size: 27px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 450px;
+    border-radius: 18px;
+    padding: 6px 0px;
+    border: 5px solid  #000000;
+}
+
+.benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi {
+    width: 50%;
+}
+
+.benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi p{
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    background-color: #275A7B;
+    margin: 20px 30px;
+    width: 500px;
+    border-radius: 16px;
+    padding: 6px 30px;
+}
+
+.pembatas-awan-Fotografi-3 {
+    background-image: url(./asset-Fotografi/cloud\ \(1\).svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 60vh;
+    position: absolute;
+    top: 68vh;
+    right: 0;
+    left: 0;
+}
+
+.timeline-Fotografi {
+    height: 150vh;
+}
+
+.timeline-Fotografi .title-timeline-Fotografi {
+    
+    margin: auto;
+    padding-top: 300px;
+    text-align: center;
+}
+
+.timeline-Fotografi .title-timeline-Fotografi h2 {
+    color: #F2EFD5;
+    font-family: "poppins";
+    background-color: #5A8EAF;
+    font-size: 40px;
+    margin: auto;
+    width: 400px;
+    border-radius: 25px;
+    border: 5px solid #112E41;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-Fotografi .title-timeline-Fotografi h1{
+    color: white;
+    font-family: "poppins";
+    font-size: 80px;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.3);
+    margin: 10px 0px;
+}
+
+.timeline-Fotografi .title-timeline-Fotografi .img-timeline-Fotografi {
+    width: 90%;
+}
+
+@media only screen and (max-width: 1880px) {
+    .pembatas-awan-Fotografi-1 {
+        bottom: -25vh;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+
+    .pembatas-awan-Fotografi-2 {
+        top: -32vh;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+
+    .pembatas-awan-Fotografi-3 {
+        height: 60vh;
+        top: 69vh;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 1760px) {
+.pembatas-awan-Fotografi-1 {
+    bottom: -28vh;
+    height: 70vh;
+    left: 0;
+    right: 0;
+}
+
+.pembatas-awan-Fotografi-2 {
+    top: -30vh;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+
+.pembatas-awan-Fotografi-3 {
+    height: 60vh;
+    top: 72vh;
+    right: 0;
+    left: 0;
+}
+}
+
+@media only screen and (max-width: 1600px) {
+.pembatas-awan-Fotografi-1 {
+    bottom: -31vh;
+    height: 70vh;
+    left: 0;
+    right: 0;
+}
+    
+.pembatas-awan-Fotografi-2 {
+    top: -28vh;
+    height: 60vh;
+    right: 0;
+    left: 0;
+}
+    
+.pembatas-awan-Fotografi-3 {
+    height: 60vh;
+    top: 73vh;
+    right: 0;
+    left: 0;
+    }
+}
+
+@media only screen and (max-width: 1490px) {
+    .pembatas-awan-Fotografi-1 {
+        bottom: -35vh;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+        
+    .pembatas-awan-Fotografi-2 {
+        top: -26vh;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+        
+    .pembatas-awan-Fotografi-3 {
+        height: 60vh;
+        top: 74vh;
+        right: 0;
+        left: 0;
+        }
+}
+
+@media only screen and (max-width: 1356px) {
+    /*Sec 1*/    
+    .Judul-Fotografi {
+        width: 84%;
+        height: 90vh;
+        margin: auto;
+        padding: 200px 0px 0px;
+    }
+        
+    .Judul-Fotografi h1 {
+        font-family: "poppins";
+        font-size: 108px;
+        text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+        margin: auto;
+    }
+        
+    .Judul-Fotografi p {
+        font-size: 28px;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    /*Sec 2*/ 
+    
+    .build-Fotografi {
+        text-align: center;
+        position: relative;
+        top: 58px;
+    }
+    
+    .build-Fotografi-img {
+        width: 50%;
+    }
+    
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi {
+        position: relative;
+        top: 29px;
+        width: 43%;
+        margin: auto;
+        background-color: #5A8EAF;
+        border: 4px solid #000000;
+        border-radius: 50px;
+        box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi h1 {
+        text-align: center;
+        margin: 10px;
+        font-size: 26px;
+        color: white;
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi {
+        background-color: #F2EFD5;
+        width: 60%;
+        height: 310px;
+        margin: auto;
+        border-radius: 45px;
+        bottom: 0;
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi p{
+        width: 90%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 18px;
+        margin: auto;
+        padding: 50px 70px;
+    }
+    
+    .pembatas-awan-Fotografi-1 {
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -37vh;
+        left: 0;
+        right: 0;
+    }
+    
+    /*Sec 3*/ 
+    .prizepool-Fotografi {
+        margin: 200px 0px;
+        text-align: center;
+    }
+    
+    
+    /*Sec 4*/ 
+    .benefit-Fotografi {
+        background-size: 100%;
+        height: 85vh;
+        margin: auto;
+    }
+    
+    .pembatas-awan-Fotografi-2 {
+        top: -25vh;
+        bottom: 0px;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi{
+        margin: auto;
+        padding-top: 240px;
+        flex-direction: row;
+        width: 90%;     
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi {
+        width: 40%;
+        text-align: center;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h1{
+        font-size: 75px;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h3{
+        background-color: #5A8EAF;
+        font-size: 24px;
+        margin: auto;
+        width: 400px;
+        border-radius: 15px;
+        border: 5px solid  #000000;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi {
+        width: 60%;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi p{
+        font-size: 24px;
+        margin: 20px 50px;
+        width: 500px;
+        border-radius: 13px;
+        padding: 6px 30px;
+    }
+    
+    .pembatas-awan-Fotografi-3 {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 60vh;
+        top: 71vh;
+        right: 0;
+        left: 0;
+    }
+    /*Sec 5*/ 
+    .timeline-Fotografi {
+        height: 180vh;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi {
+        padding-top: 300px;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h2 {
+        font-size: 40px;
+        width: 400px;
+        border-radius: 15px
+    
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h1{
+        font-size: 80px;
+        margin: 20px 0px;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi .img-timeline-Fotografi {
+        margin: 100px 0px;
+    }
+    
+}
+    
+@media only screen and (max-width: 1240px) {
+        .pembatas-awan-Fotografi-1 {
+            bottom: -15vh;
+            height: 46vh;
+            left: 0;
+            right: 0;
+        }
+    
+        .pembatas-awan-Fotografi-2 {
+            top: -23vh;
+            height: 40vh;
+            left: 0;
+            right: 0;
+        }
+    
+        .pembatas-awan-Fotografi-3 {
+            top: 71vh;
+            height: 33vh;
+            left: 0;
+            right: 0;
+        }
+}
+
+@media only screen and (max-width: 1130px) {
+     /*Sec 1*/
+        .Judul-Fotografi {
+            width: 84%;
+            height: 90vh;
+            margin: auto;
+            padding: 200px 0px 0px;
+        }
+            
+        .Judul-Fotografi h1 {
+            font-family: "poppins";
+            font-size: 108px;
+            text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+            margin: auto;
+        }
+            
+        .Judul-Fotografi p {
+            font-size: 28px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        /*Sec 2*/ 
+        .Deskripsi-Fotografi {
+            position: relative;
+        }
+        
+
+        .build-Fotografi {
+            text-align: center;
+            position: relative;
+            top: 58px;
+        }
+        
+        .build-Fotografi-img {
+            width: 50%;
+        }
+        
+        
+        .Deskripsi-Fotografi .txt-judul-Fotografi {
+            position: relative;
+            top: 29px;
+            width: 50%;
+            margin: auto;
+            background-color: #5A8EAF;
+            border: 4px solid #000000;
+            border-radius: 50px;
+            box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .Deskripsi-Fotografi .txt-judul-Fotografi h1 {
+            text-align: center;
+            margin: 10px;
+            font-size: 26px;
+            color: white;
+        }
+        
+        .Deskripsi-Fotografi .txt-deskripsi-Fotografi {
+            background-color: #F2EFD5;
+            width: 60%;
+            height: 280px;
+            margin: auto;
+            border-radius: 45px;
+            bottom: 0;
+        }
+        
+        .Deskripsi-Fotografi .txt-deskripsi-Fotografi p{
+            width: 90%;
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            margin: auto;
+            padding: 40px 70px;
+        } 
+        
+        .pembatas-awan-Fotografi-1 {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -23vh;
+            height: 50vh;
+            left: 0;
+            right: 0;
+        }
+        
+        /*Sec 3*/ 
+        .prizepool-Fotografi {
+            margin: 200px 0px;
+            text-align: center;
+        }
+        
+        
+        /*Sec 4*/ 
+        .benefit-Fotografi {
+            background-size: 100%;
+            height: 65vh;
+            margin: auto;
+        }
+        
+        .pembatas-awan-Fotografi-2 {
+            top: -20vh;
+            bottom: 0px;
+            height: 60vh;
+            right: 0;
+            left: 0;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi{
+            margin: auto;
+            padding-top: 170px;
+            flex-direction: row;
+            width: 90%;     
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi {
+            width: 40%;
+            text-align: center;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h1{
+            font-size: 57px;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h3{
+            background-color: #5A8EAF;
+            font-size: 20px;
+            margin: auto;
+            width: 330px;
+            border-radius: 15px;
+            border: 5px solid  #000000;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi {
+            width: 60%;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi p{
+            font-size: 20px;
+            margin: 20px 30px;
+            width: 400px;
+            border-radius: 13px;
+            padding: 6px 30px;
+        }
+        
+        .pembatas-awan-Fotografi-3 {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 60vh;
+            top: 53vh;
+            right: 0;
+            left: 0;
+        }
+        /*Sec 5*/ 
+        .timeline-Fotografi {
+            height: 180vh;
+        }
+        
+        .timeline-Fotografi .title-timeline-Fotografi {
+            padding-top: 300px;
+        }
+        
+        .timeline-Fotografi .title-timeline-Fotografi h2 {
+            font-size: 40px;
+            width: 400px;
+            border-radius: 15px
+        
+        }
+        
+        .timeline-Fotografi .title-timeline-Fotografi h1{
+            font-size: 80px;
+            margin: 20px 0px;
+        }
+        
+        .timeline-Fotografi .title-timeline-Fotografi .img-timeline-Fotografi {
+            margin: 100px 0px;
+        }
+        
+        .city-Fotografi {
+             top: 49px;
+            
+            }
+            
+        .road-Fotografi{
+             top: 19px;   
+            }
+    }
+    
+@media only screen and (max-width: 1040px) {
+        /*Sec 1*/
+.Judul-Fotografi {
+    width: 84%;
+    height: 90vh;
+    margin: auto;
+    padding: 200px 0px 0px;
+}
+            
+        .Judul-Fotografi h1 {
+            font-family: "poppins";
+            font-size: 90px;
+            text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.4);
+            margin: auto;
+        }
+            
+        .Judul-Fotografi p {
+            font-size: 22px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        /*Sec 2*/ 
+        
+        .build-Fotografi {
+            text-align: center;
+            position: relative;
+            top: 58px;
+        }
+        
+        .build-Fotografi-img {
+            width: 50%;
+        }
+        
+        
+        .Deskripsi-Fotografi .txt-judul-Fotografi {
+            position: relative;
+            top: 29px;
+            width: 50%;
+            margin: auto;
+            background-color: #5A8EAF;
+            border: 4px solid #000000;
+            border-radius: 50px;
+            box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .Deskripsi-Fotografi .txt-judul-Fotografi h1 {
+            text-align: center;
+            margin: 7px;
+            font-size: 22px;
+            color: white;
+        }
+        
+        .Deskripsi-Fotografi .txt-deskripsi-Fotografi {
+            background-color: #F2EFD5;
+            width: 60%;
+            height: 220px;
+            margin: auto;
+            border-radius: 45px;
+            bottom: 0;
+        }
+        
+        .Deskripsi-Fotografi .txt-deskripsi-Fotografi p{
+            width: 90%;
+            font-weight: bold;
+            text-align: center;
+            font-size: 13px;
+            margin: auto;
+            padding: 40px 50px;
+        }
+        
+        .pembatas-awan-Fotografi-1 {
+            background-repeat: no-repeat;
+            position: absolute;
+            background-size: cover;
+            bottom: -11vh;
+            height: 35vh;
+            left: 0;
+            right: 0;
+        }
+        
+        /*Sec 3*/ 
+        .prizepool-Fotografi {
+            margin: 200px 0px;
+            text-align: center;
+        }
+        
+        
+        /*Sec 4*/ 
+        .benefit-Fotografi {
+            background-size: 100%;
+            height: 85vh;
+            margin: auto;
+        }
+        
+        .pembatas-awan-Fotografi-2 {
+            top: -18vh;
+            height: 34vh;
+            right: 0;
+            left: 0;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi{
+            margin: auto;
+            padding-top: 190px;
+            flex-direction: column;
+            width: 90%;     
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi {
+            width: 50%;
+            text-align: center;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h1{
+            font-size: 75px;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h3{
+            background-color: #5A8EAF;
+            margin: auto;
+            width: 400px;
+            font-size: 24px;
+            border-radius: 15px;
+            border: 4px solid  #000000;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi {
+            position: relative;
+            width: 50%;
+            text-align: center;
+            top: 20px;
+        }
+        
+        .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi p{
+            font-size: 20px;
+            margin: 20px auto;
+            width: 400px;
+            border-radius: 12px;
+            padding: 6px 30px;
+        }
+        
+        .pembatas-awan-Fotografi-3 {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 37vh;
+            top: 74vh;
+            right: 0;
+            left: 0;
+        }
+        /*Sec 5*/ 
+        .timeline-Fotografi {
+            height: 180vh;
+        }
+        
+        .timeline-Fotografi .title-timeline-Fotografi {
+            padding-top: 300px;
+        }
+        
+        .timeline-Fotografi .title-timeline-Fotografi h2 {
+            font-size: 40px;
+            width: 400px;
+            border-radius: 15px;
+        
+        }
+        
+        .timeline-Fotografi .title-timeline-Fotografi h1{
+            font-size: 80px;
+            margin: 20px 0px;
+        }
+        
+        .timeline-Fotografi .title-timeline-Fotografi .img-timeline-Fotografi {
+            margin: 100px 0px;
+        }
+        
+        .city-Fotografi {
+             top: 49px;
+            
+            }
+            
+        .road-Fotografi{
+             top: 19px;   
+            }
+    }
+ 
+@media only screen and (max-width: 945px) {
+    .pembatas-awan-Fotografi-1 {
+        bottom: -9vh;
+        height: 32vh;
+        left: 0;
+        right: 0;
+    }
+
+    .pembatas-awan-Fotografi-2 {
+        top: -16vh;
+        height: 32vh;
+        left: 0;
+        right: 0;
+    }
+
+    .pembatas-awan-Fotografi-3 {
+        top: 75vh;
+        height: 33vh;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    /*Sec 1*/    
+    .Judul-Fotografi {
+        width: 84%;
+        height: 50vh;
+        margin: auto;
+        padding: 200px 0px 0px;
+        }
+        
+    .Judul-Fotografi h1 {
+        font-family: "poppins";
+        font-size: 80px;
+        text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+        margin: auto;
+    }
+        
+    .Judul-Fotografi p {
+        font-size: 20px;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    /*Sec 2*/ 
+    
+    .build-Fotografi {
+        text-align: center;
+        position: relative;
+        top: 34px;
+    }
+    
+    .build-Fotografi-img {
+        width: 50%;
+    }
+    
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi {
+        position: relative;
+        top: 13px;
+        width: 41%;
+        margin: auto;
+        background-color: #5A8EAF;
+        border: 3px solid #000000;
+        border-radius: 20px;
+        box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi h1 {
+        text-align: center;
+        margin: 5px;
+        font-size: 15px;
+        color: white;
+    
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi {
+        background-color: #F2EFD5;
+        width: 60%;
+        height: 180px;
+        margin: auto;
+        border-radius: 30px;
+        bottom: 0;
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi p{
+        width: 90%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 12px;
+        margin: auto;
+        padding: 20px 10px;
+    }
+    
+    .pembatas-awan-Fotografi-1 {
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -12vh;
+        height: 33vh;
+        left: 0;
+        right: 0;
+    }
+    
+    /*Sec 3*/ 
+    .prizepool-Fotografi {
+        margin: 140px 0px;
+        text-align: center;
+    }
+    
+    
+    /*Sec 4*/ 
+    .benefit-Fotografi {
+        background-size: 100%;
+        height: 50vh;
+        margin: auto;
+    }
+    
+    .pembatas-awan-Fotografi-2 {
+        top: -15vh;
+        bottom: 0px;
+        height: 25vh;
+        right: 0;
+        left: 0;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi{
+        margin: auto;
+        padding-top: 90px;
+        flex-direction: column;
+        width: 95%;   
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h1{
+        font-size: 40px;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h3{
+        font-size: 15px;
+        background-color: #5A8EAF;
+        margin: auto;
+        width: 250px;
+        border-radius: 15px;
+        border: 3px solid  #000000;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi {
+        width: 50%;
+        padding-top: 20px;
+        margin: auto;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi p{
+        font-size: 13px;
+        margin: 10px 0px;
+        width: 320px;
+        border-radius: 10px;
+        padding: 6px 30px;
+    }
+    
+    .pembatas-awan-Fotografi-3 {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 30vh;
+        top: 40vh;
+        right: 0;
+        left: 0;
+    }
+    /*Sec 5*/ 
+    .timeline-Fotografi {
+        height: 60vh;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi {
+        padding-top: 90px;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h2 {
+        font-size: 25px;
+        width: 250px;
+        border-radius: 15px;
+        border: 4px solid #112E41;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h1{
+        font-size: 55px;
+        margin: 20px 0px;
+        text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi .img-timeline-Fotografi {
+        margin: 60px 0px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .pembatas-awan-Fotografi-1 {
+        bottom: -7vh;
+        height: 25vh;
+        left: 0;
+        right: 0;
+    }
+
+    .pembatas-awan-Fotografi-2 {
+        top: -12vh;
+        height: 32vh;
+        left: 0;
+        right: 0;
+    }
+
+    .pembatas-awan-Fotografi-3 {
+        top: 43vh;
+        height: 33vh;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    /*Sec 1*/    
+    .Judul-Fotografi {
+        width: 84%;
+        height: 50vh;
+        margin: auto;
+        padding: 100px 0px 0px;
+        }
+        
+    .Judul-Fotografi h1 {
+        font-family: "poppins";
+        font-size: 60px;
+        text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+        margin: auto;
+    }
+        
+    .Judul-Fotografi p {
+        font-size: 16px;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    /*Sec 2*/ 
+    
+    .build-Fotografi {
+        text-align: center;
+        position: relative;
+        top: 34px;
+    }
+    
+    .build-Fotografi-img {
+        width: 50%;
+    }
+    
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi {
+        position: relative;
+        top: 13px;
+        width: 50%;
+        margin: auto;
+        background-color: #5A8EAF;
+        border: 3px solid #000000;
+        border-radius: 20px;
+        box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi h1 {
+        text-align: center;
+        margin: 5px;
+        font-size: 15px;
+        color: white;
+    
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi {
+        background-color: #F2EFD5;
+        width: 70%;
+        height: 120px;
+        margin: auto;
+        border-radius: 20px;
+        bottom: 0;
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi p{
+        width: 90%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 9px;
+        margin: auto;
+        padding: 16px 8px;
+    }
+    
+    .pembatas-awan-Fotografi-1 {
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -190px;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+    
+    /*Sec 3*/ 
+    .prizepool-Fotografi {
+        margin: 140px 0px;
+        text-align: center;
+    }
+    
+    
+    /*Sec 4*/ 
+    .benefit-Fotografi {
+        background-size: 100%;
+        height: 50vh;
+        margin: auto;
+    }
+    
+    .pembatas-awan-Fotografi-2 {
+        top: 590px;
+        bottom: 0px;
+        height: 20vh;
+        right: 0;
+        left: 0;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi{
+        margin: auto;
+        padding-top: 40px;
+        flex-direction: column;
+        width: 95%;   
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h1{
+        font-size: 40px;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h3{
+        font-size: 15px;
+        background-color: #5A8EAF;
+        margin: auto;
+        width: 200px;
+        border-radius: 13px;
+        border: 3px solid  #000000;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi {
+        width: 48%;
+        padding-top: 20px;
+        margin: auto;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi p{
+        font-size: 11px;
+        margin: 10px 0px;
+        width: 290px;
+        border-radius: 10px;
+        padding: 6px 30px;
+    }
+    
+    .pembatas-awan-Fotografi-3 {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 60vh;
+        top: 900px;
+        right: 0;
+        left: 0;
+    }
+    /*Sec 5*/ 
+    .timeline-Fotografi {
+        height: 70vh;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi {
+        padding-top: 70px;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h2 {
+        font-size: 20px;
+        width: 200px;
+        border-radius: 12px;
+        border: 3px solid #112E41;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h1{
+        font-size: 40px;
+        margin: 10px 0px;
+        text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi .img-timeline-Fotografi {
+        margin: 20px 0px;
+    }
+    
+    .city-Fotografi {
+         top: 40px;
+        
+        }
+        
+    .road-Fotografi{
+         top: 24px;   
+        }
+    }
+    
+@media only screen and (max-width: 508px) {
+    /*Sec 1*/    
+    .Judul-Fotografi {
+        width: 84%;
+        height: 40vh;
+        margin: auto;
+        padding: 100px 0px 0px;
+        }
+        
+    .Judul-Fotografi h1 {
+        font-family: "poppins";
+        font-size: 60px;
+        text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+        margin: auto;
+    }
+        
+    .Judul-Fotografi p {
+        font-size: 15px;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    /*Sec 2*/ 
+    
+    .build-Fotografi {
+        text-align: center;
+        position: relative;
+        top: 27px;
+    }
+    
+    .build-Fotografi-img {
+        width: 50%;
+    }
+    
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi {
+        position: relative;
+        top: 13px;
+        width: 50%;
+        margin: auto;
+        background-color: #5A8EAF;
+        border: 3px solid #000000;
+        border-radius: 20px;
+        box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi h1 {
+        text-align: center;
+        margin: 5px;
+        font-size: 8px;
+        color: white;
+    
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi {
+        background-color: #F2EFD5;
+        width: 70%;
+        height: 120px;
+        margin: auto;
+        border-radius: 20px;
+        bottom: 0;
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi p{
+        width: 90%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 7px;
+        margin: auto;
+        padding: 16px 8px;
+    }
+    
+    .pembatas-awan-Fotografi-1 {
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -190px;
+        height: 70vh;
+        left: 0;
+        right: 0;
+    }
+    
+    /*Sec 3*/ 
+    .prizepool-Fotografi {
+        margin: 40px 0px;
+        text-align: center;
+    }
+    
+    
+    /*Sec 4*/ 
+    .benefit-Fotografi {
+        background-size: 100%;
+        height: 50vh;
+        margin: auto;
+    }
+    
+    .pembatas-awan-Fotografi-2 {
+        top: 590px;
+        bottom: 0px;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi{
+        margin: auto;
+        padding-top: 40px;
+        flex-direction: column;
+        width: 95%;   
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h1{
+        font-size: 35px;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h3{
+        font-size: 15px;
+        background-color: #5A8EAF;
+        margin: auto;
+        width: 200px;
+        border-radius: 13px;
+        border: 3px solid  #000000;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi {
+        width: 57%;
+        padding-top: 20px;
+        margin: auto;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi p{
+        font-size: 10px;
+        margin: 10px 0px;
+        width: 270px;
+        border-radius: 8px;
+        padding: 6px 30px;
+    }
+    
+    .pembatas-awan-Fotografi-3 {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 60vh;
+        top: 900px;
+        right: 0;
+        left: 0;
+    }
+    /*Sec 5*/ 
+    .timeline-Fotografi {
+        height: 70vh;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi {
+        padding-top: 70px;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h2 {
+        font-size: 20px;
+        width: 200px;
+        border-radius: 12px;
+        border: 3px solid #112E41;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h1{
+        font-size: 40px;
+        margin: 10px 0px;
+        text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi .img-timeline-Fotografi {
+        margin: 20px 0px;
+    }
+    
+    .city-Fotografi {
+         top: 40px;
+        
+        }
+        
+    .road-Fotografi{
+         top: 24px;   
+        }
+    }
+    
+@media only screen and (max-width: 390px) {
+        
+    /*Sec 1*/    
+        .Judul-Fotografi {
+            width: 84%;
+            height: 40vh;
+            margin: auto;
+            padding: 100px 0px 0px;
+        }
+        
+        .Judul-Fotografi h1 {
+            font-family: "poppins";
+            font-size: 40px;
+            text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.4);
+            margin: auto;
+        }
+        
+        .Judul-Fotografi p {
+            font-size: 13px;
+            margin: 0;
+            font-weight: bold;
+        }
+    
+    /*Sec 2*/ 
+    
+    .build-Fotografi {
+        text-align: center;
+        position: relative;
+        top: 27px;
+    }
+    
+    .build-Fotografi-img {
+        width: 50%;
+    }
+    
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi {
+        position: relative;
+        top: 13px;
+        width: 30%;
+        margin: auto;
+        background-color: #5A8EAF;
+        border: 3px solid #000000;
+        border-radius: 20px;
+        box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .Deskripsi-Fotografi .txt-judul-Fotografi h1 {
+        text-align: center;
+        margin: 5px;
+        font-size: 8px;
+        color: white;
+    
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi {
+        background-color: #F2EFD5;
+        width: 70%;
+        height: 120px;
+        margin: auto;
+        border-radius: 20px;
+        bottom: 0;
+    }
+    
+    .Deskripsi-Fotografi .txt-deskripsi-Fotografi p{
+        width: 90%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 7px;
+        margin: auto;
+        padding: 16px 8px;
+    }
+    
+    .pembatas-awan-Fotografi-1 {
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -8vh;
+        height: 22vh;
+        left: 0;
+        right: 0;
+    }
+    
+    /*Sec 3*/ 
+    .prizepool-Fotografi {
+        margin: 40px 0px;
+        text-align: center;
+    }
+    
+    
+    /*Sec 4*/ 
+    .benefit-Fotografi {
+        background-size: 100%;
+        height: 46vh;
+        margin: auto;
+    }
+    
+    .pembatas-awan-Fotografi-2 {
+        top: -9vh;
+        bottom: 0px;
+        height: 60vh;
+        right: 0;
+        left: 0;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi{
+        margin: auto;
+        padding-top: 40px;
+        flex-direction: column;
+        width: 95%;   
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h1{
+        font-size: 35px;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .title-benefit-Fotografi h3{
+        font-size: 12px;
+        background-color: #5A8EAF;
+        margin: auto;
+        width: 200px;
+        border-radius: 12px;
+        border: 3px solid  #000000;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi {
+        width: 58%;
+        padding-top: 10px;
+        margin: auto;
+    }
+    
+    .benefit-Fotografi .box-benefit-Fotografi .desk-benefit-Fotografi p{
+        font-size: 8px;
+        margin: 10px 0px;
+        width: 210px;
+        border-radius: 8px;
+        padding: 6px 20px;
+    }
+    
+    .pembatas-awan-Fotografi-3 {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 22vh;
+        top: 40vh;
+        right: 0;
+        left: 0;
+    }
+    /*Sec 5*/ 
+    .timeline-Fotografi {
+        height: 40vh;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi {
+        padding-top: 50px;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h2 {
+        font-size: 16px;
+        width: 180px;
+        border-radius: 15px;
+    
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi h1{
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    
+    .timeline-Fotografi .title-timeline-Fotografi .img-timeline-Fotografi {
+        margin: 20px 0px;
+    }
+    
+    .city-Fotografi {
+         top: 40px;
+        
+        }
+        
+    .road-Fotografi{
+         top: 24px;   
+        }
+    
+    }
+
