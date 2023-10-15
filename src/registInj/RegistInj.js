@@ -38,6 +38,7 @@ function Page1({ onNextPage, onBackPage }) {
               id="check"
               name="academic"
               ref={smaCheckbox}
+              defaultChecked={data.sma ?? false}
             ></input>
             <label for="check-SMA">SMA</label>
           </div>
@@ -48,6 +49,7 @@ function Page1({ onNextPage, onBackPage }) {
               id="check"
               name="academic"
               ref={kuliahCheckbox}
+              defaultChecked={data.kuliah ?? false}
             ></input>
             <label for="check-Kuliah">Kuliah</label>
           </div>
@@ -55,13 +57,13 @@ function Page1({ onNextPage, onBackPage }) {
 
         <div className="regist-inj-bar-input">
           <h2>Nama Tim</h2>
-          <input ref={namaTim}></input>
+          <input ref={namaTim} defaultValue={data.namaTim ?? ''} required></input>
           <h2>Nama Sekolah/Kampus</h2>
-          <input ref={namaSekolah}></input>
+          <input ref={namaSekolah} defaultValue={data.namaSekolah ?? ''} required></input>
           <h2>Nama Guru/Dosen Pembimbing</h2>
-          <input ref={namaGuru}></input>
+          <input ref={namaGuru} defaultValue={data.namaGuru ?? ''} required></input>
           <h2>No Telepon Guru/Dosen Pembimbing</h2>
-          <input ref={noTelp}></input>
+          <input ref={noTelp} defaultValue={data.noTelp ?? ''} required ></input>
 
           <div className="regist-inj-button">
             <div></div>
@@ -80,9 +82,12 @@ function Page2({ onNextPage, onBackPage, formData }) {
   const nisnKetua = useRef();
   const noTelpKetua = useRef();
   const handleNext = () => {
-    data.namaKetua = namaKetua.current?.value;
-    data.nisnKetua = nisnKetua.current?.value;
-    data.noTelpKetua = noTelpKetua.current?.value;
+    data.anggota[0] = {
+      nama_lengkap: namaKetua.current?.value,
+      nim: nisnKetua.current?.value,
+      nomor_telepon: noTelpKetua.current?.value,
+      email: '',
+    };
     onNextPage(3, { ...formData, email });
   };
 
@@ -95,11 +100,11 @@ function Page2({ onNextPage, onBackPage, formData }) {
       <div className="regist-inj-bar-input">
         <h1>Identitas Ketua</h1>
         <h2>Nama Ketua</h2>
-        <input ref={namaKetua}></input>
+        <input ref={namaKetua} defaultValue={data.anggota[0]?.nama_lengkap ?? ''}></input>
         <h2>NISN/NIM Ketua</h2>
-        <input ref={nisnKetua}></input>
+        <input ref={nisnKetua} defaultValue={data.anggota[0]?.nim ?? ''}></input>
         <h2>No Telepon Ketua</h2>
-        <input ref={noTelpKetua}></input>
+        <input ref={noTelpKetua}  defaultValue={data.anggota[0]?.nomor_telepon ?? ''}></input>
 
         <div className="regist-inj-button">
           <button onClick={handleBack}>Back</button>
@@ -118,7 +123,7 @@ function Page3({ onNextPage, onBackPage, formAnggota1 }) {
   const emailAnggota = useRef();
 
   const handleNext = () => {
-    data.anggota[0] = {
+    data.anggota[1] = {
       nama_lengkap: namaAnggota.current?.value,
       nim: nisnAnggota.current?.value,
       nomor_telepon: noTelpAnggota.current?.value,
@@ -135,13 +140,13 @@ function Page3({ onNextPage, onBackPage, formAnggota1 }) {
       <div className="regist-inj-bar-input">
         <h1>Identitas Anggota 1 </h1>
         <h2>Nama Anggota 1</h2>
-        <input ref={namaAnggota}></input>
+        <input ref={namaAnggota} defaultValue={data.anggota[1]?.nama_lengkap ?? ''}></input>
         <h2>NISN/NIM Anggota 1</h2>
-        <input ref={nisnAnggota}></input>
+        <input ref={nisnAnggota} defaultValue={data.anggota[1]?.nim ?? ''}></input>
         <h2>No Telepon Anggota 1</h2>
-        <input ref={noTelpAnggota}></input>
+        <input ref={noTelpAnggota} defaultValue={data.anggota[1]?.nomor_telepon ?? ''} ></input>
         <h2>Email Anggota 1</h2>
-        <input ref={emailAnggota}></input>
+        <input ref={emailAnggota} defaultValue={data.anggota[1]?.email ?? ''}></input>
 
         <div className="regist-inj-button">
           <button onClick={handleBack}>Back</button>
@@ -159,7 +164,7 @@ function Page4({ onNextPage, onBackPage, formAnggota2 }) {
   const noTelpAnggota = useRef();
   const emailAnggota = useRef();
   const handleNext = () => {
-    data.anggota[1] = {
+    data.anggota[2] = {
       nama_lengkap: namaAnggota.current?.value,
       nim: nisnAnggota.current?.value,
       nomor_telepon: noTelpAnggota.current?.value,
@@ -176,13 +181,13 @@ function Page4({ onNextPage, onBackPage, formAnggota2 }) {
       <div className="regist-inj-bar-input">
         <h1>Identitas Anggota 2 </h1>
         <h2>Nama Anggota 2</h2>
-        <input ref={namaAnggota}></input>
+        <input ref={namaAnggota} defaultValue={data.anggota[2]?.nama_lengkap ?? ''}></input>
         <h2>NISN/NIM Anggota 2</h2>
-        <input ref={nisnAnggota}></input>
+        <input ref={nisnAnggota} defaultValue={data.anggota[2]?.nim ?? ''}></input>
         <h2>No Telepon Anggota 2</h2>
-        <input ref={noTelpAnggota}></input>
+        <input ref={noTelpAnggota} defaultValue={data.anggota[2]?.nomor_telepon ?? ''}></input>
         <h2>Email Anggota 2</h2>
-        <input ref={emailAnggota}></input>
+        <input ref={emailAnggota} defaultValue={data.anggota[2]?.email ?? ''}></input>
 
         <div className="regist-inj-button">
           <button onClick={handleBack}>Back</button>
