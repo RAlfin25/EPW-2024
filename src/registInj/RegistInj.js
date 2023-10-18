@@ -4,26 +4,71 @@ import React, { useState, useRef } from "react";
 import axios from "axios";
 
 const data = {
-  anggota: []
+  anggota: [],
 };
 
 function Page1({ onNextPage, onBackPage }) {
   const [name, setName] = useState("");
+  const [error, setError] = useState({
+    namaTim: false,
+    tingkat: false,
+    namaSekolah: false,
+    namaGuru: false,
+    noTelpGuru: false,
+    noTelpGuruNotNumber: false,
+  });
   const namaSekolah = useRef();
   const namaTim = useRef();
-  const  smaCheckbox = useRef();
+  const smaCheckbox = useRef();
   const kuliahCheckbox = useRef();
   const namaGuru = useRef();
-  const noTelp = useRef();  
+  const noTelp = useRef();
 
-  const handleNext = () => {    
+  const handleNext = () => {
     data.namaTim = namaTim.current?.value;
     data.namaSekolah = namaSekolah.current?.value;
     data.namaGuru = namaGuru.current?.value;
     data.noTelp = noTelp.current?.value;
-    data.sma = smaCheckbox.current?.value;
-    data.kuliah = kuliahCheckbox.current?.value;
-    onNextPage(2, { name });
+    data.sma = smaCheckbox.current?.checked;
+    data.kuliah = kuliahCheckbox.current?.checked;
+
+    let newError = {};
+    if (data.namaTim.length === 0) {
+      newError = { namaTim: true };
+      namaTim.current?.focus();
+    } else newError = { namaTim: false };
+
+    if (!data.sma && !data.kuliah) {
+      newError = { ...newError, tingkat: true };
+      smaCheckbox.current?.focus();
+    } else newError = { ...newError, tingkat: false };
+
+    if (!data.namaSekolah) {
+      newError = { ...newError, namaSekolah: true };
+      namaSekolah.current?.focus();
+    } else newError = { ...newError, namaSekolah: false };
+
+    if (!data.namaGuru) {
+      newError = { ...newError, namaGuru: true };
+      namaGuru.current?.focus();
+    } else newError = { ...newError, namaGuru: false };
+
+    if (!data.noTelp) {
+      newError = { ...newError, noTelpGuru: true };
+      noTelp.current?.focus();
+    } else newError = { ...newError, noTelpGuru: false };
+
+    if (isNaN(data.noTelp)) {
+      newError = { ...newError, noTelpGuruNotNumber: true };
+      noTelp.current?.focus();
+    } else newError = { ...newError, noTelpGuruNotNumber: false };
+
+    setError(newError);
+
+    console.log(error);
+    if (Object.values(newError).every((val) => val === false)) {
+      onNextPage(2, { name });
+    }
   };
 
   return (
@@ -31,6 +76,13 @@ function Page1({ onNextPage, onBackPage }) {
       <div className="regist-inj-bar-input">
         <h1>Identitas Tim</h1>
         <h2>Tingkat</h2>
+        {(() => {
+          if (error.tingkat) {
+            return (
+              <div className="regist-inj-error-msg">Pilih salah satu !</div>
+            );
+          }
+        })()}
         <div className="regist-inj-bar-checklist">
           <div className="regist-inj-bar-checklist-button1">
             <input
@@ -57,13 +109,67 @@ function Page1({ onNextPage, onBackPage }) {
 
         <div className="regist-inj-bar-input">
           <h2>Nama Tim</h2>
-          <input ref={namaTim} defaultValue={data.namaTim ?? ''} required></input>
+          {(() => {
+            if (error.namaTim) {
+              return (
+                <div className="regist-inj-error-msg">
+                  Nama Tim tidak boleh kosong !
+                </div>
+              );
+            }
+          })()}
+          <input
+            ref={namaTim}
+            defaultValue={data.namaTim ?? ""}
+            required
+          ></input>
           <h2>Nama Sekolah/Kampus</h2>
-          <input ref={namaSekolah} defaultValue={data.namaSekolah ?? ''} required></input>
+          {(() => {
+            if (error.namaSekolah) {
+              return (
+                <div className="regist-inj-error-msg">
+                  Nama Sekolah tidak boleh kosong !
+                </div>
+              );
+            }
+          })()}
+          <input
+            ref={namaSekolah}
+            defaultValue={data.namaSekolah ?? ""}
+            required
+          ></input>
           <h2>Nama Guru/Dosen Pembimbing</h2>
-          <input ref={namaGuru} defaultValue={data.namaGuru ?? ''} required></input>
+          {(() => {
+            if (error.namaGuru) {
+              return (
+                <div className="regist-inj-error-msg">
+                  Nama Guru/Dosen Pembimbing tidak boleh kosong !
+                </div>
+              );
+            }
+          })()}
+          <input
+            ref={namaGuru}
+            defaultValue={data.namaGuru ?? ""}
+            required
+          ></input>
           <h2>No Telepon Guru/Dosen Pembimbing</h2>
-          <input ref={noTelp} defaultValue={data.noTelp ?? ''} required ></input>
+          {(() => {
+            if (error.noTelpGuru) {
+              return (
+                <div className="regist-inj-error-msg">
+                  No Telp Guru/Dosen Pembimbing tidak boleh kosong !
+                </div>
+              );
+            } else if (error.noTelpGuruNotNumber) {
+              return (
+                <div className="regist-inj-error-msg">
+                  No Telp Guru/Dosen Pembimbing harus berupa angka !
+                </div>
+              );
+            }
+          })()}
+          <input ref={noTelp} defaultValue={data.noTelp ?? ""} required></input>
 
           <div className="regist-inj-button">
             <div></div>
@@ -78,17 +184,56 @@ function Page1({ onNextPage, onBackPage }) {
 
 function Page2({ onNextPage, onBackPage, formData }) {
   const [email, setEmail] = useState("");
+  const [error, setError] = useState({
+    namaKetua: false,
+    nisnKetua: false,
+    nisnKetuaNotNumber: false,
+    noTelpKetua: false,
+    noTelpKetuaNotNumber: false,
+    emailKetua: false,
+  });
   const namaKetua = useRef();
   const nisnKetua = useRef();
   const noTelpKetua = useRef();
+  const emailKetua = useRef();
   const handleNext = () => {
+    let newError = {};
+    if (!namaKetua.current?.value) {
+      newError = { namaKetua: true };
+    } else newError = { namaKetua: false };
+
+    if (!nisnKetua.current?.value) {
+      newError = { ...newError, nisnKetua: true };
+    } else newError = { ...newError, nisnKetua: false };
+
+    if (isNaN(nisnKetua.current?.value)) {
+      newError = { ...newError, nisnKetuaNotNumber: true };
+    } else newError = { ...newError, nisnKetuaNotNumber: false };
+
+    if (!noTelpKetua.current?.value) {
+      newError = { ...newError, noTelpKetua: true };
+    } else newError = { ...newError, noTelpKetua: false };
+
+    if (isNaN(noTelpKetua.current?.value)) {
+      newError = { ...newError, noTelpKetuaNotNumber: true };
+    } else newError = { ...newError, noTelpKetuaNotNumber: false };
+
+    if (!emailKetua.current?.value) {
+      newError = { ...newError, emailKetua: true };
+    } else newError = { ...newError, emailKetua: false };
+
+    setError(newError);
+
     data.anggota[0] = {
       nama_lengkap: namaKetua.current?.value,
       nim: nisnKetua.current?.value,
       nomor_telepon: noTelpKetua.current?.value,
-      email: '',
+      email: emailKetua.current?.value,
     };
-    onNextPage(3, { ...formData, email });
+
+    if (Object.values(newError).every((val) => val === false)) {
+      onNextPage(3, { ...formData, email });
+    }
   };
 
   const handleBack = () => {
@@ -100,11 +245,74 @@ function Page2({ onNextPage, onBackPage, formData }) {
       <div className="regist-inj-bar-input">
         <h1>Identitas Ketua</h1>
         <h2>Nama Ketua</h2>
-        <input ref={namaKetua} defaultValue={data.anggota[0]?.nama_lengkap ?? ''}></input>
+        {(() => {
+          if (error.namaKetua) {
+            return (
+              <div className="regist-inj-error-msg">
+                Nama Ketua Tim tidak boleh kosong !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={namaKetua}
+          defaultValue={data.anggota[0]?.nama_lengkap ?? ""}
+        ></input>
         <h2>NISN/NIM Ketua</h2>
-        <input ref={nisnKetua} defaultValue={data.anggota[0]?.nim ?? ''}></input>
+        {(() => {
+          if (error.nisnKetua) {
+            return (
+              <div className="regist-inj-error-msg">
+                NISN/NIM Ketua Tim tidak boleh kosong !
+              </div>
+            );
+          } else if (error.nisnKetuaNotNumber) {
+            return (
+              <div className="regist-inj-error-msg">
+                NISN/NIM Ketua Tim harus berupa angka !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={nisnKetua}
+          defaultValue={data.anggota[0]?.nim ?? ""}
+        ></input>
         <h2>No Telepon Ketua</h2>
-        <input ref={noTelpKetua}  defaultValue={data.anggota[0]?.nomor_telepon ?? ''}></input>
+        {(() => {
+          if (error.noTelpKetua) {
+            return (
+              <div className="regist-inj-error-msg">
+                Nomer Telepon Ketua Tim tidak boleh kosong !
+              </div>
+            );
+          } else if (error.noTelpKetuaNotNumber) {
+            return (
+              <div className="regist-inj-error-msg">
+                Nomer Telepon Ketua Tim harus berupa angka !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={noTelpKetua}
+          defaultValue={data.anggota[0]?.nomor_telepon ?? ""}
+        ></input>
+
+        <h2>Email Ketua</h2>
+        {(() => {
+          if (error.emailKetua) {
+            return (
+              <div className="regist-inj-error-msg">
+                Email Ketua Tim tidak boleh kosong !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={emailKetua}
+          defaultValue={data.anggota[0]?.email ?? ""}
+        ></input>
 
         <div className="regist-inj-button">
           <button onClick={handleBack}>Back</button>
@@ -117,19 +325,53 @@ function Page2({ onNextPage, onBackPage, formData }) {
 
 function Page3({ onNextPage, onBackPage, formAnggota1 }) {
   const [email, setEmail] = useState("");
+  const [error, setError] = useState({    
+    nisnAnggota: false,
+    nisnAnggotaNotNumber: false,
+    noTelpAnggota: false,
+    noTelpAnggotaNotNumber: false,
+    emailAnggota: false,
+  });
   const namaAnggota = useRef();
   const nisnAnggota = useRef();
   const noTelpAnggota = useRef();
   const emailAnggota = useRef();
 
   const handleNext = () => {
+    let newError = {};    
+
+    if (namaAnggota.current?.value && !nisnAnggota.current?.value) {
+      newError = { ...newError, nisnAnggota: true };
+    } else newError = { ...newError, nisnAnggota: false };
+
+    if (namaAnggota.current?.value && isNaN(nisnAnggota.current?.value)) {
+      newError = { ...newError, nisnAnggotaNotNumber: true };
+    } else newError = { ...newError, nisnAnggotaNotNumber: false };
+
+    if (namaAnggota.current?.value && !noTelpAnggota.current?.value) {
+      newError = { ...newError, noTelpAnggota: true };
+    } else newError = { ...newError, noTelpAnggota: false };
+
+    if (namaAnggota.current?.value && isNaN(noTelpAnggota.current?.value)) {
+      newError = { ...newError, noTelpAnggotaNotNumber: true };
+    } else newError = { ...newError, noTelpAnggotaNotNumber: false };
+
+    if (namaAnggota.current?.value && !emailAnggota.current?.value) {
+      newError = { ...newError, emailAnggota: true };
+    } else newError = { ...newError, emailAnggota: false };
+
+    setError(newError);
+
     data.anggota[1] = {
       nama_lengkap: namaAnggota.current?.value,
       nim: nisnAnggota.current?.value,
       nomor_telepon: noTelpAnggota.current?.value,
       email: emailAnggota.current?.value,
     };
-    onNextPage(4, { ...formAnggota1, email });
+
+    if (Object.values(newError).every((val) => val === false)) {
+      onNextPage(4, { ...formAnggota1, email });
+    }
   };
 
   const handleBack = () => {
@@ -140,13 +382,64 @@ function Page3({ onNextPage, onBackPage, formAnggota1 }) {
       <div className="regist-inj-bar-input">
         <h1>Identitas Anggota 1 </h1>
         <h2>Nama Anggota 1</h2>
-        <input ref={namaAnggota} defaultValue={data.anggota[1]?.nama_lengkap ?? ''}></input>
+        <input
+          ref={namaAnggota}
+          defaultValue={data.anggota[1]?.nama_lengkap ?? ""}
+        ></input>
         <h2>NISN/NIM Anggota 1</h2>
-        <input ref={nisnAnggota} defaultValue={data.anggota[1]?.nim ?? ''}></input>
+        {(() => {
+          if (error.nisnAnggota) {
+            return (
+              <div className="regist-inj-error-msg">
+                NISN/NIM Anggota tidak boleh kosong !
+              </div>
+            );
+          } else if (error.nisnAnggotaNotNumber) {
+            return (
+              <div className="regist-inj-error-msg">
+                NISN/NIM Anggota harus berupa angka !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={nisnAnggota}
+          defaultValue={data.anggota[1]?.nim ?? ""}
+        ></input>
         <h2>No Telepon Anggota 1</h2>
-        <input ref={noTelpAnggota} defaultValue={data.anggota[1]?.nomor_telepon ?? ''} ></input>
+        {(() => {
+          if (error.noTelpAnggota) {
+            return (
+              <div className="regist-inj-error-msg">
+                Nomer Telepon Anggota Tim tidak boleh kosong !
+              </div>
+            );
+          } else if (error.noTelpAnggotaNotNumber) {
+            return (
+              <div className="regist-inj-error-msg">
+                Nomer Telepon Anggota Tim harus berupa angka !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={noTelpAnggota}
+          defaultValue={data.anggota[1]?.nomor_telepon ?? ""}
+        ></input>
         <h2>Email Anggota 1</h2>
-        <input ref={emailAnggota} defaultValue={data.anggota[1]?.email ?? ''}></input>
+        {(() => {
+          if (error.emailAnggota) {
+            return (
+              <div className="regist-inj-error-msg">
+                Email Anggota Tim tidak boleh kosong !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={emailAnggota}
+          defaultValue={data.anggota[1]?.email ?? ""}
+        ></input>
 
         <div className="regist-inj-button">
           <button onClick={handleBack}>Back</button>
@@ -159,18 +452,50 @@ function Page3({ onNextPage, onBackPage, formAnggota1 }) {
 
 function Page4({ onNextPage, onBackPage, formAnggota2 }) {
   const [email, setEmail] = useState("");
+  const [error, setError] = useState({    
+    nisnAnggota: false,
+    nisnAnggotaNotNumber: false,
+    noTelpAnggota: false,
+    noTelpAnggotaNotNumber: false,
+    emailAnggota: false,
+  });
   const namaAnggota = useRef();
   const nisnAnggota = useRef();
   const noTelpAnggota = useRef();
   const emailAnggota = useRef();
   const handleNext = () => {
+    let newError = {};    
+
+    if (namaAnggota.current?.value && !nisnAnggota.current?.value) {
+      newError = { ...newError, nisnAnggota: true };
+    } else newError = { ...newError, nisnAnggota: false };
+
+    if (namaAnggota.current?.value && isNaN(nisnAnggota.current?.value)) {
+      newError = { ...newError, nisnAnggotaNotNumber: true };
+    } else newError = { ...newError, nisnAnggotaNotNumber: false };
+
+    if (namaAnggota.current?.value && !noTelpAnggota.current?.value) {
+      newError = { ...newError, noTelpAnggota: true };
+    } else newError = { ...newError, noTelpAnggota: false };
+
+    if (namaAnggota.current?.value && isNaN(noTelpAnggota.current?.value)) {
+      newError = { ...newError, noTelpAnggotaNotNumber: true };
+    } else newError = { ...newError, noTelpAnggotaNotNumber: false };
+
+    if (namaAnggota.current?.value && !emailAnggota.current?.value) {
+      newError = { ...newError, emailAnggota: true };
+    } else newError = { ...newError, emailAnggota: false };
+
+    setError(newError);
     data.anggota[2] = {
       nama_lengkap: namaAnggota.current?.value,
       nim: nisnAnggota.current?.value,
       nomor_telepon: noTelpAnggota.current?.value,
       email: emailAnggota.current?.value,
     };
-    onNextPage(5, { ...formAnggota2, email });
+    if (Object.values(newError).every((val) => val === false)) {
+      onNextPage(5, { ...formAnggota2, email });
+    }
   };
 
   const handleBack = () => {
@@ -181,13 +506,64 @@ function Page4({ onNextPage, onBackPage, formAnggota2 }) {
       <div className="regist-inj-bar-input">
         <h1>Identitas Anggota 2 </h1>
         <h2>Nama Anggota 2</h2>
-        <input ref={namaAnggota} defaultValue={data.anggota[2]?.nama_lengkap ?? ''}></input>
+        <input
+          ref={namaAnggota}
+          defaultValue={data.anggota[2]?.nama_lengkap ?? ""}
+        ></input>
         <h2>NISN/NIM Anggota 2</h2>
-        <input ref={nisnAnggota} defaultValue={data.anggota[2]?.nim ?? ''}></input>
+        {(() => {
+          if (error.nisnAnggota) {
+            return (
+              <div className="regist-inj-error-msg">
+                NISN/NIM Anggota tidak boleh kosong !
+              </div>
+            );
+          } else if (error.nisnAnggotaNotNumber) {
+            return (
+              <div className="regist-inj-error-msg">
+                NISN/NIM Anggota harus berupa angka !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={nisnAnggota}
+          defaultValue={data.anggota[2]?.nim ?? ""}
+        ></input>
         <h2>No Telepon Anggota 2</h2>
-        <input ref={noTelpAnggota} defaultValue={data.anggota[2]?.nomor_telepon ?? ''}></input>
+        {(() => {
+          if (error.noTelpAnggota) {
+            return (
+              <div className="regist-inj-error-msg">
+                Nomer Telepon Anggota Tim tidak boleh kosong !
+              </div>
+            );
+          } else if (error.noTelpAnggotaNotNumber) {
+            return (
+              <div className="regist-inj-error-msg">
+                Nomer Telepon Anggota Tim harus berupa angka !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={noTelpAnggota}
+          defaultValue={data.anggota[2]?.nomor_telepon ?? ""}
+        ></input>
         <h2>Email Anggota 2</h2>
-        <input ref={emailAnggota} defaultValue={data.anggota[2]?.email ?? ''}></input>
+        {(() => {
+          if (error.emailAnggota) {
+            return (
+              <div className="regist-inj-error-msg">
+                Email Anggota Tim tidak boleh kosong !
+              </div>
+            );
+          }
+        })()}
+        <input
+          ref={emailAnggota}
+          defaultValue={data.anggota[2]?.email ?? ""}
+        ></input>
 
         <div className="regist-inj-button">
           <button onClick={handleBack}>Back</button>
@@ -200,45 +576,100 @@ function Page4({ onNextPage, onBackPage, formAnggota2 }) {
 
 function Page5({ onNextPage, onBackPage, formAbstrak }) {
   const [email, setEmail] = useState("");
+  const [error, setError] = useState({    
+    buktiFollow: false,
+    abstrak: false,    
+  });
   const buktiFollow = useRef();
   const abstrak = useRef();
 
-  const handleBack = () => {    
+  const handleBack = () => {
+    let newError = {}
+
+    if (!buktiFollow.current?.value) {
+      newError = { ...newError, buktiFollow: true };
+    } else newError = { ...newError, buktiFollow: false };
+
+    if (!abstrak.current?.value) {
+      newError = { ...newError, abstrak: true };
+    } else newError = { ...newError, abstrak: false };
+
+    setError(newError);
+
     data.buktiFollow = buktiFollow.current.value;
     data.abstrak = abstrak.current.value;
-    onBackPage(4, { ...formAbstrak, email });
+
+    if (Object.values(newError).every((val) => val === false)) {
+      onBackPage(4, { ...formAbstrak, email });
+    }
   };
   return (
     <section className="regist-inj-bar">
       <div className="regist-inj-bar-input">
         <h1>Form Pengumpulan </h1>
         <h2>Pengumpulan Bukti Follow, Kartu KTM/Kartu Pelajar, Twibbon</h2>
-        <input ref={buktiFollow}></input>
+        {(() => {
+          if (error.buktiFollow) {
+            return (
+              <div className="regist-inj-error-msg">
+               Pengumpulan Bukti Follow, Kartu KTM/Kartu Pelajar, Twibbon tidak boleh kosong !
+              </div>
+            );
+          }
+        })()}
+        <input ref={buktiFollow} defaultValue={data?.buktiFollow}></input>
         <h2>Pengumpulan Abstrak & Originalitas</h2>
-        <input ref={abstrak}></input>
+        {(() => {
+          if (error.abstrak) {
+            return (
+              <div className="regist-inj-error-msg">
+               Pengumpulan Abstrak & Originalitas tidak boleh kosong !
+              </div>
+            );
+          }
+        })()}
+        <input ref={abstrak} defaultValue={data?.abstrak}></input>
 
         <div className="regist-inj-button">
           <button onClick={handleBack}>Back</button>
-          <button onClick={() => {
-            axios.post('http://localhost:3030/api/injection/register', {
-              nama_tim: String(data.namaTim),
-              asal_sekolah: String(data.namaSekolah),
-              no_telp_pembimbing: String(data.noTelp),
-              link_berkas_bukti: String(data.buktiFollow),
-              link_berkas_abstrak: String(data.abstrak),
-              type: data.kuliahCheckbox,
-              nama_pembimbing: String(data.namaGuru),
-              anggota: JSON.stringify({anggota: data.anggota})
-            }, {
-              headers: {
-                'Authorization': 'Bearer ' + 'eyJhbGciOiJIUz',
-              }
-            }).then((res) => {
-              console.log(res.data);
-            }).catch((err) => {
-              // console.log(err);
-            })
-          }}>Submit</button>
+          <button
+            onClick={() => {
+              axios
+                .post(
+                  "https://api.epwits.org/injection/register",
+                  {
+                    nama_tim: String(data.namaTim),
+                    asal_sekolah: String(data.namaSekolah),
+                    no_telp_pembimbing: String(data.noTelp),
+                    link_berkas_bukti: String(data.buktiFollow),
+                    link_berkas_abstrak: String(data.abstrak),
+                    type: data.kuliahCheckbox,
+                    nama_pembimbing: String(data.namaGuru),
+                    anggota: JSON.stringify({ anggota: data.anggota }),
+                  },
+                  {
+                    headers: {
+                      Authorization: "Bearer " + "eyJhbGciOiJIUz",
+                    },
+                  }
+                )
+                .then((res) => {
+                  if (res?.message === "Team already exist") {
+                    alert("Nama Tim sudah terdaftar");
+                    onBackPage(4, { ...formAbstrak, email });
+                  } else {
+                    alert("Berhasil mendaftar");
+                    window.location.href = "/";
+                  }
+                })
+                .catch((err) => {
+                  alert("terdapat kesalahan");
+                  // console.log(err);
+                });
+            }}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </section>

@@ -59,7 +59,7 @@
     justify-content: space-between;
     align-items: center;
     width: 60%;
-    margin: auto;
+    margin: auto;    
 }
 
 .regist-inj-bar-checklist-button1 {
@@ -122,4 +122,14 @@
     color: white;
     background-color: #1A9B95;
     aspect-ratio: 4/1.2;
+}
+
+.regist-inj-error-msg {
+    fontSize: 0.4em;
+    fontFamily: 'poppins';
+    fontStyle: bold;    
+    color: red;
+    padding:     5px;
+    border-radius: 5px;        
+    z-index: 2;
 }
