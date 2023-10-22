@@ -325,7 +325,8 @@ function Page2({ onNextPage, onBackPage, formData }) {
 
 function Page3({ onNextPage, onBackPage, formAnggota1 }) {
   const [email, setEmail] = useState("");
-  const [error, setError] = useState({    
+  const [error, setError] = useState({
+    namaAnggota: false,
     nisnAnggota: false,
     nisnAnggotaNotNumber: false,
     noTelpAnggota: false,
@@ -340,23 +341,27 @@ function Page3({ onNextPage, onBackPage, formAnggota1 }) {
   const handleNext = () => {
     let newError = {};    
 
-    if (namaAnggota.current?.value && !nisnAnggota.current?.value) {
+    if ( !namaAnggota.current?.value) {
+      newError = { namaAnggota: true };
+    } else newError = { namaAnggota: false };
+    
+    if ( !nisnAnggota.current?.value) {
       newError = { ...newError, nisnAnggota: true };
     } else newError = { ...newError, nisnAnggota: false };
 
-    if (namaAnggota.current?.value && isNaN(nisnAnggota.current?.value)) {
+    if ( isNaN(nisnAnggota.current?.value)) {
       newError = { ...newError, nisnAnggotaNotNumber: true };
     } else newError = { ...newError, nisnAnggotaNotNumber: false };
 
-    if (namaAnggota.current?.value && !noTelpAnggota.current?.value) {
+    if ( !noTelpAnggota.current?.value) {
       newError = { ...newError, noTelpAnggota: true };
     } else newError = { ...newError, noTelpAnggota: false };
 
-    if (namaAnggota.current?.value && isNaN(noTelpAnggota.current?.value)) {
+    if ( isNaN(noTelpAnggota.current?.value)) {
       newError = { ...newError, noTelpAnggotaNotNumber: true };
     } else newError = { ...newError, noTelpAnggotaNotNumber: false };
 
-    if (namaAnggota.current?.value && !emailAnggota.current?.value) {
+    if ( !emailAnggota.current?.value) {
       newError = { ...newError, emailAnggota: true };
     } else newError = { ...newError, emailAnggota: false };
 
@@ -381,6 +386,15 @@ function Page3({ onNextPage, onBackPage, formAnggota1 }) {
     <section className="regist-inj-bar">
       <div className="regist-inj-bar-input">
         <h1>Identitas Anggota 1 <span className="star">*</span></h1>
+        {(() => {
+          if (error.namaAnggota) {
+            return (
+              <div className="regist-inj-error-msg">
+                Nama Anggota 1 Tim tidak boleh kosong !
+              </div>
+            );
+          }
+        })()}
         <h2>Nama Anggota 1<span className="star">*</span></h2>
         <input
           ref={namaAnggota}
@@ -596,8 +610,8 @@ function Page5({ onNextPage, onBackPage, formAbstrak }) {
 
     setError(newError);
 
-    data.buktiFollow = buktiFollow.current.value;
-    data.abstrak = abstrak.current.value;
+    data.buktiFollow = buktiFollow.current?.value;
+    data.abstrak = abstrak.current?.value;
 
     if (Object.values(newError).every((val) => val === false)) {
       onBackPage(4, { ...formAbstrak, email });
@@ -634,6 +648,9 @@ function Page5({ onNextPage, onBackPage, formAbstrak }) {
           <button onClick={handleBack}>Back</button>
           <button
             onClick={() => {
+              data.buktiFollow = buktiFollow.current?.value;
+              data.abstrak = abstrak.current?.value;
+              console.log(data);
               axios
                 .post(
                   "https://api.epwits.org/injection/register",
