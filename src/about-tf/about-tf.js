@@ -22,6 +22,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { NavLink } from 'react-router-dom';
+import 'swiper/swiper-bundle.css'
 
 
 
@@ -38,7 +39,7 @@ function AboutTF() {
             <h1 className='its_Ab'>
               Institut Teknologi Sepuluh Nopember
             </h1>
-            <a href='#Page2_Ab' className='butExp_Ab'>Explore More</a>
+            {/*<a href='#Page2_Ab' className='butExp_Ab'>Explore More</a>*/}
           </div>
         </div>
       </section>
@@ -93,20 +94,47 @@ function AboutTF() {
         <div className='containerP4_Ab'>
           <div className='textP4_Ab'>
             <h1 className='textLab_Ab'>LABORATORIUM</h1>
-            <h1 className='tfP4_Ab'>Teknik Fisika</h1>
+            <div className='P4AB'><div></div><h1 className='tfP4_Ab'>Teknik Fisika</h1></div>
             <p className='textPanjangP4_Ab'>Departemen Teknik Fisika berkomitmen untuk menyelenggarakan pendidikan yang beriringan dengan pembentukan keterampilan mahasiswa/i sesuai yang tertuang dalam visi misi  Teknik Fisika. Fasilitas akademik yang memadai ditunjukkan diantaranya dengan keberadaan laboratorium untuk kelimat bidang minat.</p>
           </div>
-          <div className='container-slider'>
-          {/*  <Swiper
+          {/*<div className='container-slider'>
+          <Swiper
               // install Swiper modules
               modules={[Navigation, Pagination, A11y]}
-              spaceBetween={-50}
-              slidesPerView={5}
+              spaceBetween={0}
+              slidesPerView={1}
               navigation
               pagination={{ clickable: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log('slide change')}
               
+              breakpoints={{
+                414: {
+                  slidesPerView: 1,
+                  spaceBetween: 50,
+                },
+                
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+
+                1000: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+
+                1300: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
+
+                1600: {
+                  slidesPerView: 5,
+                  spaceBetween: 20,
+                },
+              }}
+
             >
 
               <SwiperSlide className='slide-container'>
@@ -251,9 +279,9 @@ function AboutTF() {
                     </div>
             
                 </div>
-              </SwiperSlide>
-                    </Swiper> */}
-          </div>
+                    </SwiperSlide>
+          </Swiper>
+          </div>*/}
         </div>
       </section>
     </body>

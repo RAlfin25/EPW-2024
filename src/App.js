@@ -28,8 +28,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-     
-        
+        <Navbar/>
         <Routes>
           <Route path='/' exact Component={HomePage}/>
           <Route path='/aboutTF' Component={AboutTF}/>
@@ -45,8 +44,11 @@ function App() {
               <Route path='injection/regist-injection' Component={RegistInj}/>
           <Route path='/fotografi' Component={Fotografi}/>
 
+              <Route path='/p' Component={P}/>
+
           <Route path='/login' Component={Login}/>
           <Route path='/sign-up' Component={Signup}/>
+          <Route path='/Page-Not-Found' Component={NotFound}/>
         </Routes>
       <Footer/>
       </Router>

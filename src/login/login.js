@@ -1,5 +1,6 @@
 import './login.css'
 import { NavLink } from 'react-router-dom';
+import city from './Frame 39.png'
 
 function Login () {
 return (
@@ -21,11 +22,10 @@ return (
                 <button className='notToday'>REGISTER</button>
                 </NavLink> 
             </div>
-            
-                
         </section>
+        <img className='city-login' src={city} alt=''/>
     </main>
 )
 }
 
-export default Login;
+export default Login;   

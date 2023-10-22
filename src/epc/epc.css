@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap");
 
 .Epc {
-    background-image: url(./asset-Epc/Background\ Design\ --------------------------------------------\ \(1\).svg);
+    background-image: url(./asset-Epc/Background\ Design\ --------------------------------------------\ \(1\).png);
     background-size: cover;
 
 }
@@ -39,9 +39,6 @@
     width: 50%;
 }
 
-.Judul-epc .Judul-Epc-container{
-
-}
 
 .Deskripsi-Epc{
     position: relative;
@@ -86,11 +83,10 @@
 
 
 .pembatas-awan-epc-1 {
-    background-image: url(./asset-Epc/Cloud.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: -21vh;
+    bottom: -18vh;
     height: 70vh;
     left: 0;
     right: 0;
@@ -119,17 +115,17 @@
     background-image: url(./asset-Epc/Group\ 224.png);
     background-size: cover;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     margin: auto;
     position: relative;
 }
 
 .pembatas-awan-epc-2 {
-    background: url(./asset-Epc/cloud\ \(2\).svg);
+    background: url(./asset-Epc/cloud\ \(2\).png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top: -35.5vh;
+    top: -30vh;
     height: 60vh;
     right: 0;
     left: 0;
@@ -137,7 +133,7 @@
 
 .benefit-epc .box-benefit-epc{
     margin: auto;
-    padding-top: 240px;
+    padding-top: 34vh;
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -146,7 +142,7 @@
 
 .benefit-epc .box-benefit-epc .title-benefit-epc {
     margin: auto;
-    width: 40%;
+    width: 50%;
     text-align: center;
 }
 
@@ -171,7 +167,7 @@
 }
 
 .benefit-epc .box-benefit-epc .desk-benefit-epc {
-    width: 60%;
+    width: 50%;
 }
 
 .benefit-epc .box-benefit-epc .desk-benefit-epc p{
@@ -180,17 +176,17 @@
     font-size: 25px;
     background-color: #275A7B;
     margin: 20px 30px;
-    width: 800px;
+    width: 560px;
     border-radius: 16px;
     padding: 6px 30px;
 }
 
 .pembatas-awan-epc-3 {
-    background-image: url(./asset-Epc/cloud\ \(1\).svg);
+    background-image: url(./asset-Epc/cloud\ \(1\).png);
     background-size: 100%;
     height: 60vh;
     position: absolute;
-    top: 69vh;
+    top: 75vh;
     right: 0;
     left: 0;
 }
@@ -253,7 +249,7 @@
         }
     
         .pembatas-awan-epc-2 {
-            top: -32vh;
+            top: -27vh;
             height: 60vh;
             right: 0;
             left: 0;
@@ -276,7 +272,7 @@
     }
     
     .pembatas-awan-epc-2 {
-        top: -30vh;
+        top: -27vh;
         height: 60vh;
         right: 0;
         left: 0;
@@ -299,7 +295,7 @@
     }
         
     .pembatas-awan-epc-2 {
-        top: -28vh;
+        top: -24vh;
         height: 60vh;
         right: 0;
         left: 0;
@@ -322,15 +318,16 @@
         }
             
         .pembatas-awan-epc-2 {
-            top: -26vh;
+            top: -22vh;
             height: 60vh;
             right: 0;
             left: 0;
         }
             
         .pembatas-awan-epc-3 {
-            height: 60vh;
-            top: 74vh;
+            height: 50vh;
+            background-repeat: no-repeat ;
+            top: 77vh;
             right: 0;
             left: 0;
             }
@@ -427,12 +424,12 @@
 /*Sec 4*/ 
 .benefit-epc {
     background-size: 100%;
-    height: 85vh;
+    height: 75vh;
     margin: auto;
 }
 
 .pembatas-awan-epc-2 {
-    top: 590px;
+    top: -19vh;
     bottom: 0px;
     height: 60vh;
     right: 0;
@@ -478,14 +475,14 @@
 .pembatas-awan-epc-3 {
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 60vh;
-    top: 900px;
+    height: 40vh;
+    top: 57vh;
     right: 0;
     left: 0;
 }
 /*Sec 5*/ 
 .timeline-epc {
-    height: 180vh;
+    height: 100vh;
 }
 
 .timeline-epc .title-timeline-epc {
@@ -609,14 +606,13 @@
     /*Sec 4*/ 
     .benefit-epc {
         background-size: 100%;
-        height: 85vh;
+        height: 65vh;
         margin: auto;
     }
     
     .pembatas-awan-epc-2 {
-        top: 590px;
-        bottom: 0px;
-        height: 60vh;
+        top: -17vh;
+        height: 50vh;
         right: 0;
         left: 0;
     }
@@ -660,8 +656,8 @@
     .pembatas-awan-epc-3 {
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 60vh;
-        top: 900px;
+        height: 50vh;
+        top: 50vh;
         right: 0;
         left: 0;
     }
@@ -791,12 +787,12 @@
     /*Sec 4*/ 
     .benefit-epc {
         background-size: 100%;
-        height: 60vh;
+        height: 63vh;
         margin: auto;
     }
     
     .pembatas-awan-epc-2 {
-        top: -18vh;
+        top: -16vh;
         bottom: 0px;
         height: 40vh;
         right: 0;
@@ -844,13 +840,13 @@
         background-repeat: no-repeat;
         background-size: 100%;
         height: 40vh;
-        top: 49vh;
+        top: 51vh;
         right: 0;
         left: 0;
     }
     /*Sec 5*/ 
     .timeline-epc {
-        height: 180vh;
+        height: 90vh;
     }
     
     .timeline-epc .title-timeline-epc {
@@ -892,14 +888,14 @@
 }
 
 .pembatas-awan-epc-2 {
-    top: -16vh;
+    top: -14vh;
     height: 32vh;
     left: 0;
     right: 0;
 }
 
 .pembatas-awan-epc-3 {
-    top: 50vh;
+    top: 53vh;
     height: 33vh;
     left: 0;
     right: 0;
@@ -1003,7 +999,7 @@
 }
 
 .pembatas-awan-epc-2 {
-    top: -15vh;
+    top: -13vh;
     bottom: 0px;
     height: 25vh;
     right: 0;
@@ -1059,11 +1055,11 @@
 }
 /*Sec 5*/ 
 .timeline-epc {
-    height: 100vh;
+    height: 70vh;
 }
 
 .timeline-epc .title-timeline-epc {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .timeline-epc .title-timeline-epc h2 {
@@ -1215,8 +1211,7 @@
 }
 
 .pembatas-awan-epc-2 {
-    top: 590px;
-    bottom: 0px;
+    top:-15vh;
     height: 60vh;
     right: 0;
     left: 0;
@@ -1310,7 +1305,7 @@
 /*Sec 1*/    
 .Judul-Epc {
     width: 84%;
-    height: 40vh;
+    height: 30vh;
     margin: auto;
     padding: 100px 0px 0px;
     }
@@ -1340,6 +1335,9 @@
     width: 50%;
 }
 
+.Deskripsi-Epc{
+    position: relative;
+}
 
 .Deskripsi-Epc .txt-judul-epc {
     position: relative;
@@ -1382,8 +1380,8 @@
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: -190px;
-    height: 70vh;
+    bottom: -9vh;
+    height: 20vh;
     left: 0;
     right: 0;
 }
@@ -1398,14 +1396,14 @@
 /*Sec 4*/ 
 .benefit-epc {
     background-size: 100%;
-    height: 50vh;
+    height: 35vh;
     margin: auto;
 }
 
 .pembatas-awan-epc-2 {
-    top: 590px;
+    top: -8vh;
     bottom: 0px;
-    height: 60vh;
+    height: 20vh;
     right: 0;
     left: 0;
 }
@@ -1452,14 +1450,14 @@
 .pembatas-awan-epc-3 {
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 60vh;
-    top: 900px;
+    height: 20vh;
+    top: 30vh;
     right: 0;
     left: 0;
 }
 /*Sec 5*/ 
 .timeline-epc {
-    height: 70vh;
+    height: 35vh;
 }
 
 .timeline-epc .title-timeline-epc {
@@ -1492,6 +1490,105 @@
 .road-epc{
      top: 24px;   
     }
+}
+
+@media only screen and (max-width: 415px) {
+    .Judul-Epc {
+        width: 84%;
+        height: 30vh;
+        margin: auto;
+        padding: 100px 0px 0px;
+    }
+
+    .Deskripsi-Epc .txt-deskripsi-epc {
+        background-color: #F2EFD5;
+        width: 70%;
+        height: 100px;
+        margin: auto;
+        border-radius: 20px;
+        bottom: 0;
+    }
+
+    .pembatas-awan-epc-1 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -11.5vh;
+        height: 22vh;
+        left: 0;
+        right: 0;
+}   
+
+.prizepool-epc {
+    height: 22vh;
+}
+
+.prizepool-img-epc {
+    padding-top: 30px;
+}
+.benefit-epc {
+    background-size: 100%;
+    height: 40vh;
+    margin: auto;
+}
+
+.pembatas-awan-epc-2 {
+    top: -8vh;
+    bottom: 0px;
+    height: 22vh;
+    right: 0;
+    left: 0;
+}
+        
+.benefit-epc .box-benefit-epc{
+    margin: auto;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 95%;   
+}
+        
+.benefit-epc .box-benefit-epc .title-benefit-epc {
+    width: 100%;
+    text-align: center;
+}
+        
+.benefit-epc .box-benefit-epc .title-benefit-epc h1{
+    font-size: 35px;
+}
+        
+.benefit-epc .box-benefit-epc .title-benefit-epc h3{
+    font-size: 15px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 260px;
+    border-radius: 18px;
+    border: 3px solid  #000000;
+}
+        
+.benefit-epc .box-benefit-epc .desk-benefit-epc {
+    width: 70%;
+    padding-top: 20px;
+    margin: auto;
+}
+        
+.benefit-epc .box-benefit-epc .desk-benefit-epc p{
+    font-size: 8px;
+    margin: 10px 0px;
+    width: 280px;
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+        
+.pembatas-awan-epc-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 22vh;
+    top: 35vh;
+}
+
+.timeline-epc {
+    height: 40vh;
+}
 }
 
  @media only screen and (max-width: 390px) {
@@ -1552,7 +1649,7 @@
 .Deskripsi-Epc .txt-deskripsi-epc {
     background-color: #F2EFD5;
     width: 70%;
-    height: 120px;
+    height: 100px;
     margin: auto;
     border-radius: 20px;
     bottom: 0;

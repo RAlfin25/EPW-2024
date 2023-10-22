@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@700&display=swap");
 
 .Injection {
-    background-image: url(./asset-Inj/Background\ Design\ --------------------------------------------.svg);
+    background-image: url(./asset-Inj/Background\ Design\ --------------------------------------------.png);
     background-size: cover;
 
 }
@@ -43,10 +43,6 @@
     width: 50%;
 }
 
-.Judul-Inj .Judul-Inj-container{
-
-}
-
 .Deskripsi-Inj .txt-judul-inj {
     position: relative;
     top: 29px;
@@ -69,7 +65,7 @@
 .Deskripsi-Inj .txt-deskripsi-inj {
     background-color: #F2EFD5;
     width: 60%;
-    height: 300px;
+    height: 280px;
     margin: auto;
     border-radius: 50px;
     bottom: 0;
@@ -79,14 +75,14 @@
     width: 90%;
     font-weight: bold;
     text-align: center;
-    font-size: 19px;
+    font-size: 21px;
     margin: auto;
     padding: 60px 80px;
 }
 
 
 .pembatas-awan-inj-1 {
-    background-image: url(./asset-Inj/Cloud.svg);
+
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -136,11 +132,11 @@
 }
 
 .pembatas-awan-inj-2 {
-    background: url(./asset-Inj/cloud\ \(2\).svg);
+    background: url(./asset-Inj/cloud\ \(2\).png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top: -36vh;    
+    top: -30vh;    
     bottom: 0px;
     height: 60vh;
     right: 0;
@@ -149,7 +145,7 @@
 
 .benefit-inj .box-benefit-inj{
     margin: auto;
-    padding-top: 180px;
+    padding-top: 30vh;
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -198,10 +194,12 @@
 }
 
 .pembatas-awan-inj-3 {
-    background-image: url(./asset-Inj/cloud\ \(1\).svg);
-    background-size: cover;
+
+    background-image: url(./asset-Inj/cloud\ \(1\).png);
+    background-size: 100%;
     height: 60vh;
     position: absolute;
+    background-repeat: no-repeat;
     top: 69vh;
     right: 0;
     left: 0;
@@ -256,6 +254,68 @@
      top: 25px;   
     }
 
+.Interest-Inj{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 100px;
+ }
+
+.interest-inj {
+    text-align: center;
+    margin: auto;
+    height: 50vh;
+}
+
+.box-interest-inj {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+   margin: auto;
+}
+
+.text-interest-inj h1{
+    text-align: center;
+    color: #FF880B;
+    font-size: 90px;
+    font-family: "Poppins";
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.button-inj {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button-inj button{
+    font-family: "Poppins";
+    color: white;
+    border: none;
+    font-size: large;
+    font-weight: 700;
+    margin: 10px 100px;
+    border-radius: 15px;
+    width: 200px;
+    aspect-ratio: 4/1;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    background-color: #275A7B;
+}
+
+.button-inj a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-inj button:hover{
+    transform: scale(1.1);
+}
+
 
 @media only screen and (max-width: 1880px) {
         .pembatas-awan-inj-1 {
@@ -266,7 +326,7 @@
         }
     
         .pembatas-awan-inj-2 {
-            top: -32vh;
+            top: -23vh;
             height: 60vh;
             right: 0;
             left: 0;
@@ -274,7 +334,7 @@
     
         .pembatas-awan-inj-3 {
             height: 60vh;
-            top: 69vh;
+            top: 71vh;
             right: 0;
             left: 0;
         }
@@ -385,7 +445,7 @@
         }
             
         .pembatas-awan-inj-2 {
-            top: -26vh;
+            top: -23vh;
             height: 60vh;
             right: 0;
             left: 0;
@@ -393,7 +453,7 @@
             
         .pembatas-awan-inj-3 {
             height: 60vh;
-            top: 74vh;
+            top: 70vh;
             right: 0;
             left: 0;
             }
@@ -522,7 +582,7 @@
         }
         
 .pembatas-awan-inj-2 {
-    top: -23.6vh;
+    top: -17vh;
     bottom: 0px;
     height: 50vh;
     right: 0;
@@ -574,7 +634,7 @@
 }
 /*Sec 5*/ 
 .timeline-inj {
-    height: 180vh;
+    height: 140vh;
 }
         
 .timeline-inj .title-timeline-inj {
@@ -593,9 +653,17 @@
         }
         
 .timeline-inj .title-timeline-inj .img-timeline-inj {
-    margin: 100px 0px;
+    margin: 100px 0px 0px;
 }
-        
+
+.box-interest-inj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+   margin: auto;
+}
+
 .city-inj {
     top: 49px;
 }
@@ -728,7 +796,7 @@
         }
         
 .pembatas-awan-inj-2 {
-    top: -20vh;
+    top: -16vh;
     bottom: 0px;
     height: 40vh;
     right: 0;
@@ -779,7 +847,7 @@
 }
 /*Sec 5*/ 
 .timeline-inj {
-    height: 180vh;
+    height: 120vh;
 }
         
 .timeline-inj .title-timeline-inj {
@@ -801,6 +869,14 @@
     margin: 100px 0px;
 }
         
+.box-interest-inj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+   margin: auto;
+}
+
 .city-inj {
     top: 49px;
 }
@@ -933,7 +1009,7 @@
         }
         
 .pembatas-awan-inj-2 {
-    top: -19.5vh;
+    top: -14vh;
     bottom: 0px;
     height: 30vh;
     right: 0;
@@ -1006,7 +1082,8 @@
 .timeline-inj .title-timeline-inj .img-timeline-inj {
     margin: 80px 0px;
 }
-        
+
+
 .city-inj {
     top: 49px;
 }
@@ -1026,7 +1103,7 @@
 }
 
 .pembatas-awan-inj-2 {
-    top: -16vh;
+    top: -13vh;
     height: 32vh;
     left: 0;
     right: 0;
@@ -1164,7 +1241,7 @@
 }
         
 .pembatas-awan-inj-2 {
-    top: -14.5vh;
+    top: -12vh;
     bottom: 0px;
     height: 40vh;
     right: 0;
@@ -1218,7 +1295,7 @@
 }
 /*Sec 5*/ 
 .timeline-inj {
-    height: 120vh;
+    height: 80vh;
 }
         
 .timeline-inj .title-timeline-inj {
@@ -1246,6 +1323,41 @@
             
 .road-inj{
     top: 19px;   
+}
+
+.box-interest-inj{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding-bottom: 100px;
+}
+
+.interest-inj h1{
+    color: #FF880B;
+    font-size: 90px;
+    font-family: "Poppins";
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.button-inj {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button-inj button{
+    font-family: "Poppins";
+    color: white;
+    border: none;
+    font-size: large;
+    font-weight: 700;
+    margin: 10px 100px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
         
 }
@@ -1561,7 +1673,7 @@
     /*Sec 1*/    
     .Judul-Inj {
         width: 84%;
-        height: 40vh;
+        height: 30vh;
         margin: auto;
         padding: 100px 0px 0px;
     }
@@ -1633,8 +1745,8 @@
         background-size: 100%;
         background-repeat: no-repeat;
         position: absolute;
-        bottom: -162px;
-        height: 70vh;
+        bottom: -9vh;
+        height: 20vh;
         left: 0;
         right: 0;
     }
@@ -1673,14 +1785,14 @@
     /*Sec 4*/ 
     .benefit-inj {
         background-size: 100%;
-        height: 70vh;
+        height: 35vh;
         margin: auto;
             }
             
     .pembatas-awan-inj-2 {
-        top: 620px;
+        top: -8vh;
         bottom: 0px;
-        height: 60vh;
+        height: 17vh;
         right: 0;
         left: 0;
     }
@@ -1727,12 +1839,12 @@
     .pembatas-awan-inj-3 {
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 60vh;
-        top: 1049px;
+        height: 20vh;
+        top: 30vh;
     }
     /*Sec 5*/ 
     .timeline-inj {
-        height: 60vh;
+        height: 35vh;
     }
             
     .timeline-inj .title-timeline-inj {
@@ -1766,6 +1878,121 @@
     }
             
     }
+
+@media only screen and (max-width: 415px) {
+    .Judul-Inj {
+        width: 84%;
+        height: 30vh;
+        margin: auto;
+        padding: 100px 0px 0px;
+    }
+
+    .pembatas-awan-inj-1 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -11.5vh;
+        height: 22vh;
+        left: 0;
+        right: 0;
+}   
+
+.prizepool-inj {
+    height: 22vh;
+}
+
+
+.benefit-inj {
+    background-size: 100%;
+    height: 40vh;
+    margin: auto;
+}
+
+.pembatas-awan-inj-2 {
+    top: -8vh;
+    bottom: 0px;
+    height: 22vh;
+    right: 0;
+    left: 0;
+}
+        
+.benefit-inj .box-benefit-inj{
+    margin: auto;
+    padding-top: 40px;
+    flex-direction: column;
+    width: 95%;   
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj {
+    width: 100%;
+    text-align: center;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h1{
+    font-size: 35px;
+}
+        
+.benefit-inj .box-benefit-inj .title-benefit-inj h3{
+    font-size: 15px;
+    background-color: #5A8EAF;
+    margin: auto;
+    width: 260px;
+    border-radius: 18px;
+    border: 3px solid  #000000;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj {
+    width: 70%;
+    padding-top: 20px;
+    margin: auto;
+}
+        
+.benefit-inj .box-benefit-inj .desk-benefit-inj p{
+    font-size: 8px;
+    margin: 10px 0px;
+    width: 280px;
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+        
+.pembatas-awan-inj-3 {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 22vh;
+    top: 35vh;
+}
+
+.timeline-inj {
+    height: 40vh;
+}
+
+.interest-inj h1{
+    margin-bottom: 10px;
+    color: #FF880B;
+    font-size: 40px;
+    font-family: "Poppins";
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.button-inj {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button-inj button{
+    font-family: "Poppins";
+    color: white;
+    border: none;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 5px 50px;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+}
 
 @media only screen and (max-width: 390px) {
     
@@ -1974,5 +2201,32 @@
 .road-inj{
     top: 24px;   
 }
-        
+   
+.interest-inj h1{
+    margin-bottom: 10px;
+    color: #FF880B;
+    font-size: 40px;
+    font-family: "Poppins";
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.button-inj {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button-inj button{
+    font-family: "Poppins";
+    color: white;
+    border: none;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 5px 50px;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
 }

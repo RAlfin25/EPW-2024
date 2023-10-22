@@ -3,7 +3,7 @@
     text-align: center;
     background-color: #7ED7F4;
     margin: auto;
-    padding: 200px 0;
+    padding-top: 200px;
 }
 
 .judul-login {
@@ -17,6 +17,7 @@
     font-weight: 700;
     font-size: 70px;
     margin: auto;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .judul-login h2{
@@ -24,12 +25,13 @@
     font-family: 'Poppins';
     font-weight: 700;
     margin: auto;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .form-login {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 500px;
     margin: auto;
     font-family: 'Poppins';
     font-weight: 700;
@@ -75,7 +77,7 @@
     font-size: 20px;
     height: 45px;
     border-radius: 15px;
-    border: solid 2px #000;
+    border: solid 3px #000;
     width: 100%;
     background-color: #ffffff;
     color: #EA7000;
@@ -88,7 +90,7 @@
     text-align: center;
     background-color: #7ED7F4;
     margin: auto;
-    padding: 200px 0;
+    padding-top: 200px;
 }
 
 .judul-signup {
@@ -102,6 +104,7 @@
     font-weight: 700;
     font-size: 70px;
     margin: auto;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .form-signup {
@@ -125,4 +128,90 @@
     border: solid 3px #000;
     font-size: 20px ;
     padding: 0px 20px;
+}
+.city-login {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 10px;
+}
+
+@media only screen and (max-width: 415px) {
+    /*Login*/
+    
+    .Login {
+        padding-top: 100px;
+    }
+    
+    .judul-login h1 {
+        font-size: 35px;
+        margin: auto;
+    }
+    
+    .judul-login h2{
+        font-size: 30px;
+        font-family: 'Poppins';
+        font-weight: 700;
+        margin: auto;
+    }
+
+    .form-login {
+        width: 250px;
+    }
+
+    .form-login label{
+        font-size: 10px;
+    }
+
+    .form-login input {
+        height: 30px;
+        border-radius: 9px;
+        border: solid 3px #000;
+        font-size: 12px ;
+        padding: 0px 10px;
+    }
+
+    .confirm{
+        font-size: 10px;
+        height: 30px;
+        border-radius: 9px;
+        border: solid 3px #000;
+    }
+    
+    .notToday {
+        font-size: 10px;
+        height: 30px;
+        border-radius: 9px;
+        border: solid 3px #000;
+    
+    }
+
+    /*SingUp*/
+    
+    .SignUp {
+        padding-top: 100px;
+    }
+
+    .form-signup {
+        width: 250px;
+    }
+
+    .judul-signup h1 {
+        font-size: 35px;
+        margin: 10px auto;
+        text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-signup label{
+        font-size: 10px;
+    }
+
+    .form-signup input {
+        height: 30px;
+        border-radius: 9px;
+        border: solid 3px #000;
+        font-size: 12px ;
+        padding: 0px 10px;
+    }
+
 }

@@ -2,8 +2,8 @@ import './fotografi.css'
 import building from './asset-Fotografi/Asset 1@300x red.png'
 import prizepool from './asset-Fotografi/Prizepool.svg'
 import timelineEpc from './asset-Fotografi/Group 221.png'
-import city from './asset-Fotografi/Frame 39 copy.svg'
-import road from './asset-Fotografi/Group 283 copy.svg'
+import city from './asset-Fotografi/Frame 39.png'
+import road from './asset-Fotografi/Group 283.svg'
 
 function Fotografi () {
     return (
@@ -32,7 +32,9 @@ function Fotografi () {
 
                     </p>
                 </div>
-                <div className='pembatas-awan-Fotografi-1'></div>
+
+            {/*<div className='pembatas-awan-Fotografi-1'></div>*/}
+
             </section>
             
             <section></section>

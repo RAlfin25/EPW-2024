@@ -6,6 +6,7 @@
 }
 
 .notfound{
+    padding: 200px;
     margin: auto;
     text-align: center;
 }
@@ -13,10 +14,10 @@
 .text-notfound{
     position: relative;
     bottom: 40px;
+    font-family: "poppins";
 }
 
-/* .text-notfound p, h1, h2 {
-    font-family:'Poppins';
+.text-notfound p {
     color: #2E5B78;
     line-height: 0.5rem;
     font-weight:normal;
@@ -25,18 +26,24 @@
 .text-notfound h1 {
     font-size: 120px;
     font-weight: 700;
+    color: #2E5B78;
+    line-height: 0.5rem;
+    font-weight:normal;
 }
 
 .text-notfound h2 {
     font-size: 50px;
     font-weight: 900;
+    color: #2E5B78;
+    line-height: 0.5rem;
+    font-weight:normal;
 }
 .text-notfound p {
     font-size: 20px;
     
 }
 
-*/
+
 .building {
     position: relative;
     top: 40px;

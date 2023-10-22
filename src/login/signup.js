@@ -1,5 +1,6 @@
 import './login.css'
 import { NavLink } from 'react-router-dom';
+import city from './Frame 39.png'
 
 function SignUp () {
 return (
@@ -25,6 +26,8 @@ return (
                 </NavLink> 
             </div>
         </section>
+
+        <img className='city-login' src={city} alt=''/>
     </main>
 )}
 

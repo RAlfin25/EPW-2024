@@ -1,8 +1,6 @@
 import './Laboratory.css';
-import logoLabEcs from './asset-lab/Opening ECS.svg'
-import bipeng from './asset-lab/Group 154.svg'
-import rumah  from './asset-lab/rumah.svg'
-import city  from './asset-lab/Group 286.svg'
+import bipeng from './asset-lab/Group 154.png'
+
 
 function Laboratorium ({txtJudul1, txtJudul2, txtJudul3, imgJudul, imgLab, txtDeskripsi, txtBipeng, fotoBidang, txtBidang1, 
                         txtBidang2, txtBidang3, txtBidang4}) {

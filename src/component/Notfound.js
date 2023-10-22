@@ -7,8 +7,8 @@ function NotFound () {
             <div className='notfound'>
               <img src={Building} className='building' alt=''/> 
               <div className='text-notfound'>
-               <h1>404</h1>
-              <h2>Page Not Found</h2> 
+                <h1>404</h1>
+                <h2>Page Not Found</h2> 
               <p>Oops... something is wrong</p> 
               </div>
               

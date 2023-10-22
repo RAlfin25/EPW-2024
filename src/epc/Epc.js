@@ -1,8 +1,8 @@
 import './epc.css';
 import building from './asset-Epc/Asset 1@300x green.png'
 import prizepool from './asset-Epc/Prizepool.svg'
-import timelineEpc from './asset-Epc/Group 221.png'
-import city from './asset-Epc/Frame 39.svg'
+import timelineEpc from './asset-Epc/Group 222.png'
+import city from './asset-Epc/Frame 39.png'
 import road from './asset-Epc/Group 283.svg'
 
 
@@ -37,7 +37,10 @@ function Epc () {
                     (iv) Rekayasa Material, dan (v) Rekayasa Energi dan Pengkondisian Lingkungan.
                     </p>
                 </div>
-                <div className='pembatas-awan-epc-1'></div>
+
+                <div className='pembatas-awan-epc'></div>
+                {/*<div className='pembatas-awan-epc-1'></div>*/}
+
             </section>
             
             <section></section>

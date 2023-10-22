@@ -3,6 +3,7 @@ import {Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 import Logo from './asset/Frame.png'
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
+import Cross from './asset/cross.svg';
 
 function Navbar () {
 
@@ -107,8 +108,9 @@ const [isOpen, setIsOpen] = useState(false);
           
             
           <ul className='menu main2'>
-            <div className="open-nav-menu" onClick={(e) => setIsOpen (!isOpen)}>
-              <span></span>
+            <div className="open-nav-menu-2" onClick={(e) => setIsOpen (!isOpen)}>
+              <span className='cross1'></span>
+              <span className='cross2'></span>
           </div>
 		        <li className='menu-menu'>
             <NavLink to="/"

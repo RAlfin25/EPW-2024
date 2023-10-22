@@ -36,11 +36,11 @@ function Footer () {
                     <div className="footer-sosmed">
                         <h1>You can find us at</h1>
                         <ul className="sosmed">
-                            <li><a href="https://www.instagram.com/epw_its/"><FaInstagram size={25}/></a></li>
-                            <li><a><FaFacebookF size={25}/></a></li>
-                            <li><a><FaTiktok size={25}/></a></li>
-                            <li><a><FaLinkedin size={25}/></a></li>
-                            <li><a><FaLine size={25}/></a></li>
+                            <li><a href="https://www.instagram.com/epw_its/"><FaInstagram/></a></li>
+                            <li><a><FaFacebookF /></a></li>
+                            <li><a><FaTiktok/></a></li>
+                            <li><a><FaLinkedin/></a></li>
+                            <li><a><FaLine/></a></li>
                         </ul>
                         
                     </div>

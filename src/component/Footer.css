@@ -73,6 +73,7 @@
 .sosmed a{
     padding: 10px;
     color: white;
+    font-size: 25px;
 }
 
 .sosmed a:hover{
@@ -406,7 +407,7 @@
         margin: auto;
         position: relative;
         width: 80%;
-        padding: 20px 10px;
+        padding: 40px 10px 20px;
         border-bottom: solid 2px white;
         justify-content: space-between; 
     }
@@ -418,13 +419,13 @@
     }
 
     .footer-brand h1{
-        font-size: 35px;
+        font-size: 25px;
         width: 100%;
         margin: 0;
     }
     
     .footer-logo {
-        width: 170px;
+        width: 100px;
     }
     
     .footer-main {
@@ -438,17 +439,21 @@
     
     .footer-main h1{
         text-align: start;
-        font-size: 20px;
+        font-size: 15px;
        text-decoration: underline;
     }
     
+    .footer-main ul{
+        margin: auto;
+    }
+
     .footer-main li {
         position: relative;
         text-align: start;
         right: 0px;
        list-style-type: none;
-        font-size: 18px;
-        line-height: 1.7rem;
+        font-size: 12px;
+        line-height: 1rem;
         padding-left: 0px;
     }
     
@@ -484,9 +489,12 @@
         display: flex;
         padding-left: 0;
     }
-    
-    
-    
+
+    .sosmed a {
+        padding: 0px 10px 0px 0px;
+        font-size: 15px;
+    }
+
     .footer-sub{
         color: white;
         margin: auto;

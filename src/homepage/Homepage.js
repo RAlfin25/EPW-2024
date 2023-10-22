@@ -1,8 +1,11 @@
 import "./homepage.css";
-import ephyfest from "./asset-HP/Group 195.svg";
+import { NavLink } from "react-router-dom";
+import ephyfest from "./asset-HP/Group 195.png";
 import slider1 from "./asset-HP/image 18.jpg";
-import timeline from './asset-HP/TIMELINE 2.svg';
+import timeline from './asset-HP/TIMELINE 2.png';
 import { useEffect, useRef, useState } from "react";
+
+
 const sliderContent = [
   {
     title: "Workshop",
@@ -35,7 +38,7 @@ const sliderContent = [
 ];
 
 function HomePage() {
-  document.title = "Engineering Physics Week 2024";
+  {/*document.title = "Engineering Physics Week 2024";
   const [left, setLeft] = useState(false);
   const [right, setRight] = useState(false);
   const [index, setIndex] = useState(0);
@@ -86,7 +89,7 @@ function HomePage() {
     setInterval(() => {
       setLeft(true);
     }, 5000);
-  }, []);
+  }, []); */}
   return (
     <>
       <div className="header">
@@ -130,7 +133,9 @@ function HomePage() {
               perguruan tinggi yang dapat dijadikan salah satu wadah bagi para
               generasi penerus bangsa...
             </p>
-            <button>Explore More</button>
+            <NavLink to="/injection">
+              <button>Explore More</button>
+            </NavLink>
           </div>
           <div className="injection-logo">
             
@@ -148,7 +153,10 @@ function HomePage() {
               film bagi SMA/SMK sederajat dan mahasiswa/i perguruan tinggi
               tingkat nasional sebagai bentuk wadah pengembangan minat...
             </p>
-            <button>Explore More</button>
+            <NavLink to="/Fotografi">
+              <button>Explore More</button>
+            </NavLink>
+            
           </div>
         </div>
         <div className="pembatas bawah"></div>
@@ -163,7 +171,9 @@ function HomePage() {
               Mahasiswa Teknik Fisika, Departemen Teknik Fisika ITS untuk
               mengasah...
             </p>
-            <button>Explore More</button>
+            <NavLink to="/epc">
+              <button>Explore More</button>
+            </NavLink>
           </div>
           <div className="epc-logo">
             <div className="epc-thropy"></div>
@@ -185,7 +195,7 @@ function HomePage() {
               </p>
             </div>
           </div>
-          <div className="ephyfest-content-bottom">
+          {/*<div className="ephyfest-content-bottom">
            
             <div className="slider" ref={slider}>
               {sliderContent.map((item, i) => {
@@ -238,12 +248,13 @@ function HomePage() {
                 }
               })}
             </div>
-          </div>
+            </div>*/}
+
           <div className="ephyfest-content-end"></div>
         </div>
         <div className="ephyfest-mask-end"> </div>
       </div>
-      <div className="timeline">
+      {/*<div className="timeline">
         <div className="timeline-content">
           <h1>EPW 2024</h1>
           <h2>TIMELINE</h2>
@@ -252,7 +263,7 @@ function HomePage() {
          <img src={timeline} className="timeline-img" alt=""/> 
         </div>
         
-      </div>
+            </div>*/}
     </>
   );
 }

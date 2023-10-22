@@ -1,49 +1,33 @@
-.Page4 {
-    height: 100vh;
+body {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(30, 54, 59, 1) 0%,
+    rgba(93, 93, 116, 1) 100%
+  );
 }
 
-.containerP4 {
-    position: relative;
-    top: 200px;
-    right: 0;
-    width: 700px;
-  }
-  .textP4 {
-    display: flex;
-    flex-direction: column;
-    
-    margin: 0px 50px;
-   display: flex;
-   flex-direction: column;
-    position: relative;
-   justify-content: flex-end;
+.container {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+.container > form {
+  width: 70%;
+  border: 1px solid #dfdfdf;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+pre {
+  width: 70%;
+  color: #fff;
+  font-size: larger;
+}
 
-  }
-  
-  .textLab {
-
-  color: #FA8406;
-  font-size: 90px;
-  }
-  
-  .tfP4 {
-    
-   
-    color: white;
-    background-color: #48545D;
-    border-radius: 50px;
-  width: fit-content;
-    font-size: 30px ;
-    padding: 5px 20px;
-    margin: 0;
-    right: 0px;
-  }
-
-  
-  
-  .textPanjangP4 {
-    
-    width: 500px;
-    right: 0;
-    
-  }

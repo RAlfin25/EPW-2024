@@ -3,8 +3,7 @@
 
 
 .body-AT{
-  background-color: black;
-  background-image: url(./asset-at/Background.jpg);
+  background: linear-gradient(#4BDCFD, #D1FEF6 ,#FDFFFF);
   background-size: cover;
   
 }
@@ -112,6 +111,7 @@ a.butExp_Ab {
 
 .textPanjangP2_Ab {
   color: #373737;
+  font-size: 20px;
   text-align: justify;
   font-weight: 700;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.104);
@@ -165,6 +165,7 @@ a.butExp_Ab {
 .textPanjangP3_Ab {
   position: relative;
   top: 80px;
+  font-size: 20px;
   color: #373737;
   text-align: justify;
   font-weight: 700;
@@ -218,9 +219,13 @@ a.butExp_Ab {
   margin: 10px 0;
 }
 
+.P4AB{
+  display: flex;
+  justify-content: space-between;
+}
+
 .tfP4_Ab {
   position: relative;
-  left: 88%;
   width: fit-content;
   font-size: 30px;
   color: #ffffff;
@@ -236,6 +241,7 @@ a.butExp_Ab {
   font-weight: 700;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.104);
   padding-left: 500px;
+  font-size: 20px;
 }
 
 /* Slider */
@@ -406,7 +412,8 @@ a.butExp_Ab {
 .foto1_Ab {
   position: relative;
   width: 60%;
-  height: auto;
+  height: 50%;
+  padding-top: 100px;
 }
 
 .textP2_Ab {
@@ -543,7 +550,6 @@ a.butExp_Ab {
 
 .tfP4_Ab {
   position: relative;
-  left: 88%;
   width: fit-content;
   font-size: 30px;
   color: #ffffff;
@@ -637,7 +643,8 @@ a.butExp_Ab {
 .foto1_Ab {
   position: relative;
   width: 60%;
-  height: auto;
+  height: 50%;
+  padding-top: 50px;
 }
 
 .textP2_Ab {
@@ -647,16 +654,16 @@ a.butExp_Ab {
 }
 
 .tfP2_Ab {
-  font-size: 90px;
+  font-size: 50px;
   color: #075827;
-  text-shadow: 3px 5px 0px rgba(0, 0, 0, 0.304);
- 
+  text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.304);
+ margin: auto;
 }
 
 .apaItu_Ab {
   
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   color: #ffffff;
   background-color: #BA3517;
   border-radius: 25px;
@@ -774,7 +781,6 @@ a.butExp_Ab {
 
 .tfP4_Ab {
   position: relative;
-  left: 88%;
   width: fit-content;
   font-size: 30px;
   color: #ffffff;
@@ -1000,7 +1006,6 @@ a.butExp_Ab {
 
 .tfP4_Ab {
   position: relative;
-  left: 0px;
   margin: auto;
   width: fit-content;
   font-size: 30px;
@@ -1020,7 +1025,7 @@ a.butExp_Ab {
 
 @media only screen and (max-width: 850px) {
   .Page1_Ab {
-    height: 100vh;
+    height: 70vh;
   }
 
   .body-AT{
@@ -1082,6 +1087,7 @@ a.butExp_Ab {
   .foto1_Ab {
    width: 60%;
    left: 25%;
+   
   }
     
   .textP2_Ab {
@@ -1216,7 +1222,6 @@ a.butExp_Ab {
 
 .tfP4_Ab {
   position: relative;
-  left: 0px;
   margin: auto;
   width: fit-content;
   font-size: 25px;
@@ -1236,7 +1241,7 @@ a.butExp_Ab {
 
 @media only screen and (max-width: 645px) {
   .Page1_Ab {
-    height: 70vh;
+    height: 50vh;
   }
 
   .body-AT{
@@ -1435,7 +1440,6 @@ a.butExp_Ab {
 
 .tfP4_Ab {
   position: relative;
-  left: 0px;
   margin: auto;
   width: fit-content;
   font-size: 10px;
@@ -1501,7 +1505,7 @@ a.butExp_Ab {
   /*page 2*/
 
   .Page2_Ab {
-    height: 75vh;
+    height: 65vh;
   }
   
   .containerP2_Ab {
@@ -1556,7 +1560,7 @@ a.butExp_Ab {
   
 /*page 3*/
 .Page3_Ab {
-  height: 60vh;
+  height: 40vh;
 }
 
 .containerP3_Ab {
@@ -1672,7 +1676,7 @@ a.butExp_Ab {
 }
 }
 
-@media only screen and (max-width:390px) {
+@media only screen and (max-width:415px) {
   .Page1_Ab {
     height: 50vh;
   }
@@ -1969,6 +1973,92 @@ a.butExp_Ab {
   padding: 8px 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.button:hover{
+  border-radius: 20px;
+  background-color: #446EA5;
+  font-weight: bolder;
+}
+
+/* Slider */
+
+.container-slider{
+  margin: 50px 50px;
+  
+}
+
+.slide-container{
+  padding: 0px 0px 50px 68px;
+  height: 60px;
+  background-color: transparent;
+  position: relative;
+}
+
+.slide-content {
+  width: 150px;
+  height: 250px;
+  background-color: #48545D;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 14px;
+  height: 50%;
+}
+
+.image-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.card-image {
+  border-radius: 20px 20px 0 0;
+  height: 55%;
+  width: 150px;
+  padding-top: 20px;
+  background-color: #446EA5;
+}
+
+.card-img {
+  background-color: rgba(256, 256, 256, 0.104);
+  border-radius: 7px;
+  width: 80px;
+  height: auto;
+}
+
+
+.nama-lab {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  height: 40%;
+}
+
+
+.button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 10px;
 }
 
 .button:hover{
