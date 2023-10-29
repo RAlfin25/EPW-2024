@@ -19,6 +19,7 @@ import Vibrastik from './Laboratory/Vibs'
 import ECS from './Laboratory/ECS'
 import PKRK from './Laboratory/Pkrk'
 import RegistInj from './registInj/RegistInj'
+import RegistFoto from './registFoto/RegistFoto'
 import Login from './login/login';
 import Signup from './login/signup'
 
@@ -43,7 +44,7 @@ function App() {
           <Route path='/injection' Component={Injection}/>
               <Route path='injection/regist-injection' Component={RegistInj}/>
           <Route path='/fotografi' Component={Fotografi}/>
-
+              <Route path='fotografi/regist-fotografi' Component={RegistFoto}/>
               <Route path='/p' Component={P}/>
 
           <Route path='/login' Component={Login}/>
