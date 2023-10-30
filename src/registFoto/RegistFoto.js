@@ -394,15 +394,20 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
             onClick={() => {
               axios
                 .post(
-                  "https://api.epwits.org/fotoection/register",
+                  "https://api.epwits.org/fotografi/register",
                   {
-                    nama_tim: String(data.buktiFollowIg),
-                    asal_sekolah: String(data.domisili),
-                    no_telp_pembimbing: String(data.noTelp),
-                    link_berkas_bukti: String(data.buktiTransfer),
-                    link_berkas_buktifollowig: String(data.buktifollowig),
-                    nama_pembimbing: String(data.asalInstansi),
-                    anggota: JSON.stringify({ anggota: data.anggota }),
+                    nama_lengkap: String(data.namaDiri),
+                    email: String(data.email),
+                    domisili: String(data.domisili),
+                    judul_karya: String(data.anggota[0]?.judul),
+                    deskripsi_karya: String(data.anggota[0]?.deskripsi),
+                    nomor_telepon: String(data.noTelp),
+                    link_post_instagram: String(data.anggota[1]?.link),
+                    asal_sekolah: String(data.asalInstansi),
+                    bukti_transfer: data.buktiTransfer,
+                    bukti_follow: data.buktifollowig,
+                    berkas_asli: data.anggota[1]?.karyaAsli,
+                    foto_karya: data.anggota[1]?.kumpul_karya,
                   },
                   {
                     headers: {
