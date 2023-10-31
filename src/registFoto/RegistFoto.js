@@ -12,6 +12,7 @@ function Page1({ onNextPage, onBackPage }) {
   const [error, setError] = useState({
     namaDiri: false,
     domisili: false,
+    email: false,
     asalInstansi: false,
     noTelp: false,
     noTelpNotNumber: false,
@@ -20,12 +21,14 @@ function Page1({ onNextPage, onBackPage }) {
   const namaDiri = useRef();
   const asalInstansi = useRef();
   const noTelp = useRef();
+  const email= useRef();
 
   const handleNext = () => {
     data.namaDiri = namaDiri.current?.value;
     data.domisili = domisili.current?.value;
     data.asalInstansi = asalInstansi.current?.value;
     data.noTelp = noTelp.current?.value;
+    data.email = email.current?.value;
 
 
     let newError = {};
@@ -48,6 +51,11 @@ function Page1({ onNextPage, onBackPage }) {
       newError = { ...newError, noTelp: true };
       noTelp.current?.focus();
     } else newError = { ...newError, noTelp: false };
+
+    if (!data.email) {
+      newError = { ...newError, email: true };
+      email.current?.focus();
+    } else newError = { ...newError, email: false };
 
     if (isNaN(data.noTelp)) {
       newError = { ...newError, noTelpNotNumber: true };
@@ -81,6 +89,21 @@ function Page1({ onNextPage, onBackPage }) {
           <input className="form-foto" classname="form-foto"
             ref={namaDiri}
             defaultValue={data.namaDiri ?? ""}
+            required
+          ></input>
+          <h2>Email<span className="star">*</span></h2>
+          {(() => {
+            if (error.namaDiri) {
+              return (
+                <div className="regist-foto-error-msg">
+                  Email tidak boleh kosong !
+                </div>
+              );
+            }
+          })()}
+          <input className="form-foto" classname="form-foto"
+            ref={email}
+            defaultValue={data.email ?? ""}
             required
           ></input>
           <h2>Domisili<span className="star">*</span></h2>
@@ -411,6 +434,7 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
                   },
                   {
                     headers: {
+                        "Content-Type": "multipart/form-data",
                       Authorization: "Bearer " + "eyJhbGciOiJIUz",
                     },
                   }
@@ -420,8 +444,9 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
                     alert("Nama Tim sudah terdaftar");
                     onBackPage(4, { ...formBukti, email });
                   } else {
+                    console.log(res, data);
                     alert("Berhasil mendaftar");
-                    window.location.href = "/";
+                    // window.location.href = "/";
                   }
                 })
                 .catch((err) => {
