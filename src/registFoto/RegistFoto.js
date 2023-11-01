@@ -468,7 +468,7 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
                   } else {
                     console.log(res, data);
                     alert("Berhasil mendaftar");
-                    // window.location.href = "/";
+                    window.location.href = "/";
                   }
                 })
                 .catch((err) => {
