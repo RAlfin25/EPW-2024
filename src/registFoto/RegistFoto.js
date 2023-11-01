@@ -16,12 +16,17 @@ function Page1({ onNextPage, onBackPage }) {
     asalInstansi: false,
     noTelp: false,
     noTelpNotNumber: false,
+    email: false,
   });
   const domisili = useRef();
   const namaDiri = useRef();
   const asalInstansi = useRef();
   const noTelp = useRef();
+<<<<<<< HEAD
   const email= useRef();
+=======
+  const email = useRef();
+>>>>>>> d9e8bfaaac46c9b9891b5ec277274dd6518edc18
 
   const handleNext = () => {
     data.namaDiri = namaDiri.current?.value;
@@ -61,6 +66,12 @@ function Page1({ onNextPage, onBackPage }) {
       newError = { ...newError, noTelpNotNumber: true };
       noTelp.current?.focus();
     } else newError = { ...newError, noTelpNotNumber: false };
+
+    if (!data.email) {
+      newError = { ...newError, email: true };
+      email.current?.focus();
+    } else newError = { ...newError, asalemail: false };
+
 
     setError(newError);
 
@@ -154,6 +165,21 @@ function Page1({ onNextPage, onBackPage }) {
             }
           })()}
           <input className="form-foto" classname="form-foto" ref={noTelp} defaultValue={data.noTelp ?? ""} required></input>
+          <h2>Email<span className="star">*</span></h2>
+          {(() => {
+            if (error.email) {
+              return (
+                <div className="regist-foto-error-msg">
+                  Email tidak boleh kosong !
+                </div>
+              );
+            }
+          })()}
+          <input className="form-foto" 
+            ref={asalInstansi}
+            defaultValue={data.email ?? ""}
+            required
+          ></input>
 
           <div className="regist-foto-button">
             <div></div>
@@ -375,7 +401,7 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
     data.buktifollowig = buktifollowig.current.value;
 
     if (Object.values(newError).every((val) => val === false)) {
-      onBackPage(4, { ...formBukti, email });
+      onBackPage(3, { ...formBukti, email });
     }
   };
   return (
@@ -468,18 +494,18 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
 
 function RegistFoto() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [formDeskripsi, setFormData] = useState({});
-  const [formKarya, setFormAnggota1] = useState({});
+  const [formDeskripsi, setFormDeskripsi] = useState({});
+  const [formKarya, setFormKarya] = useState({});
   const [formBukti, setFormAbstrak] = useState({});
 
   const handleNextPage = (page, data) => {
     setCurrentPage(page);
-    setFormData(data);
+    setFormDeskripsi(data);
   };
 
   const handleBackPage = (page, data) => {
     setCurrentPage(page);
-    setFormData(data);
+    setFormDeskripsi(data);
   };
 
   const renderPage = () => {
@@ -521,7 +547,7 @@ function RegistFoto() {
 
   return (
     <div className="regist-foto-main">
-      {currentPage < 6 && (
+      {currentPage < 5 && (
         <section>
           <div className="regist-foto-judul">
             <h1>FOTOGRAFI</h1>

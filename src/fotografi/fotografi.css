@@ -235,6 +235,60 @@
     width: 90%;
 }
 
+.interest-foto {
+    text-align: center;
+    margin: auto;
+    height: 50vh;
+}
+
+.box-interest-foto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+   margin: auto;
+}
+
+.text-interest-foto h1{
+    text-align: center;
+    color: #4bdcfd;
+    font-size: 90px;
+    font-family: "Poppins";
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.button-foto {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button-foto button{
+    font-family: "Poppins";
+    color: white;
+    border: none;
+    font-size: large;
+    font-weight: 700;
+    margin: 10px 100px;
+    border-radius: 15px;
+    width: 200px;
+    aspect-ratio: 4/1;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    background-color: #275A7B;
+}
+
+.button-foto a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-foto button:hover{
+    transform: scale(1.1);
+}
+
+
+
 @media only screen and (max-width: 1880px) {
     .pembatas-awan-Fotografi-1 {
         bottom: -25vh;
@@ -498,6 +552,14 @@
         margin: 100px 0px;
     }
     
+    .box-interest-foto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+       margin: auto;
+       padding-top: 100px;
+    }
 }
     
 @media only screen and (max-width: 1240px) {
@@ -707,6 +769,14 @@
             
         .road-Fotografi{
              top: 19px;   
+            }
+
+            .box-interest-foto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 30%;
+               margin: auto;
             }
     }
     
@@ -1093,6 +1163,41 @@
     
     .timeline-Fotografi .title-timeline-Fotografi .img-timeline-Fotografi {
         margin: 60px 0px;
+    }
+
+    .box-interest-foto{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        padding-bottom: 100px;
+    }
+    
+    .interest-foto h1{
+        color: #4BDCFD;
+        font-size: 90px;
+        font-family: "Poppins";
+        text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    
+    .button-foto {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .button-foto button{
+        font-family: "Poppins";
+        color: white;
+        border: none;
+        font-size: large;
+        font-weight: 700;
+        margin: 10px 100px;
+        border-radius: 15px;
+        width: 200px;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -1582,6 +1687,33 @@
     .timeline-fotografi {
         height: 40vh;
     }
+
+    .interest-foto h1{
+        margin-bottom: 10px;
+        color: #4BDCFD;
+        font-size: 40px;
+        font-family: "Poppins";
+        text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    
+    .button-foto {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .button-foto button{
+        font-family: "Poppins";
+        color: white;
+        border: none;
+        font-size: 10px;
+        font-weight: 700;
+        margin: 5px 50px;
+        border-radius: 10px;
+        width: 100px;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    }
     }   
     
     
@@ -1768,6 +1900,33 @@
         
     .road-Fotografi{
          top: 24px;   
+        }
+    
+        .interest-foto h1{
+            margin-bottom: 10px;
+            color: #4BDCFD;
+            font-size: 40px;
+            font-family: "Poppins";
+            text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        
+        .button-foto {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .button-foto button{
+            font-family: "Poppins";
+            color: white;
+            border: none;
+            font-size: 10px;
+            font-weight: 700;
+            margin: 5px 50px;
+            border-radius: 10px;
+            width: 100px;
+            box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
         }
     
     }
