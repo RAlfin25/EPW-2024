@@ -172,7 +172,7 @@ function Page1({ onNextPage, onBackPage }) {
             }
           })()}
           <input className="form-foto" 
-            ref={asalInstansi}
+            ref={email}
             defaultValue={data.email ?? ""}
             required
           ></input>
