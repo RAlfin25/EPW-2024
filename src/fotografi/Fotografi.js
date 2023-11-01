@@ -1,4 +1,5 @@
 import './fotografi.css'
+import {Link, NavLink } from 'react-router-dom';
 import building from './asset-Fotografi/Asset 1@300x red.png'
 import prizepool from './asset-Fotografi/Prizepool.svg'
 import timelineEpc from './asset-Fotografi/Group 221.png'
@@ -69,7 +70,19 @@ function Fotografi () {
                     <img className='img-timeline-Fotografi' src={timelineEpc} alt=''/>
                 </div>
             </section>
-            <section></section>
+            <section className='interest-foto'>
+                <div className='box-interest-foto'>
+                    <div className='text-interest-foto'>
+                        <h1>INTEREST?</h1>
+                    </div>
+                    <div className='button-foto'>
+                        <NavLink to="./regist-fotografi">
+                        <button>Register</button>
+                        </NavLink>
+                       <button><a href='https://drive.google.com/drive/folders/1yE8MXgbYIQcG89v6LGGKaLeiyUs7BUai'>Guidebook</a></button>
+                    </div>
+                </div>
+            </section>
             <img className='city-inj' src={city} alt=''/>
             <img className='road-inj' src={road} alt=''/>
         </div>

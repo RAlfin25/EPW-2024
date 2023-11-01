@@ -15,17 +15,20 @@ function Page1({ onNextPage, onBackPage }) {
     asalInstansi: false,
     noTelp: false,
     noTelpNotNumber: false,
+    email: false,
   });
   const domisili = useRef();
   const namaDiri = useRef();
   const asalInstansi = useRef();
   const noTelp = useRef();
+  const email = useRef();
 
   const handleNext = () => {
     data.namaDiri = namaDiri.current?.value;
     data.domisili = domisili.current?.value;
     data.asalInstansi = asalInstansi.current?.value;
     data.noTelp = noTelp.current?.value;
+    data.email = email.current?.value;
 
 
     let newError = {};
@@ -53,6 +56,12 @@ function Page1({ onNextPage, onBackPage }) {
       newError = { ...newError, noTelpNotNumber: true };
       noTelp.current?.focus();
     } else newError = { ...newError, noTelpNotNumber: false };
+
+    if (!data.email) {
+      newError = { ...newError, email: true };
+      email.current?.focus();
+    } else newError = { ...newError, asalemail: false };
+
 
     setError(newError);
 
@@ -131,6 +140,21 @@ function Page1({ onNextPage, onBackPage }) {
             }
           })()}
           <input className="form-foto" classname="form-foto" ref={noTelp} defaultValue={data.noTelp ?? ""} required></input>
+          <h2>Email<span className="star">*</span></h2>
+          {(() => {
+            if (error.email) {
+              return (
+                <div className="regist-foto-error-msg">
+                  Email tidak boleh kosong !
+                </div>
+              );
+            }
+          })()}
+          <input className="form-foto" 
+            ref={asalInstansi}
+            defaultValue={data.email ?? ""}
+            required
+          ></input>
 
           <div className="regist-foto-button">
             <div></div>
@@ -352,7 +376,7 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
     data.buktifollowig = buktifollowig.current.value;
 
     if (Object.values(newError).every((val) => val === false)) {
-      onBackPage(4, { ...formBukti, email });
+      onBackPage(3, { ...formBukti, email });
     }
   };
   return (
@@ -394,15 +418,20 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
             onClick={() => {
               axios
                 .post(
-                  "https://api.epwits.org/fotoection/register",
+                  "https://api.epwits.org/fotografi/register",
                   {
-                    nama_tim: String(data.buktiFollowIg),
-                    asal_sekolah: String(data.domisili),
-                    no_telp_pembimbing: String(data.noTelp),
-                    link_berkas_bukti: String(data.buktiTransfer),
-                    link_berkas_buktifollowig: String(data.buktifollowig),
-                    nama_pembimbing: String(data.asalInstansi),
-                    anggota: JSON.stringify({ anggota: data.anggota }),
+                    nama_lengkap: String(data.namaDiri),
+                    email: String(data.email),
+                    domisili: String(data.domisili),
+                    judul_karya: String(data.anggota[0]?.judul),
+                    deskripsi_karya: String(data.anggota[0]?.deskripsi),
+                    nomor_telepon: String(data.noTelp),
+                    link_post_instagram: String(data.anggota[1]?.link),
+                    asal_sekolah: String(data.asalInstansi),
+                    bukti_transfer: data.buktiTransfer,
+                    bukti_follow: data.buktifollowig,
+                    berkas_asli: data.anggota[1]?.karyaAsli,
+                    foto_karya: data.anggota[1]?.kumpul_karya,
                   },
                   {
                     headers: {
@@ -438,18 +467,18 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
 
 function RegistFoto() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [formDeskripsi, setFormData] = useState({});
-  const [formKarya, setFormAnggota1] = useState({});
+  const [formDeskripsi, setFormDeskripsi] = useState({});
+  const [formKarya, setFormKarya] = useState({});
   const [formBukti, setFormAbstrak] = useState({});
 
   const handleNextPage = (page, data) => {
     setCurrentPage(page);
-    setFormData(data);
+    setFormDeskripsi(data);
   };
 
   const handleBackPage = (page, data) => {
     setCurrentPage(page);
-    setFormData(data);
+    setFormDeskripsi(data);
   };
 
   const renderPage = () => {
@@ -491,7 +520,7 @@ function RegistFoto() {
 
   return (
     <div className="regist-foto-main">
-      {currentPage < 6 && (
+      {currentPage < 5 && (
         <section>
           <div className="regist-foto-judul">
             <h1>FOTOGRAFI</h1>
