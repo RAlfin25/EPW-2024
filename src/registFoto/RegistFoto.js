@@ -22,11 +22,7 @@ function Page1({ onNextPage, onBackPage }) {
   const namaDiri = useRef();
   const asalInstansi = useRef();
   const noTelp = useRef();
-<<<<<<< HEAD
   const email= useRef();
-=======
-  const email = useRef();
->>>>>>> d9e8bfaaac46c9b9891b5ec277274dd6518edc18
 
   const handleNext = () => {
     data.namaDiri = namaDiri.current?.value;
