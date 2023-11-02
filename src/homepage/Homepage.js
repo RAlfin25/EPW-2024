@@ -153,7 +153,7 @@ function HomePage() {
               film bagi SMA/SMK sederajat dan mahasiswa/i perguruan tinggi
               tingkat nasional sebagai bentuk wadah pengembangan minat...
             </p>
-            <NavLink to="/Fotografi">
+            <NavLink to="/fotografi">
               <button>Explore More</button>
             </NavLink>
             
