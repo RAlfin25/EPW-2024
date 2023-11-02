@@ -159,22 +159,7 @@ function Page1({ onNextPage, onBackPage }) {
               );
             }
           })()}
-          <input className="form-foto" classname="form-foto" ref={noTelp} defaultValue={data.noTelp ?? ""} required></input>
-          <h2>Email<span className="star">*</span></h2>
-          {(() => {
-            if (error.email) {
-              return (
-                <div className="regist-foto-error-msg">
-                  Email tidak boleh kosong !
-                </div>
-              );
-            }
-          })()}
-          <input className="form-foto" 
-            ref={email}
-            defaultValue={data.email ?? ""}
-            required
-          ></input>
+          <input className="form-foto" classname="form-foto" ref={noTelp} defaultValue={data.noTelp ?? ""} required></input>          
 
           <div className="regist-foto-button">
             <div></div>
