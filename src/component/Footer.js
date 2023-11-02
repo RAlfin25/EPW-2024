@@ -27,8 +27,8 @@ function Footer () {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink className="hover" to="/videografi">
-                                Videografi
+                                <NavLink className="hover" to="/fotografi">
+                                Fotografi
                                 </NavLink>
                             </li>
                         </ul>
