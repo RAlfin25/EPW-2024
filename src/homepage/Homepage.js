@@ -149,9 +149,12 @@ function HomePage() {
           <div className="videografi-text">
             <h1>Fotografi</h1>
             <p>
-              Videografi EPW 2024 merupakan kompetisi film pendek atau short
-              film bagi SMA/SMK sederajat dan mahasiswa/i perguruan tinggi
-              tingkat nasional sebagai bentuk wadah pengembangan minat...
+              Fotografi EPW 2024 merupakan salah satu sub-event dari serangkaian acara 
+              The 14th Engineering Physics Week 2024. Acara ini merupakan lomba fotografi 
+              dengan mengusung tema yaitu "Urban Life" dimana mencakup genre human interest, 
+              street activity, landscape, dll. Kompetisi ini terbuka bagi kalangan umum dan 
+              terbagi atas dua babak yaitu babak penyisihan dan babak final yang dilakukan secara online
+
             </p>
             <NavLink to="/fotografi">
               <button>Explore More</button>
