@@ -142,6 +142,8 @@
     color: red;
 }
 
+
+
 @media only screen and (max-width: 500px) {
     .regist-inj-main {
         padding-top: 50px;

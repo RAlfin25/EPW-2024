@@ -20,6 +20,7 @@ import ECS from './Laboratory/ECS'
 import PKRK from './Laboratory/Pkrk'
 import RegistInj from './registInj/RegistInj'
 import RegistFoto from './registFoto/RegistFoto'
+import RegistEpc from './registEpc/RegistEpc'
 import Login from './login/login';
 import Signup from './login/signup'
 
@@ -41,6 +42,7 @@ function App() {
               <Route path='/ECS' Component={ECS}/>
               <Route path='/PKRK' Component={PKRK}/>
           <Route path='/epc' Component={Epc}/>
+              <Route path='epc/regist-epc' Component={RegistEpc}/>
           <Route path='/injection' Component={Injection}/>
               <Route path='injection/regist-injection' Component={RegistInj}/>
           <Route path='/fotografi' Component={Fotografi}/>
