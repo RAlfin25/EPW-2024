@@ -1,0 +1,248 @@
+.regist-epc-main {
+    padding-top: 100px;
+    background-image: url('./asset-regist-epc/Background\ Design\ --------------------------------------------\ \(1\).png');
+    background-size: cover;
+}
+
+.regist-epc-judul{
+    text-align: center;
+    margin: auto;
+    padding: 100px 0px;
+}
+
+.regist-epc-judul h1{
+    margin: 0;
+    font-size: 150px;
+   color: #365569;
+   font-family: 'poppins';
+   font-weight: 700; 
+   text-shadow: 3px 7px 2px rgba(0, 0, 0, 0.4);
+   line-height: 1em;
+}
+
+.regist-epc-judul p {
+    margin: auto;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    background-color: #365569;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 18px;
+    font-family: 'poppins';
+}
+
+.pembatas-epc-regis-img {
+    background-image: url('./asset-regist-epc/Group\ 290.svg');
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 54vh;
+}
+
+.regist-epc-bar {
+    margin: auto;
+    width: 40%;
+    padding-bottom: 100px;
+}
+
+.regist-epc-bar h1{
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'poppins';
+    font-size: 25px;
+    background: #1976D2;
+}
+
+.regist-epc-bar-checklist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;    
+}
+
+.regist-epc-bar-checklist-button1 {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+}
+
+.regist-epc-bar-checklist-button2{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+}
+
+.regist-epc-bar-checklist-button1 label {
+    color: #1460B9;
+    font-style: bold ;
+    font-family: 'poppins';
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.regist-epc-bar-checklist-button2 label {
+    color: #1460B9;
+    font-style: bold ;
+    font-family: 'poppins';
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.regist-epc-bar h2{
+    margin: 20px 0 5px;
+    color: #1460B9;
+    font-family: 'poppins';
+}
+
+.regist-epc-bar-checklist-button1 input {
+    width: 30px;
+    aspect-ratio: 1/1;
+    margin: 0;
+}
+
+
+.regist-epc-bar-checklist-button2 input {
+    width: 30px;
+    aspect-ratio: 1/1;
+    margin: 0;
+}
+
+.form-epc{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: large;
+    padding: 0px 20px;
+    font-family: "Poppins";
+}
+
+.regist-epc-button {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.regist-epc-button button {
+    margin: 20px;
+    font-family: 'poppins';
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    background-color: #268AFF;
+    aspect-ratio: 4/1.2;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+}
+
+.regist-epc-button button:hover{
+    transform: scale(1.1);
+}
+
+.regist-epc-error-msg {
+    font-size: 1.4em;
+    font-family: 'poppins';
+    font-style: bold;    
+    color: red;
+    padding:     5px;
+    border-radius: 5px;        
+    z-index: 2;
+}
+
+.star {
+    color: red;
+}
+
+.form-foto-file {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    font-size: large;
+    padding: 0px 20px;
+}
+
+input[type="file"] {
+    outline: none;
+    padding: 20px;
+    margin: -4px;
+  }
+  
+  input[type="file"]:focus-within::file-selector-button,
+  input[type="file"]:focus::file-selector-button {
+    outline: 2px solid #0964b0;
+    outline-offset: 2px;
+  }
+  
+  input[type="file"]::before {
+    top: 30px;
+  }
+  
+  input[type="file"]::after {
+    top: 28px;
+  }
+  
+  /* ------- From Step 2 ------- */
+  
+  input[type="file"] {
+    position: relative;
+  }
+  
+  input[type="file"]::file-selector-button {
+    width: 136px;
+    color: transparent;
+  }
+  
+  /* Faked label styles and icon */
+  input[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+    left: 56px;
+    color: #0964b0;
+    content: "Upload File";
+  }
+  
+  input[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+    left: 29px;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  }
+  
+  /* ------- From Step 1 ------- */
+  
+  /* file upload button */
+  input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+    border-radius: 9px;
+  }
+  
+  /* file upload button hover state */
+  input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* file upload button active state */
+  input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
+  
+
+

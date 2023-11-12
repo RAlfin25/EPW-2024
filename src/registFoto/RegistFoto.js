@@ -12,6 +12,7 @@ function Page1({ onNextPage, onBackPage }) {
   const [error, setError] = useState({
     namaDiri: false,
     domisili: false,
+    email: false,
     asalInstansi: false,
     noTelp: false,
     noTelpNotNumber: false,
@@ -21,7 +22,7 @@ function Page1({ onNextPage, onBackPage }) {
   const namaDiri = useRef();
   const asalInstansi = useRef();
   const noTelp = useRef();
-  const email = useRef();
+  const email= useRef();
 
   const handleNext = () => {
     data.namaDiri = namaDiri.current?.value;
@@ -52,6 +53,11 @@ function Page1({ onNextPage, onBackPage }) {
       noTelp.current?.focus();
     } else newError = { ...newError, noTelp: false };
 
+    if (!data.email) {
+      newError = { ...newError, email: true };
+      email.current?.focus();
+    } else newError = { ...newError, email: false };
+
     if (isNaN(data.noTelp)) {
       newError = { ...newError, noTelpNotNumber: true };
       noTelp.current?.focus();
@@ -64,8 +70,7 @@ function Page1({ onNextPage, onBackPage }) {
 
 
     setError(newError);
-
-    console.log(error);
+    
     if (Object.values(newError).every((val) => val === false)) {
       onNextPage(2, { name });
     }
@@ -90,6 +95,21 @@ function Page1({ onNextPage, onBackPage }) {
           <input className="form-foto" classname="form-foto"
             ref={namaDiri}
             defaultValue={data.namaDiri ?? ""}
+            required
+          ></input>
+          <h2>Email<span className="star">*</span></h2>
+          {(() => {
+            if (error.namaDiri) {
+              return (
+                <div className="regist-foto-error-msg">
+                  Email tidak boleh kosong !
+                </div>
+              );
+            }
+          })()}
+          <input className="form-foto" classname="form-foto"
+            ref={email}
+            defaultValue={data.email ?? ""}
             required
           ></input>
           <h2>Domisili<span className="star">*</span></h2>
@@ -139,22 +159,7 @@ function Page1({ onNextPage, onBackPage }) {
               );
             }
           })()}
-          <input className="form-foto" classname="form-foto" ref={noTelp} defaultValue={data.noTelp ?? ""} required></input>
-          <h2>Email<span className="star">*</span></h2>
-          {(() => {
-            if (error.email) {
-              return (
-                <div className="regist-foto-error-msg">
-                  Email tidak boleh kosong !
-                </div>
-              );
-            }
-          })()}
-          <input className="form-foto" 
-            ref={asalInstansi}
-            defaultValue={data.email ?? ""}
-            required
-          ></input>
+          <input className="form-foto" classname="form-foto" ref={noTelp} defaultValue={data.noTelp ?? ""} required></input>          
 
           <div className="regist-foto-button">
             <div></div>
@@ -277,10 +282,11 @@ function Page3({ onNextPage, onBackPage, formKarya }) {
     setError(newError);
 
     data.anggota[1] = {
-      karya_asli: karyaAsli.current?.value,
+      karya_asli: karyaAsli.current,
       link: linkPost.current?.value,
-      kumpul_karya: kumpulKarya.current?.value,
+      kumpul_karya: kumpulKarya.current,
     };
+    console.log(data.anggota[1]);
 
     if (Object.values(newError).every((val) => val === false)) {
       onNextPage(4, { ...formKarya, email });
@@ -307,7 +313,7 @@ function Page3({ onNextPage, onBackPage, formKarya }) {
         <input className="form-foto-file" 
           type="file"
           ref={karyaAsli}
-          defaultValue={data.anggota[1]?.karya_asli ?? ""}
+          defaultValue={data.anggota[1]?.karya_asli?.value ?? ""}
         ></input>
         <h2>Pengumpulan Link Post Instagram (multiple)<span className="star">*</span></h2>
         {(() => {
@@ -337,7 +343,7 @@ function Page3({ onNextPage, onBackPage, formKarya }) {
         <input className="form-foto-file" 
           type="file"
           ref={kumpulKarya}
-          defaultValue={data.anggota[1]?.kumpul_karya ?? ""}
+          defaultValue={data.anggota[1]?.kumpul_karya?.value ?? ""}
         ></input>
 
         <div className="regist-foto-button">
@@ -372,8 +378,8 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
 
     setError(newError);
 
-    data.buktiTransfer = buktiTransfer.current.value;
-    data.buktifollowig = buktifollowig.current.value;
+    data.buktiTransfer = buktiTransfer.current;
+    data.buktifollowig = buktifollowig.current;
 
     if (Object.values(newError).every((val) => val === false)) {
       onBackPage(3, { ...formBukti, email });
@@ -396,7 +402,7 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
         <input className="form-foto-file" 
         type="file"
         ref={buktiTransfer} 
-        defaultValue={data?.buktiTransfer}></input>
+        defaultValue={data?.buktiTransfer?.value}></input>
         <h2>Bukti Follow Instagram EPW<span className="star">*</span></h2>
         {(() => {
           if (error.buktifollowig) {
@@ -410,32 +416,39 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
         <input className="form-foto-file" 
         type="file"
         ref={buktifollowig} 
-        defaultValue={data?.buktifollowig}></input>
+        defaultValue={data?.buktifollowig?.value}></input>
 
         <div className="regist-foto-button">
           <button onClick={handleBack}>Back</button>
           <button
             onClick={() => {
+              data.buktiTransfer = buktiTransfer.current;
+              data.buktifollowig = buktifollowig.current;
+              const formData = new FormData();
+              formData.append("nama_lengkap", String(data.namaDiri));
+              formData.append("email", String(data.email));
+              formData.append("domisili", String(data.domisili));
+              formData.append("judul_karya", String(data.anggota[0]?.judul));
+              formData.append(
+                "deskripsi_karya",
+                String(data.anggota[0]?.deskripsi)
+              );
+              formData.append("nomor_telepon", String(data.noTelp));
+              formData.append("link_post_instagram", String(data.anggota[1]?.link));
+              formData.append("asal_sekolah", String(data.asalInstansi));
+              formData.append("bukti_transfer", data?.buktiTransfer?.files[0]);
+              formData.append("bukti_follow", data?.buktifollowig?.files[0]);
+              formData.append("berkas_asli", data.anggota[1]?.karya_asli?.files[0]);
+              formData.append("foto_karya", data.anggota[1]?.kumpul_karya?.files[0]);
+              
               axios
                 .post(
                   "https://api.epwits.org/fotografi/register",
-                  {
-                    nama_lengkap: String(data.namaDiri),
-                    email: String(data.email),
-                    domisili: String(data.domisili),
-                    judul_karya: String(data.anggota[0]?.judul),
-                    deskripsi_karya: String(data.anggota[0]?.deskripsi),
-                    nomor_telepon: String(data.noTelp),
-                    link_post_instagram: String(data.anggota[1]?.link),
-                    asal_sekolah: String(data.asalInstansi),
-                    bukti_transfer: data.buktiTransfer,
-                    bukti_follow: data.buktifollowig,
-                    berkas_asli: data.anggota[1]?.karyaAsli,
-                    foto_karya: data.anggota[1]?.kumpul_karya,
-                  },
+                  formData,
                   {
                     headers: {
-                      Authorization: "Bearer " + "eyJhbGciOiJIUz",
+                        "Content-Type": "multipart/form-data",
+                      "Authorization": "Bearer " + "eyJhbGciOiJIUz",
                     },
                   }
                 )
@@ -443,14 +456,13 @@ function Page4({ onNextPage, onBackPage, formBukti }) {
                   if (res?.message === "Team already exist") {
                     alert("Nama Tim sudah terdaftar");
                     onBackPage(4, { ...formBukti, email });
-                  } else {
+                  } else {                    
                     alert("Berhasil mendaftar");
                     window.location.href = "/";
                   }
                 })
                 .catch((err) => {
-                  alert("terdapat kesalahan");
-                  // console.log(err);
+                  alert("terdapat kesalahan");                  
                 });
             }}
           >

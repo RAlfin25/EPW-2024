@@ -79,7 +79,8 @@ function Page1({ onNextPage, onBackPage }) {
         {(() => {
           if (error.tingkat) {
             return (
-              <div className="regist-inj-error-msg">Pilih salah satu !<span className="star">*</span></div>
+              <div className="regist-inj-error-msg">
+                Pilih salah satu !</div>
             );
           }
         })()}
