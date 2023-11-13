@@ -1,6 +1,7 @@
 import './RegistEpc.css'
 import { NavLink } from 'react-router-dom'
 import React, { useState, useRef } from "react";
+import axios from 'axios';
 
 const data = {
     anggota: [],
@@ -111,7 +112,7 @@ function Page2 ({ onNextPage, onBackPage, formAnggota1 }){
             newError = { ...newError, asalSekolah: true };
           } else newError = { ...newError, asalSekolah: false };
         
-        if (!maleCheckbox && !femaleCheckbox) {
+        if (!maleCheckbox.current?.checked && !femaleCheckbox.current?.checked) {
             newError = { ...newError, gender: true };
             maleCheckbox.current?.focus();
           } else newError = { ...newError, gender: false };
@@ -289,7 +290,7 @@ function Page3 ({ onNextPage, onBackPage, formAnggota2 }){
             newError = { ...newError, asalSekolah: true };
           } else newError = { ...newError, asalSekolah: false };
         
-          if (!maleCheckbox && !femaleCheckbox) {
+          if (!maleCheckbox.current?.checked && !femaleCheckbox.current?.checked) {
             newError = { ...newError, gender: true };
             maleCheckbox.current?.focus();
           } else newError = { ...newError, gender: false };
@@ -580,7 +581,93 @@ function Page4 ({ onNextPage, onBackPage, formBerkas }){
             <div className='regist-epc-button'>
                 <button onClick={handleBack}>Back</button>
 
-                <button>Submit</button>
+                <button onClick={(e) => {    
+                  let newError = {}
+    
+                  if (!pasFoto1.current?.value) {
+                      newError = { ...newError, pasFoto1: true };
+                    } else newError = { ...newError, pasFoto1: false };
+                  
+                  if (!pasFoto2.current?.value) {
+                      newError = { ...newError, pasFoto2: true };
+                    } else newError = { ...newError, pasFoto2: false };
+                    
+                  if (!kartuPelajar1.current?.value) {
+                      newError = { ...newError, kartuPelajar1: true };
+                    } else newError = { ...newError, kartuPelajar1: false };
+                    
+                  if (!kartuPelajar2.current?.value) {
+                      newError = { ...newError, kartuPelajar2: true };
+                    } else newError = { ...newError, kartuPelajar2: false };
+                  
+                  if (!buktiTransfer.current?.value) {
+                      newError = { ...newError, buktiTransfer: true };
+                    } else newError = { ...newError, buktiTransfer: false };
+              
+                  
+              
+                  setError(newError);
+                  if (!Object.values(newError).every((val) => val === false)) {
+                   return
+                  }
+                  data.pasFoto1 = pasFoto1.current;
+                  data.pasFoto2 = pasFoto2.current;
+                  data.kartuPelajar1 = kartuPelajar1.current;
+                  data.kartuPelajar2 = kartuPelajar2.current;
+                  data.buktiTransfer = buktiTransfer.current;
+
+                  let anggota = [];
+                  for (let i = 0; i < data.anggota.length; i++) {
+                    let gender = "";
+                    if (data.anggota[i].female) gender = "female";
+                    else if(data.anggota[i].male) gender = "male";
+                    anggota.push({
+                      nama_lengkap : data.anggota[i].nama_lengkap,
+                      asal_sekolah: data.anggota[i].asal_sekolah,
+                      gender: gender,
+                      email: data.anggota[i].email,
+                      nomor_telepon: data.anggota[i].nomor_telepon,
+                      })
+                  }
+                  let anggota_ = {anggota: anggota};
+
+                  const formData = new FormData();
+                  formData.append("nama_tim", String(data.namaTeam));
+                  formData.append("rayon", String(data.rayon));
+                  formData.append("anggota", String(JSON.stringify(anggota_)));
+
+                  formData.append("foto_anggota_1", data?.pasFoto1?.files[0]);
+                  formData.append("foto_anggota_2", data?.pasFoto2?.files[0]);
+                  formData.append("bukti_transfer", data?.buktiTransfer?.files[0]);
+                  formData.append("kartu_pelajar_anggota_2", data?.kartuPelajar2?.files[0]);
+                  formData.append("kartu_pelajar_anggota_1", data?.kartuPelajar1?.files[0]);
+                  console.log(formData);
+                  
+                  axios
+                    .post(
+                      "https://api.epwits.org/epc/register",
+                      formData,
+                      {
+                        headers: {
+                            "Content-Type": "multipart/form-data",
+                          "Authorization": "Bearer " + "eyJhbGciOiJIUz",
+                        },
+                      }
+                    )
+                    .then((res) => {
+                      console.log(res);
+                      if (res?.message === "Team already exist") {
+                        alert("Nama Tim sudah terdaftar");
+                        // onBackPage(4, { ...formBukti, email });
+                      } else {                    
+                        alert("Berhasil mendaftar");
+                        window.location.href = "/";
+                      }
+                    })
+                    .catch((err) => {
+                      alert("terdapat kesalahan");                  
+                    });
+                }}>Submit</button>
             </div>
         </section>
     )
