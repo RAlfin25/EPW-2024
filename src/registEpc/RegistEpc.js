@@ -641,7 +641,7 @@ function Page4 ({ onNextPage, onBackPage, formBerkas }){
                   formData.append("bukti_transfer", data?.buktiTransfer?.files[0]);
                   formData.append("kartu_pelajar_anggota_2", data?.kartuPelajar2?.files[0]);
                   formData.append("kartu_pelajar_anggota_1", data?.kartuPelajar1?.files[0]);
-                  console.log(formData);
+                  
                   
                   axios
                     .post(
@@ -655,7 +655,7 @@ function Page4 ({ onNextPage, onBackPage, formBerkas }){
                       }
                     )
                     .then((res) => {
-                      console.log(res);
+                      
                       if (res?.message === "Team already exist") {
                         alert("Nama Tim sudah terdaftar");
                         // onBackPage(4, { ...formBukti, email });
