@@ -4,6 +4,7 @@ import prizepool from './asset-Epc/Prizepool.svg'
 import timelineEpc from './asset-Epc/Group 222.png'
 import city from './asset-Epc/Frame 39.png'
 import road from './asset-Epc/Group 283.svg'
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -74,6 +75,19 @@ function Epc () {
                     <h2>EVENT TIMELINE</h2>
                     <h1>EPC TIMELINE</h1>
                     <img className='img-timeline-epc' src={timelineEpc} alt=''/>
+                </div>
+            </section>
+            <section className='interest-inj'>
+                <div className='box-interest-inj'>
+                    <div className='text-interest-inj'>
+                        <h1>INTEREST?</h1>
+                    </div>
+                    <div className='button-inj'>
+                        <NavLink to="./regist-epc">
+                        <button>Register</button>
+                        </NavLink>
+                       <button><a href=''>Guidebook</a></button>
+                    </div>
                 </div>
             </section>
             <img className='city-epc' src={city} alt=''/>
