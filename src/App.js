@@ -23,6 +23,7 @@ import RegistFoto from './registFoto/RegistFoto'
 import RegistEpc from './registEpc/RegistEpc'
 import Login from './login/login';
 import Signup from './login/signup'
+import Upload from './upAbsInj/upAbsInj'
 
 
 
@@ -45,6 +46,7 @@ function App() {
               <Route path='epc/regist-epc' Component={RegistEpc}/>
           <Route path='/injection' Component={Injection}/>
               <Route path='injection/regist-injection' Component={RegistInj}/>
+              <Route path='injection/upload-abstrak-injection' Component={Upload}/>
           <Route path='/fotografi' Component={Fotografi}/>
               <Route path='fotografi/regist-fotografi' Component={RegistFoto}/>
               <Route path='/p' Component={P}/>
