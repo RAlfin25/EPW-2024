@@ -20,7 +20,7 @@ function Page1({ onNextPage, onBackPage }) {
   const namaSekolah = useRef();
   const namaTim = useRef();
   const smaCheckbox = useRef();
-  const  = useRef();
+  const kuliahCheckbox = useRef();
   const namaGuru = useRef();
   const noTelp = useRef();
 
@@ -30,7 +30,7 @@ function Page1({ onNextPage, onBackPage }) {
     data.namaGuru = namaGuru.current?.value;
     data.noTelp = noTelp.current?.value;
     data.sma = smaCheckbox.current?.checked;
-    data.kuliah = .current?.checked;
+    data.kuliah = kuliahCheckbox.current?.checked;
 
     let newError = {};
     if (data.namaTim.length === 0) {
@@ -101,7 +101,7 @@ function Page1({ onNextPage, onBackPage }) {
               type="radio"
               id="check"
               name="academic"
-              ref={}
+              ref={kuliahCheckbox}
               defaultChecked={data.kuliah ?? false}
             ></input>
             <label for="check-Kuliah">Kuliah</label>
@@ -651,7 +651,7 @@ function Page5({ onNextPage, onBackPage, formAbstrak }) {
             onClick={() => {
               data.buktiFollow = buktiFollow.current?.value;
               data.abstrak = abstrak.current?.value;
-              
+              console.log(data);
               axios
                 .post(
                   "https://api.epwits.org/injection/register",
