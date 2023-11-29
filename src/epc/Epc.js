@@ -77,19 +77,7 @@ function Epc () {
                     <img className='img-timeline-epc' src={timelineEpc} alt=''/>
                 </div>
             </section>
-            <section className='interest-inj'>
-                <div className='box-interest-inj'>
-                    <div className='text-interest-inj'>
-                        <h1>INTEREST?</h1>
-                    </div>
-                    <div className='button-inj'>
-                        <NavLink to="./regist-epc">
-                        <button>Register</button>
-                        </NavLink>
-                       <button><a href=''>Guidebook</a></button>
-                    </div>
-                </div>
-            </section>
+            
             <img className='city-epc' src={city} alt=''/>
             <img className='road-epc' src={road} alt=''/>
         </div>
