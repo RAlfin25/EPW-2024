@@ -1,5 +1,5 @@
-import { Link, NavLink } from "react-router-dom";
 import React, {useState, useRef} from "react";
+import axios from "axios";
 
 const data = {
     anggota: [],
@@ -62,11 +62,40 @@ function UpAbsInj ({ onNextPage, onBackPage }) {
 
 
       setError(newError);
-  
-      console.log(error);
-      if (Object.values(newError).every((val) => val === false)) {
-        onNextPage(2, { name });
-      }
+        
+      axios
+                .post(
+                  "http://localhost:3000/injection/abstrak",
+                  {
+                    nama_tim: String(data.namaTim),
+                    email_ketua: String(data.emailKetua),
+                    tingkat: data.sma ? "SMA" : "Mahasiswa",
+                    link_bukti_transfer: String(data.buktiBayar),
+                    link_full_paper: String(data.kumpulPaper),        
+                    judul_paper: String(data.judulPaper),            
+                  },
+                  {
+                    headers: {
+                      Authorization: "Bearer " + "eyJhbGciOiJIUz",
+                    },
+                  }
+                )
+                .then((res) => {
+                  console.log(res)
+                  if (res.data.status == 400) {
+                    alert("Nama Tim tidak terdaftar");                    
+                  } else {
+                    alert("Berhasil mendaftar");
+                    // window.location.href = "/";
+                  }
+                })
+                .catch((err) => {
+                  alert("terdapat kesalahan");
+                  // console.log(err);
+                });
+      // if (Object.values(newError).every((val) => val === false)) {
+      //   onNextPage(2, { name });
+      // }
     };
     
     
