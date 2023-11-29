@@ -84,19 +84,7 @@ function Injection () {
                     <img className='img-timeline-inj' src={timelineInj} alt=''/>
                 </div>
             </section>
-            <section className='interest-inj'>
-                <div className='box-interest-inj'>
-                    <div className='text-interest-inj'>
-                        <h1>INTEREST?</h1>
-                    </div>
-                    <div className='button-inj'>
-                        <NavLink to="./regist-injection">
-                        <button>Register</button>
-                        </NavLink>
-                       <button><a href='https://drive.google.com/drive/folders/1byhWFLcrrIZrUMR_x9Ub8H4DaZ2stU_i'>Guidebook</a></button>
-                    </div>
-                </div>
-            </section>
+            
             <img className='city-inj' src={city} alt=''/>
             <img className='road-inj' src={road} alt=''/>
         </div>
