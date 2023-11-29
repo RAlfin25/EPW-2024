@@ -79,7 +79,7 @@ function Fotografi () {
                         <NavLink to="./regist-fotografi">
                         <button>Register</button>
                         </NavLink>
-                       <button><a href='https://api.epwits.org/uploads/Sabtu November 2023 23:0:36-pialaa.png'>Guidebook</a></button>
+                       <button><a href='https://drive.google.com/drive/folders/1yE8MXgbYIQcG89v6LGGKaLeiyUs7BUai?hl=id'>Guidebook</a></button>
                     </div>
                 </div>
             </section>
