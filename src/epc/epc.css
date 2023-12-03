@@ -1778,3 +1778,60 @@
     }
 
 }
+
+
+.interest-epc {
+    text-align: center;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.box-interest-epc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    margin: auto;       
+}
+
+.text-interest-epc h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 90px;
+    font-family: "Poppins";
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.button-epc {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button-epc button{
+    font-family: "Poppins";
+    color: white;
+    border: none;
+    font-size: large;
+    font-weight: 700;
+    margin: 10px 100px;
+    border-radius: 15px;
+    width: 200px;
+    aspect-ratio: 4/1;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    background-color: #275A7B;
+}
+
+.button-epc a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-epc button:hover{
+    transform: scale(1.1);
+}

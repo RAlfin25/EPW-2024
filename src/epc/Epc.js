@@ -77,7 +77,17 @@ function Epc () {
                     <img className='img-timeline-epc' src={timelineEpc} alt=''/>
                 </div>
             </section>
-            
+            <section className='interest-epc'>
+                <div className='box-interest-epc'>
+                    <div className='text-interest-epc'>
+                        <h1>INTEREST?</h1>
+                    </div>
+                    <div className='button-epc'>                       
+                       <button><a href='http://daftar.epwits.org'>Daftar</a></button>
+                       <button><a href='http://kompetisi.epwits.org'>Ujian</a></button>
+                    </div>
+                </div>
+            </section>
             <img className='city-epc' src={city} alt=''/>
             <img className='road-epc' src={road} alt=''/>
         </div>
