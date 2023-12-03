@@ -110,7 +110,7 @@ function UpAbsInj ({ onNextPage, onBackPage }) {
         </section>
         <section className="regist-inj-bar">
             <div className="regist-inj-bar-input">
-                <h1>Upload Abstrak<span className="star">*</span></h1>
+                <h1>Regristrasi Ulang Tahap Full Paper<span className="star">*</span></h1>
                 <h2>Tingkat<span className="star">*</span></h2>
                 {(() => {
                     if (error.tingkat) {
@@ -188,7 +188,7 @@ function UpAbsInj ({ onNextPage, onBackPage }) {
                 ref={judulPaper}
                 defaultValue={data.judulPaper ?? ""}
                 ></input>
-                <h2>Link google drive bukti pembayaran<span className="star">*</span></h2>
+                <h2>Link Gdrive Bukti Pembayaran<span className="star">*</span></h2>
                 {(() => {
                     if (error.buktiBayar) {
                     return (
@@ -203,7 +203,7 @@ function UpAbsInj ({ onNextPage, onBackPage }) {
                     defaultValue={data.buktiBayar ?? ""}
                     required
                 ></input>
-                <h2>Pengumpulan Full Paper<span className="star">*</span></h2>
+                <h2>Link Gdrive Pengumpulan Full Paper<span className="star">*</span></h2>
                 {(() => {
                     if (error.kumpulPaper) {
                     return (
@@ -233,4 +233,3 @@ function UpAbsInj ({ onNextPage, onBackPage }) {
 }
 
 export default UpAbsInj;
-
